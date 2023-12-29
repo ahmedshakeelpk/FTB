@@ -7,6 +7,7 @@
 //
 
 import UIKit
+
 class TimerApplication: UIApplication {
     
     // the timeout in seconds, after which should perform custom actions
@@ -71,5 +72,4 @@ class TimerApplication: UIApplication {
             }
         }
     }
-
 }

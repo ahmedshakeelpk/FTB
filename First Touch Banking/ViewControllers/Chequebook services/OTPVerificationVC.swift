@@ -80,7 +80,6 @@ class OTPVerificationVC: BaseVC, UITextFieldDelegate {
             
         } else {
             totalSecond -= 1
-            
         }
     }
     
@@ -532,9 +531,12 @@ class OTPVerificationVC: BaseVC, UITextFieldDelegate {
                             self.showAlert(title: "", message: message, completion: {
                                 //                            self.navigationController?.popToRootViewController(animated: true)
                                 //                           circluar 4 changes
-                                let vc = self.storyboard?.instantiateViewController(withIdentifier: "RegistrationVC")
-                                as! RegistrationVC
-                                self.navigationController?.pushViewController(vc, animated: true)
+                                
+                                self.logoutUser()
+                                
+                                //                                let vc = self.storyboard?.instantiateViewController(withIdentifier: "RegistrationVC")
+                                //                                as! RegistrationVC
+                                //                                self.navigationController?.pushViewController(vc, animated: true)
                                 
                                 
                             })
@@ -555,13 +557,32 @@ class OTPVerificationVC: BaseVC, UITextFieldDelegate {
                     if let message = self.genericResponse?.message{
                         self.navigationController?.popToRootViewController(animated: true)
                     }
-//                    print(response.result.value)
+                    //                    print(response.result.value)
                     print(response.response?.statusCode)
                 }
             }
             
         }
-        
-        
+    }
+    func logoutUser2() {
+        UserDefaults.standard.synchronize()
+
+        DataManager.instance.accessToken = nil
+        DataManager.instance.accountTitle = ""
+        DataManager.instance.beneficaryTitle = nil
+        DataManager.instance.imei = nil
+        DataManager.instance.Latitude = nil
+        DataManager.instance.Longitude = nil
+
+        reloadStoryBoard2()
+    }
+
+     func reloadStoryBoard2() {
+
+        let delegate:AppDelegate = UIApplication.shared.delegate as! AppDelegate
+        let storyBoardName = "Main"
+        let storyBoard = UIStoryboard(name: storyBoardName,bundle: nil)
+
+        delegate.window?.rootViewController = storyBoard.instantiateInitialViewController()
     }
 }
