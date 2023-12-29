@@ -400,15 +400,17 @@ class OTPVerifyVC: BaseVC {
                             var tempFingerPrintDictionary = [[String:Any]]()
 
                             tempFingerPrintDictionary.append(
-                                ["FINGER_INDEX":"1",
-                                 "FINGER_TEMPLATE":thumbOne
+                                [
+                                 "FINGER_TEMPLATE":thumbOne,
+                                 "FINGER_INDEX":"6"
 //                                 ,"templateType":"WSQ"
                                 ]
                             )
                             
                             tempFingerPrintDictionary.append(
-                                ["FINGER_INDEX":"2",
-                                 "FINGER_TEMPLATE":thumbTwo
+                                [
+                                 "FINGER_TEMPLATE":thumbTwo,
+                                 "FINGER_INDEX":"1"
 //                                 ,"templateType":"WSQ"
                                 ]
                             )
@@ -420,7 +422,7 @@ class OTPVerifyVC: BaseVC {
                         if let key = self.verifyOTPInfo?.data?.unique_key {
                             nextVC.uniqueKey = key
                         }
-                        self.navigationController!.pushViewController(nextVC, animated: true)
+//                        self.navigationController!.pushViewController(nextVC, animated: true)
                         
                     }
                     else {
@@ -602,7 +604,7 @@ class OTPVerifyVC: BaseVC {
         print(compelteUrl)
         
         NetworkManager.sharedInstance.enableCertificatePinning()
-        AF.request(compelteUrl, method: .post, parameters: params , encoding: URLEncoding.httpBody, headers:header).response { response in
+        AF.request(compelteUrl, method: .post, parameters: params , encoding: JSONEncoding.default, headers:header).response { response in
             //        Object { (response: DataResponse<GenericResponse>) in
             
             //        Alamofire.request(compelteUrl, method: .post, parameters: params , encoding: URLEncoding.httpBody, headers:header).responseObject { (response: DataResponse<GenericResponse>) in
@@ -647,6 +649,10 @@ class OTPVerifyVC: BaseVC {
 var thumbOne = "iVBORw0KGgoAAAANSUhEUgAAAZsAAAKUCAAAAAD3TcpsAAAgAElEQVR4AeS9d3gd1bU3vE/vvTedIx31asmy5I5xwYBtML0FQghcLk4P6T034UJuCknuDeHSAgkdbGMbg7stF1myrN6lo1N0eu+9vWuP7Lx5//zANjzPt/6Y2bPLzJ69Zq/1W2uXIZXR54zKsZwMoed+FkSoq1mpX9WC65f3lbX/t56xkTPnbXRaPxHz2F9ol1Km958a8uHwDVs3ty7FlZDr1Z/i4JefqOGRcMD/0q/SqO0H9+LwwICV3LFZjIOfR6L84nNWq3LYLOAg0+u44RU6EV+hgvb8w5O/em1mmeByVRmpUFHWulw8iSN4bBl3KYGeIjFRCD62YtyTVDFxJIlEDQ9EINAsziYyiXiBUohFXcx6oxGSc5Eygy+RCDIlytINPmdH0uer3+TJ2QBZQUu+9mPcoPesEjN1jayT35jBrcb4eQOJymJI6xBKjEU10DOmdvUg0go0E0OCe+9ZR0Vxr985NTrvi2YQ2nL7+hqiQyX3v9pD6mwTcyRicpam1eYmxwJ0uVotoFFolGwsh9I+XpuA9znjC67O54s37qiUywDR437pzwHEe/DO+myIKo6/+4ulhhNUkmkclrK9W5cKiSuX4iZ8to/eJ4K3PrJczIKQfXRq6MMkQpU3raxX8nFf881HCslAmslO+9KajjpGxB8I+BNUqb5SQY0H3JYFb2nTbcKl+32ejp8rmTZ/sMiSkXHz+Mmytbu+Ws8TSmjMcsJrJ5pMVYwFbBPDH/UOTdmLjUutKK9sX5MdwOFZV9iT1SAkqF3Trve7EEq7Zwf67Uoe4lTU1qslIiEzH3C4wmnEFgiomUg0XcgEF13RfKmQjswWqFz60h0/P8fPT7/xR3MfURSVRjk0TmrUlNd3XtIvRa9pMcOmZ1MRvz/onkoRjVe3fvPqf6KDl74XhkihjN+44zYqkTzVZwlFfCYrQj94mohAKBRNBudHZsO86pYGFSng8CRLhYA"
 
 var thumbTwo = "iVBORw0KGgoAAAANSUhEUgAAAaMAAAKVCAAAAABHNdsFAAAgAElEQVR4Aey9Z3hcx5Eo2pNzzjPAYAAMciIywACCOUlUTpaVnNeyrbV9vU7rXaeVdi1711rLUZYsWbKoRImkJJJiziQAIuc0mJxzzvOqD0BZvu++PytQpL936/umY50+3V3dVdXVfXpIBfT3AYXzzI6/remPfkh68IvrEbLMypr+Ngdii4Pe6s0fpkZJUYuX38j9MOHvKkD9e6mtebbkf6vqDCrE85DGoKX+muOze1NMIS+5MB1gfJgasiUDJjcnt5aCk7IF2oc5fxeBvxsaldCGyvTLXTpbhX3jCEJsYmakvOQm6PaJ9654ktEYRVFVqaI4zRGpV7pCAvu8x7FoIS8lunk+g5skkKp5Kzl/F97fDY1CwwOze28nQafu+0tqy0Ma1M9G+lJSiuacmbYMT1VQh/7Ut9zjJC1i8BhkJ9m+QqNITkghJ+PRRDSPLKfMan3YrKolo7Sfx/m/NFqlHvCMs2SuAwfMk2OHNnSJFwau+E48d3+9p61USL18ORqNenwsikQtwhSRNanFRZVlcporOzdtalM6hmyShqriBjHyLrq5nWyk5fB0jaxwfsl76appb0NhnWCVKnkdiyH9HegMD76KKMJIGnqB1tBdkZ846ENIsrOclgw6zfYEXy2gKzu3aDMf7J8Wd66vlRLS5tRv9l/rNcW9e7bj+bcMY/FWQIi7L750HCec7l1Ovpndm5rXeWS46069ilDOh0SKnCOHCpk8mQ808hkYvKhxxoZQWiWWl9cVI5qiMpMvIMEyiZ459GGvuyxGY+m1WCjJB4RYKJrj0DHV36Z1EA9cy78Z/ZuXRkNGsucWFfTZOaLfKpu0OXuhdg3PYsDamaTgj0aDFCmFr9AIuczEVGD4woCxUDTn6CxihEYPvPdhZ1MbKYunLdKcy+zPk0LWuLyY7IpKiqhNzOFZhH4VX/ch5s0auHlpdOU1n3K6Ts22QU8iemNjo57myWiU4aD"
+
+
+
+
 
 extension  OTPVerifyVC: FingerprintResponseDelegate {
     func onScanComplete(fingerprintResponse: FingerprintResponse) {
@@ -743,16 +749,38 @@ extension OTPVerifyVC {
         let compelteUrl = Constants.BASE_URL + "api/v1/Customers/BioVerisys"
         let jsonDataaa = try! JSONSerialization.data(withJSONObject: fingerprints as Any, options: .prettyPrinted)
         let decoded = try! JSONSerialization.jsonObject(with: jsonDataaa, options: [])
-//            print(decoded)
-        
+            print(decoded)
+        if let dicFromJson = decoded as? [[String:Any]] {
+            print(dicFromJson)
+            print(dicFromJson)
+        }
+        let decoded2 = try! JSONSerialization.jsonObject(with: jsonDataaa, options: .fragmentsAllowed)
+        print(decoded2)
+        if let dicFromJson = decoded2 as? [[String:Any]] {
+            print(dicFromJson)
+            print(dicFromJson)
+        }
+//        if let jsonsss = try? JSONSerialization.jsonObject(with: jsonDataaa2, options: []) {
+//            print(jsonsss)
+//            print(jsonsss)
+//        }
         let params = [
             "TEMPLATE_TYPE": "ISO_19794_2",
             "LOCATION_LAT": "33.6844",
             "LOCATION_LONG": "73.0479",
             "imei":"\(DataManager.instance.imei ?? "")",
             "nadra":decoded
-        ]
+        ] as [String : Any]
+        let jsonDataaaParams = try! JSONSerialization.data(withJSONObject: params as Any, options: .prettyPrinted)
+        print(jsonDataaaParams)
+        let decoded3 = try! JSONSerialization.jsonObject(with: jsonDataaaParams, options: [])
+            print(decoded3)
+        if let dicFromJson = decoded3 as? [[String:Any]] {
+            print(dicFromJson)
+            print(dicFromJson)
+        }
         
+
 //        let params = [
 //            "TEMPLATE_TYPE": "ISO_19794_2",
 //            "LOCATION_LAT": "\(DataManager.instance.Latitude!)",
@@ -762,15 +790,30 @@ extension OTPVerifyVC {
 //        ]
         
         let header: HTTPHeaders = [
-            "Accept":"application/json","Content-Type":"application/x-www-form-urlencoded",
+            "Accept":"application/json",
+            "Content-Type":"application/json",
             "Authorization":"Bearer \(DataManager.instance.regAccessToken!)"]
-        print(params)
-        print(compelteUrl)
-        print(DataManager.instance.stringHeader!)
-        
+        print("Parameters Before Sending: \(params)")
+        print("Url Before Sending: \(compelteUrl)")
+        print("Token Before Sending: \(DataManager.instance.stringHeader!)")
+
         NetworkManager.sharedInstance.enableCertificatePinning()
+        let url = URL(string: compelteUrl)!
+
+        var request = URLRequest(url: url)
+        request.httpMethod = HTTPMethod.post.rawValue
+        request.setValue("application/json", forHTTPHeaderField: "Accept")
+        request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+        request.setValue("Authorization", forHTTPHeaderField: "Bearer \(DataManager.instance.regAccessToken!)")
+                
+        let jsonDataaa2 = try! JSONSerialization.data(withJSONObject: params as Any, options: .prettyPrinted)
+        request.httpBody = jsonDataaa2
+        if let jsonsss = try? JSONSerialization.jsonObject(with: jsonDataaa2, options: []) {
+            print(jsonsss)
+            print(jsonsss)
+        }
         
-        NetworkManager.sharedInstance.sessionManager?.request(compelteUrl, method: .post, parameters: params , encoding: URLEncoding.httpBody, headers:header).response { response in
+        NetworkManager.sharedInstance.sessionManager?.request(request.url!, method: .post, parameters: params , encoding: JSONEncoding.default, headers:header).response { response in
             
             //        NetworkManager.sharedInstance.serverRequest().request(compelteUrl, method: .post, parameters: params , encoding: URLEncoding.httpBody, headers:header).response { response in
             //        Object { (response: DataResponse<Registeration>) in
@@ -781,7 +824,7 @@ extension OTPVerifyVC {
             guard let data = response.data else { return }
             if let json = try? JSONSerialization.jsonObject(with: data, options: []) {
 //                self.registerInfo = Mapper<Registeration>().map(JSONObject: json)
-                
+                print(json)
                 if response.response?.statusCode == 200 {
 //                    if self.registerInfo?.response == 2 || self.registerInfo?.response == 1 {
 //                        if let accessToken = self.registerInfo?.data?.token {

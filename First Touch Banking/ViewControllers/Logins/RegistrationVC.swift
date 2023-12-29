@@ -423,8 +423,8 @@ class RegistrationVC: BaseVC , UITextFieldDelegate {
             "LOCATION_LAT": "2.17403",
             "LOCATION_LONG": "41.40338",
             "imei":"\(DataManager.instance.imei ?? "")",
-            "nadra":decoded
-        ]
+            "nadra":fingerprints
+        ] as [String : Any]
         
         let header: HTTPHeaders = ["Accept":"application/json","Content-Type":"application/x-www-form-urlencoded"]
         print(params)
