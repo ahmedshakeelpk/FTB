@@ -1,0 +1,1948 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3512C839274CF04C00961C1C /* FakeLaunchScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3512C838274CF04C00961C1C /* FakeLaunchScreen.swift */; };
+		3512C83B274D075400961C1C /* FakeLSCellVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3512C83A274D075400961C1C /* FakeLSCellVc.swift */; };
+		3514C6822835433300241AAE /* URLSessionMethodVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3514C6812835433300241AAE /* URLSessionMethodVc.swift */; };
+		3517A14C287FF222002E094E /* GenerateQR.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3517A14B287FF222002E094E /* GenerateQR.swift */; };
+		3517A14E288006CC002E094E /* StaticQRVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3517A14D288006CC002E094E /* StaticQRVC.swift */; };
+		351C305E277EF1FF00B4A0CD /* TransferByAliasVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 351C305D277EF1FF00B4A0CD /* TransferByAliasVC.swift */; };
+		3525F0D4277F278D00A5B398 /* AliasTransactionConfirmationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3525F0D3277F278D00A5B398 /* AliasTransactionConfirmationVC.swift */; };
+		3525F0D6277F27AA00A5B398 /* AliasTransferOTPVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3525F0D5277F27AA00A5B398 /* AliasTransferOTPVC.swift */; };
+		3525F0D8277F27C700A5B398 /* TransactionAliasSuccessfull.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3525F0D7277F27C700A5B398 /* TransactionAliasSuccessfull.swift */; };
+		3525F0DA277F32F800A5B398 /* FundsTransferByalias.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3525F0D9277F32F800A5B398 /* FundsTransferByalias.swift */; };
+		352A0C9427B4EFCA00E8C36F /* RAASTREasonsLOv.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352A0C9327B4EFCA00E8C36F /* RAASTREasonsLOv.swift */; };
+		352E225428CDD51B0012BE95 /* CRC16.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352E225328CDD51B0012BE95 /* CRC16.swift */; };
+		353E2B94276B712000B93AF6 /* extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 353E2B93276B712000B93AF6 /* extentions.swift */; };
+		3557C8EE28964EF600098BD7 /* QRCodeReaderDisplayable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3557C8ED28964EF600098BD7 /* QRCodeReaderDisplayable.swift */; };
+		3557C8F028964F0400098BD7 /* QRCodeReaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3557C8EF28964F0300098BD7 /* QRCodeReaderView.swift */; };
+		3557C8F228964F0F00098BD7 /* QRCodeReaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3557C8F128964F0F00098BD7 /* QRCodeReaderViewController.swift */; };
+		3557C8F428964F1E00098BD7 /* QRCodeReaderViewControllerBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3557C8F328964F1D00098BD7 /* QRCodeReaderViewControllerBuilder.swift */; };
+		3557C8F628964F2D00098BD7 /* QRCodeReaderViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3557C8F528964F2D00098BD7 /* QRCodeReaderViewControllerDelegate.swift */; };
+		3557C8F828964F3900098BD7 /* ReaderOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3557C8F728964F3900098BD7 /* ReaderOverlayView.swift */; };
+		3557C8FA28964F4700098BD7 /* ReaderOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3557C8F928964F4600098BD7 /* ReaderOverlayView.swift */; };
+		3557C8FC28964F6A00098BD7 /* SwitchCameraButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3557C8FB28964F6A00098BD7 /* SwitchCameraButton.swift */; };
+		3557C8FE28964F7D00098BD7 /* TabQRSccaner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3557C8FD28964F7D00098BD7 /* TabQRSccaner.swift */; };
+		3557C90028964F8D00098BD7 /* TabQRSccaner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3557C8FF28964F8D00098BD7 /* TabQRSccaner.swift */; };
+		3557C90628964FAB00098BD7 /* ToggleTorchButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3557C90528964FAA00098BD7 /* ToggleTorchButton.swift */; };
+		3557C9082896517900098BD7 /* QRCodeReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3557C9072896517900098BD7 /* QRCodeReader.swift */; };
+		3557C90A289651BB00098BD7 /* QRCodeReaderResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3557C909289651BA00098BD7 /* QRCodeReaderResult.swift */; };
+		3557C90C289651FD00098BD7 /* TapQRCodeScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3557C90B289651FD00098BD7 /* TapQRCodeScanner.swift */; };
+		355AD19C277EDB9C00DD3D47 /* DelinkAliasVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 355AD19B277EDB9C00DD3D47 /* DelinkAliasVC.swift */; };
+		356190D6289A581F003C830C /* Scan_QRVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356190D5289A581F003C830C /* Scan_QRVC.swift */; };
+		356190D8289A6979003C830C /* UIUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356190D7289A6979003C830C /* UIUtilities.swift */; };
+		35641FC727ABB80800A3F4AB /* ATMCellvC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35641FC627ABB80800A3F4AB /* ATMCellvC.swift */; };
+		35641FC927ABB80F00A3F4AB /* MobileBankingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35641FC827ABB80F00A3F4AB /* MobileBankingCell.swift */; };
+		35641FCB27ABB85900A3F4AB /* LimitManagementMainVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35641FCA27ABB85900A3F4AB /* LimitManagementMainVc.swift */; };
+		35641FCD27ABB96200A3F4AB /* SelectLimitMangamnetLovVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35641FCC27ABB96100A3F4AB /* SelectLimitMangamnetLovVC.swift */; };
+		35641FD027ABBB2500A3F4AB /* AtmMobilebankingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35641FCF27ABBB2500A3F4AB /* AtmMobilebankingModel.swift */; };
+		35641FD227ABF6DE00A3F4AB /* MaintenanceCertificateVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35641FD127ABF6DE00A3F4AB /* MaintenanceCertificateVC.swift */; };
+		35641FD427AD0ACF00A3F4AB /* WHTCertificateVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35641FD327AD0ACF00A3F4AB /* WHTCertificateVC.swift */; };
+		356CA189279051A900FD11F3 /* Terms.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 356CA188279051A900FD11F3 /* Terms.pdf */; };
+		357EFA10289E490000B32C9A /* ScanReader_VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 357EFA0F289E490000B32C9A /* ScanReader_VC.swift */; };
+		3584270728854C8800DB673B /* ReadQRVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3584270628854C8800DB673B /* ReadQRVC.swift */; };
+		3588DF5C2837866B00AAB1D7 /* Access Banking Terms and Conditions.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 3588DF5B2837866A00AAB1D7 /* Access Banking Terms and Conditions.pdf */; };
+		3590E43827832BBB006A699B /* DelinkModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3590E43727832BBA006A699B /* DelinkModel.swift */; };
+		359895B127673E3D00667F35 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 359895B327673E3D00667F35 /* Localizable.strings */; };
+		359895B827686C1700667F35 /* ChequeBookMainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359895B727686C1700667F35 /* ChequeBookMainVC.swift */; };
+		359895BB2768718700667F35 /* NewRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359895BA2768718700667F35 /* NewRequest.swift */; };
+		359895BD2768720000667F35 /* StatusCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359895BC276871FF00667F35 /* StatusCheck.swift */; };
+		359895BF276876F400667F35 /* StopPaymentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359895BE276876F400667F35 /* StopPaymentModel.swift */; };
+		359895C12768779500667F35 /* LeafInqModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359895C02768779500667F35 /* LeafInqModel.swift */; };
+		359895C32768785100667F35 /* MaintenanceCertificateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359895C22768785100667F35 /* MaintenanceCertificateModel.swift */; };
+		359895C5276878FE00667F35 /* WHT Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359895C4276878FE00667F35 /* WHT Model.swift */; };
+		359895C72768794700667F35 /* SMSModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359895C62768794700667F35 /* SMSModel.swift */; };
+		359895C92768797800667F35 /* E-StatementModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359895C82768797800667F35 /* E-StatementModel.swift */; };
+		359895CB2768833A00667F35 /* ChequeBookRequestVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359895CA2768833A00667F35 /* ChequeBookRequestVc.swift */; };
+		359895CD276884B400667F35 /* StatusCheckVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359895CC276884B400667F35 /* StatusCheckVC.swift */; };
+		359895CF276884D900667F35 /* StatusCheckTableViewCellVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359895CE276884D900667F35 /* StatusCheckTableViewCellVc.swift */; };
+		359895D12768886A00667F35 /* StopPaymentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359895D02768886A00667F35 /* StopPaymentVC.swift */; };
+		359895D327688E7800667F35 /* CheckLeafVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359895D227688E7800667F35 /* CheckLeafVC.swift */; };
+		359895D527688ED000667F35 /* LeafCellVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359895D427688ED000667F35 /* LeafCellVC.swift */; };
+		359895D72768969A00667F35 /* MaintenaceCellVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359895D62768969A00667F35 /* MaintenaceCellVC.swift */; };
+		359895D9276896EE00667F35 /* MaintenanceCertificationVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359895D8276896EE00667F35 /* MaintenanceCertificationVc.swift */; };
+		359B89732768A27A00447B66 /* WHTtaxVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359B89722768A27A00447B66 /* WHTtaxVC.swift */; };
+		359B89752768A29100447B66 /* WHTCellvc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359B89742768A29100447B66 /* WHTCellvc.swift */; };
+		359B89772768A58800447B66 /* EStatementCEllVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359B89762768A58800447B66 /* EStatementCEllVc.swift */; };
+		359B89792768A5B400447B66 /* E-StatmentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359B89782768A5B400447B66 /* E-StatmentVC.swift */; };
+		359D22652769C61B007769A9 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE37911D1FDA950800969D67 /* CoreLocation.framework */; };
+		359F62AD28AD10B6007F1963 /* ShowQr_model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359F62AC28AD10B6007F1963 /* ShowQr_model.swift */; };
+		359F62AF28AD1243007F1963 /* Qr_Create.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359F62AE28AD1243007F1963 /* Qr_Create.swift */; };
+		359F62B128AD1778007F1963 /* Show_QrList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359F62B028AD1778007F1963 /* Show_QrList.swift */; };
+		359F62B328AD193B007F1963 /* Cell_showQr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359F62B228AD193B007F1963 /* Cell_showQr.swift */; };
+		35A26BB027AA9AFB00C310E8 /* OTPVerificationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A26BAF27AA9AFB00C310E8 /* OTPVerificationVC.swift */; };
+		35A45A9F286C2E3200654D1D /* MainQRVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A45A9E286C2E3200654D1D /* MainQRVC.swift */; };
+		35AAD95F277DB71100484B80 /* RegisterAliasVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AAD95E277DB71100484B80 /* RegisterAliasVC.swift */; };
+		35AAD962277DC0D200484B80 /* CustomerDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AAD961277DC0D200484B80 /* CustomerDetail.swift */; };
+		35ADDF1428CB8BC900F0FD08 /* TestVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35ADDF1328CB8BC900F0FD08 /* TestVc.swift */; };
+		35AE55B727DB4061006ACD32 /* RelinkAlias.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AE55B627DB4061006ACD32 /* RelinkAlias.swift */; };
+		35B48EC4277F029600F85A9F /* TitleFetchTransactiinByAlias.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B48EC3277F029600F85A9F /* TitleFetchTransactiinByAlias.swift */; };
+		35B9FD1028A66FB90042FF77 /* BaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B9FD0F28A66FB90042FF77 /* BaseVC.swift */; };
+		35C1A6E0283DE84800DFB7BA /* Access Banking FAQs updateddocx.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 35C1A6DF283DE84700DFB7BA /* Access Banking FAQs updateddocx.pdf */; };
+		35C274C327BD022100073FBF /* MyLoansModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35C274C227BD022100073FBF /* MyLoansModel.swift */; };
+		35C274C527BD026C00073FBF /* LoansCellVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35C274C427BD026C00073FBF /* LoansCellVC.swift */; };
+		35C274C727BD027E00073FBF /* MyLoanListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35C274C627BD027E00073FBF /* MyLoanListVC.swift */; };
+		35C274C927BD17C400073FBF /* LoanModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35C274C827BD17C400073FBF /* LoanModel.swift */; };
+		35C92DAE28AFDDA000A475DE /* Scanning_UplaodingVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35C92DAD28AFDDA000A475DE /* Scanning_UplaodingVc.swift */; };
+		35D549EA27A1897C00987DCE /* BeneficiaryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D549E927A1897C00987DCE /* BeneficiaryModel.swift */; };
+		35D549EC27A18C9F00987DCE /* BenefiaryListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D549EB27A18C9F00987DCE /* BenefiaryListVC.swift */; };
+		35D549EE27A18CBA00987DCE /* RaastbeneficiaryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D549ED27A18CBA00987DCE /* RaastbeneficiaryCell.swift */; };
+		35D549F127A199C800987DCE /* CustomerProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D549F027A199C800987DCE /* CustomerProfile.swift */; };
+		35F60318277D9D0E00585E4E /* RaastMainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F60317277D9D0E00585E4E /* RaastMainVC.swift */; };
+		35F6031B277DA55300585E4E /* RaastSubViewVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F6031A277DA55300585E4E /* RaastSubViewVc.swift */; };
+		35F6031D277DA80F00585E4E /* RaastSubvIew2Vc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F6031C277DA80F00585E4E /* RaastSubvIew2Vc.swift */; };
+		35F6D32B27EF4C0900BC23EC /* DebitCardActivationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F6D32A27EF4C0900BC23EC /* DebitCardActivationVC.swift */; };
+		35F6D32D27EF4C2000BC23EC /* DebitCardBlockingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F6D32C27EF4C1F00BC23EC /* DebitCardBlockingVC.swift */; };
+		35F6D32F27EF4C3500BC23EC /* DebitCardServiceVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F6D32E27EF4C3500BC23EC /* DebitCardServiceVC.swift */; };
+		35F6D33227EF4C6B00BC23EC /* DebitCardMainVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F6D33127EF4C6B00BC23EC /* DebitCardMainVc.swift */; };
+		35F6D33427EF50CB00BC23EC /* DebitcardOTPVerificationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F6D33327EF50CB00BC23EC /* DebitcardOTPVerificationVC.swift */; };
+		35F6D33627EF50EC00BC23EC /* DebitcardSetPinVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F6D33527EF50EC00BC23EC /* DebitcardSetPinVC.swift */; };
+		35F6D33827F1B6FD00BC23EC /* DebitCardActivation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F6D33727F1B6FD00BC23EC /* DebitCardActivation.swift */; };
+		35FD2D20277DE999002DE307 /* Sparrowindex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35FD2D1F277DE999002DE307 /* Sparrowindex.swift */; };
+		35FD2D22277DF518002DE307 /* RegisterAliasSuccessVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35FD2D21277DF518002DE307 /* RegisterAliasSuccessVC.swift */; };
+		35FD2D24277DF8CC002DE307 /* SparrowRegister.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35FD2D23277DF8CC002DE307 /* SparrowRegister.swift */; };
+		5FCA79A01FCAC3E7001E5246 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FCA799F1FCAC3E7001E5246 /* Constants.swift */; };
+		5FCA79A21FCAC453001E5246 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FCA79A11FCAC453001E5246 /* DataManager.swift */; };
+		6A4E2D6C2B3C45C000ADD8D1 /* SelectedlangugaegVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A4E2D692B3C45C000ADD8D1 /* SelectedlangugaegVc.swift */; };
+		6A4E2D6D2B3C45C000ADD8D1 /* Notification Setting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A4E2D6A2B3C45C000ADD8D1 /* Notification Setting.storyboard */; };
+		6A4E2D6E2B3C45C000ADD8D1 /* NotificationSettingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A4E2D6B2B3C45C000ADD8D1 /* NotificationSettingVC.swift */; };
+		6A9731732B26DD2C00E977F2 /* FIRST Touch Banking FAQs-converted.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 6A97316B2B26DD2C00E977F2 /* FIRST Touch Banking FAQs-converted.pdf */; };
+		6A9731742B26DD2C00E977F2 /* Access Banking Terms and Conditions-converted 3.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 6A97316C2B26DD2C00E977F2 /* Access Banking Terms and Conditions-converted 3.pdf */; };
+		6A9731752B26DD2C00E977F2 /* touch old revised with HBL MFB.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 6A97316D2B26DD2C00E977F2 /* touch old revised with HBL MFB.pdf */; };
+		6A9731762B26DD2C00E977F2 /* Access Banking FAQs-converted.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 6A97316E2B26DD2C00E977F2 /* Access Banking FAQs-converted.pdf */; };
+		6A9731772B26DD2C00E977F2 /* Access Banking Terms and Conditions-converted 2.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 6A97316F2B26DD2C00E977F2 /* Access Banking Terms and Conditions-converted 2.pdf */; };
+		6A9731782B26DD2C00E977F2 /* First Touch Banking Terms and Conditions-converted.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 6A9731702B26DD2C00E977F2 /* First Touch Banking Terms and Conditions-converted.pdf */; };
+		6A97317A2B26DD2C00E977F2 /* Access Banking Terms and Conditions-converted.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 6A9731722B26DD2C00E977F2 /* Access Banking Terms and Conditions-converted.pdf */; };
+		6A97317F2B26DDE600E977F2 /* Access Banking FAQs Urdu.html in Resources */ = {isa = PBXBuildFile; fileRef = 6A97317E2B26DDE600E977F2 /* Access Banking FAQs Urdu.html */; };
+		6AFE82C12B3410FF00F2286F /* VeridiumAnalytics.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AFE82B92B3410FE00F2286F /* VeridiumAnalytics.xcframework */; };
+		6AFE82C22B3410FF00F2286F /* VeridiumAnalytics.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6AFE82B92B3410FE00F2286F /* VeridiumAnalytics.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6AFE82C32B3410FF00F2286F /* VeridiumCore.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AFE82BA2B3410FE00F2286F /* VeridiumCore.xcframework */; };
+		6AFE82C42B3410FF00F2286F /* VeridiumCore.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6AFE82BA2B3410FE00F2286F /* VeridiumCore.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6AFE82C52B3410FF00F2286F /* Veridium4FBiometrics.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AFE82BB2B3410FE00F2286F /* Veridium4FBiometrics.xcframework */; };
+		6AFE82C62B3410FF00F2286F /* Veridium4FBiometrics.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6AFE82BB2B3410FE00F2286F /* Veridium4FBiometrics.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6AFE82C72B3410FF00F2286F /* VeridiumFingerSelector.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AFE82BC2B3410FE00F2286F /* VeridiumFingerSelector.xcframework */; };
+		6AFE82C82B3410FF00F2286F /* VeridiumFingerSelector.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6AFE82BC2B3410FE00F2286F /* VeridiumFingerSelector.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6AFE82C92B34110000F2286F /* LicensingFramework.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AFE82BD2B3410FE00F2286F /* LicensingFramework.xcframework */; };
+		6AFE82CA2B34110000F2286F /* LicensingFramework.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6AFE82BD2B3410FE00F2286F /* LicensingFramework.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6AFE82CB2B34110000F2286F /* Veridium4FUI.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AFE82BE2B3410FF00F2286F /* Veridium4FUI.xcframework */; };
+		6AFE82CC2B34110000F2286F /* Veridium4FUI.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6AFE82BE2B3410FF00F2286F /* Veridium4FUI.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6AFE82CF2B34110000F2286F /* FingerprintSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AFE82C02B3410FF00F2286F /* FingerprintSDK.xcframework */; };
+		6AFE82D02B34110000F2286F /* FingerprintSDK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6AFE82C02B3410FF00F2286F /* FingerprintSDK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6AFE82D22B3421FD00F2286F /* APIs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AFE82D12B3421FD00F2286F /* APIs.swift */; };
+		A200DE882191B8FA00C750AB /* MoviePaymentSuccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = A200DE872191B8FA00C750AB /* MoviePaymentSuccess.swift */; };
+		A20219FC2020443D0013A824 /* SearchTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20219FB2020443D0013A824 /* SearchTextField.swift */; };
+		A20A12CD21E76592001FB44A /* EFTStatement.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20A12CC21E76592001FB44A /* EFTStatement.swift */; };
+		A2123CAC21E7E6790025DE2A /* tc.html in Resources */ = {isa = PBXBuildFile; fileRef = A2123CAB21E7E6790025DE2A /* tc.html */; };
+		A212C7392239104A001219E5 /* TouchIDFaceIDEnableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A212C7382239104A001219E5 /* TouchIDFaceIDEnableVC.swift */; };
+		A23765AE21A40B2C001A6484 /* BookMeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A23765AD21A40B2C001A6484 /* BookMeVC.swift */; };
+		A23765B021A40CB8001A6484 /* TransportListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A23765AF21A40CB8001A6484 /* TransportListVC.swift */; };
+		A23765B221A40FE9001A6484 /* TransportListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A23765B121A40FE9001A6484 /* TransportListModel.swift */; };
+		A23765B421A4127E001A6484 /* TransportSelectedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A23765B321A4127E001A6484 /* TransportSelectedVC.swift */; };
+		A23CDDF22022F1E300AC5CD6 /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A23CDDF12022F1E300AC5CD6 /* LocalAuthentication.framework */; };
+		A23CDDF42022F2A000AC5CD6 /* PITouchIDManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A23CDDF32022F2A000AC5CD6 /* PITouchIDManager.swift */; };
+		A246C4B120218C71003C32FF /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A246C4B020218C71003C32FF /* NetworkManager.swift */; };
+		A247152E21E73ADA0022385D /* TransactionConsent.swift in Sources */ = {isa = PBXBuildFile; fileRef = A247152D21E73ADA0022385D /* TransactionConsent.swift */; };
+		A251D028205AA22B00F68DC3 /* SocialServicesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A251D027205AA22B00F68DC3 /* SocialServicesVC.swift */; };
+		A256CBBB20E3A3BC00534572 /* MyProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A256CBBA20E3A3BC00534572 /* MyProfileVC.swift */; };
+		A256CBBD20E3A73B00534572 /* MyProfileAccountsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A256CBBC20E3A73B00534572 /* MyProfileAccountsTableViewCell.swift */; };
+		A258D76A20AABE900078E329 /* RateUsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A258D76920AABE900078E329 /* RateUsVC.swift */; };
+		A25B5227204E779A0035C41B /* AccountPreviewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25B5226204E779A0035C41B /* AccountPreviewVC.swift */; };
+		A25B522B204EC2130035C41B /* CLTypingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25B522A204EC2130035C41B /* CLTypingLabel.swift */; };
+		A25BD4FD23BA131700D114EF /* UtilityBillConfirmationOneBillVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25BD4FC23BA131700D114EF /* UtilityBillConfirmationOneBillVC.swift */; };
+		A25E3B6523CDDFF500B78915 /* app.fmfb.com.pk.cer in Resources */ = {isa = PBXBuildFile; fileRef = A2841C7A23B4BBEB00F658D3 /* app.fmfb.com.pk.cer */; };
+		A25E6A57217F08C70013B54D /* MoviesShowVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25E6A56217F08C70013B54D /* MoviesShowVC.swift */; };
+		A25E6A59217F0BED0013B54D /* MovieShowInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25E6A58217F0BED0013B54D /* MovieShowInfo.swift */; };
+		A25E6A5B217F369D0013B54D /* MoviesBookingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25E6A5A217F369D0013B54D /* MoviesBookingTableViewCell.swift */; };
+		A25E6A5D217F4E940013B54D /* MovieSeatSelectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25E6A5C217F4E940013B54D /* MovieSeatSelectionVC.swift */; };
+		A25E6A5F217F4F6A0013B54D /* MovieSeatsBooking.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25E6A5E217F4F6A0013B54D /* MovieSeatsBooking.swift */; };
+		A25E6A61217F5F760013B54D /* SeatBookingPlanCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25E6A60217F5F760013B54D /* SeatBookingPlanCollectionViewCell.swift */; };
+		A25F2304235907550052CF6D /* TouchID.html in Resources */ = {isa = PBXBuildFile; fileRef = A25F2303235907550052CF6D /* TouchID.html */; };
+		A2638D6B20F47BF400D43399 /* PrifleUpdate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2638D6A20F47BF400D43399 /* PrifleUpdate.swift */; };
+		A264564C205BA21F001F5E53 /* ChangePasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A264564B205BA21F001F5E53 /* ChangePasswordVC.swift */; };
+		A265E43B2111DB4700C64D39 /* MyLoanFurtherInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A265E43A2111DB4700C64D39 /* MyLoanFurtherInfoVC.swift */; };
+		A265E43D2111DBC200C64D39 /* FurtherLoanInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A265E43C2111DBC200C64D39 /* FurtherLoanInfoTableViewCell.swift */; };
+		A2678E36216C7E32006E6515 /* GetReaons.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2678E35216C7E32006E6515 /* GetReaons.swift */; };
+		A268042520315FC1008BE619 /* faq.html in Resources */ = {isa = PBXBuildFile; fileRef = A268042420315FC1008BE619 /* faq.html */; };
+		A26848C9210F40AD0007FBA8 /* MyLoanVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26848C8210F40AD0007FBA8 /* MyLoanVC.swift */; };
+		A26848CB210F410A0007FBA8 /* MyLoanTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26848CA210F410A0007FBA8 /* MyLoanTableViewCell.swift */; };
+		A26848CD210F44970007FBA8 /* MyLoanInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26848CC210F44970007FBA8 /* MyLoanInformation.swift */; };
+		A26C02102178997E00F280D8 /* MoviesListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26C020F2178997E00F280D8 /* MoviesListVC.swift */; };
+		A26C0212217899B700F280D8 /* MoviesListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26C0211217899B700F280D8 /* MoviesListTableViewCell.swift */; };
+		A26C021421789BAC00F280D8 /* MovieList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26C021321789BAC00F280D8 /* MovieList.swift */; };
+		A26CDAF625FB27FA005245E4 /* NetworkManagerSUA.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26CDAF525FB27FA005245E4 /* NetworkManagerSUA.swift */; };
+		A27564B32339EE81002A2939 /* TitleBalanceStatementModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27564B22339EE81002A2939 /* TitleBalanceStatementModel.swift */; };
+		A27BDA7D2181DCEA000945D6 /* MovieTicketConfirmationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27BDA7C2181DCEA000945D6 /* MovieTicketConfirmationVC.swift */; };
+		A27BDA7F2181F670000945D6 /* SectionHeaderCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27BDA7E2181F670000945D6 /* SectionHeaderCollectionReusableView.swift */; };
+		A282A9A6245963AC0087EBA8 /* DonationsMainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A282A9A5245963AC0087EBA8 /* DonationsMainVC.swift */; };
+		A282A9A8245979E20087EBA8 /* DonationsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A282A9A7245979E20087EBA8 /* DonationsTableViewCell.swift */; };
+		A284FB6E2068C9B0003F937A /* TimerApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = A284FB6D2068C9B0003F937A /* TimerApplication.swift */; };
+		A284FB702068C9C7003F937A /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = A284FB6F2068C9C7003F937A /* main.swift */; };
+		A2B09FB924FE027700CD4D97 /* KeyChainUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B09FB824FE027700CD4D97 /* KeyChainUtils.swift */; };
+		A2C6F74424FD205E003FD837 /* GetIpLocationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C6F74324FD205E003FD837 /* GetIpLocationModel.swift */; };
+		F1A3005720DBE7BE1B047D1B /* Pods_First_Touch_Banking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A77D1EE4CB8170B9FD52AD29 /* Pods_First_Touch_Banking.framework */; };
+		FE0234881FF4C5C600804076 /* WebViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0234871FF4C5C600804076 /* WebViewVC.swift */; };
+		FE03C7952007722A003608D3 /* UtilityBillPaymentConfirmationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE03C7942007722A003608D3 /* UtilityBillPaymentConfirmationVC.swift */; };
+		FE03C7972007762E003608D3 /* BillPaymentInquiry.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE03C7962007762E003608D3 /* BillPaymentInquiry.swift */; };
+		FE072BBB1FEA810D00D891F1 /* NotificationPut.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE072BBA1FEA810D00D891F1 /* NotificationPut.swift */; };
+		FE1698C71FC6F2BD00AC25CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE1698C61FC6F2BD00AC25CC /* AppDelegate.swift */; };
+		FE1698CC1FC6F2BD00AC25CC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE1698CA1FC6F2BD00AC25CC /* Main.storyboard */; };
+		FE1698CE1FC6F2BD00AC25CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE1698CD1FC6F2BD00AC25CC /* Assets.xcassets */; };
+		FE1698D11FC6F2BD00AC25CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE1698CF1FC6F2BD00AC25CC /* LaunchScreen.storyboard */; };
+		FE1698DE1FC732BC00AC25CC /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE1698DD1FC732BC00AC25CC /* LoginVC.swift */; };
+		FE1698E01FC732F800AC25CC /* RegistrationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE1698DF1FC732F800AC25CC /* RegistrationVC.swift */; };
+		FE1698E21FC7331200AC25CC /* OTPVerifyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE1698E11FC7331200AC25CC /* OTPVerifyVC.swift */; };
+		FE1698E41FC7332600AC25CC /* EnterPasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE1698E31FC7332600AC25CC /* EnterPasswordVC.swift */; };
+		FE1698E61FC7333800AC25CC /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE1698E51FC7333800AC25CC /* HomeVC.swift */; };
+		FE3791181FDA4DB700969D67 /* EnterPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3791171FDA4DB700969D67 /* EnterPassword.swift */; };
+		FE37911A1FDA589D00969D67 /* CustomAlertVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3791191FDA589D00969D67 /* CustomAlertVC.swift */; };
+		FE37911C1FDA6A1800969D67 /* AcessAndRefreshToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE37911B1FDA6A1800969D67 /* AcessAndRefreshToken.swift */; };
+		FE3791201FDAAF8B00969D67 /* BalanceInquiry.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE37911F1FDAAF8B00969D67 /* BalanceInquiry.swift */; };
+		FE37F0791FF4BAC6008627F7 /* ContactUsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE37F0781FF4BAC5008627F7 /* ContactUsVC.swift */; };
+		FE396CDF1FE23E3900361F16 /* LocalFundTransferConfirmationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE396CDE1FE23E3900361F16 /* LocalFundTransferConfirmationVC.swift */; };
+		FE396CE11FE2564000361F16 /* LocalFundsTransferDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE396CE01FE2564000361F16 /* LocalFundsTransferDetailsVC.swift */; };
+		FE396CE51FE26CAA00361F16 /* InterBankFundTransferVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE396CE41FE26CAA00361F16 /* InterBankFundTransferVC.swift */; };
+		FE396CE71FE27DD700361F16 /* BankNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE396CE61FE27DD700361F16 /* BankNames.swift */; };
+		FE396CE91FE286C800361F16 /* InterBankFundTransferConfirmationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE396CE81FE286C800361F16 /* InterBankFundTransferConfirmationVC.swift */; };
+		FE396CEB1FE29CCE00361F16 /* IBFTFundTransfer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE396CEA1FE29CCE00361F16 /* IBFTFundTransfer.swift */; };
+		FE396CED1FE29E4800361F16 /* InterBankFundTransferDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE396CEC1FE29E4800361F16 /* InterBankFundTransferDetailsVC.swift */; };
+		FE3988AD1FE100F90093D7D6 /* TitleFetch.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3988AC1FE100F90093D7D6 /* TitleFetch.swift */; };
+		FE3988AF1FE129C40093D7D6 /* MiniStatement.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3988AE1FE129C40093D7D6 /* MiniStatement.swift */; };
+		FE3988B11FE138D80093D7D6 /* MiniStatementVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3988B01FE138D80093D7D6 /* MiniStatementVC.swift */; };
+		FE3988B31FE1412B0093D7D6 /* MiniStatementTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3988B21FE1412B0093D7D6 /* MiniStatementTableViewCell.swift */; };
+		FE3988B51FE1660E0093D7D6 /* LocalFundsTransferVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3988B41FE1660E0093D7D6 /* LocalFundsTransferVC.swift */; };
+		FE3988B71FE1662F0093D7D6 /* LocalFundsTransfer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3988B61FE1662F0093D7D6 /* LocalFundsTransfer.swift */; };
+		FE3988B91FE16C1B0093D7D6 /* UIDropDown.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3988B81FE16C1A0093D7D6 /* UIDropDown.swift */; };
+		FE3988BB1FE16F1F0093D7D6 /* Accounts.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3988BA1FE16F1F0093D7D6 /* Accounts.swift */; };
+		FE3D0B0E1FE9254D004FAF68 /* NotificationPopUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3D0B0D1FE9254D004FAF68 /* NotificationPopUpVC.swift */; };
+		FE3DF4F120048206006D839B /* UtilityBillMainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3DF4F020048206006D839B /* UtilityBillMainVC.swift */; };
+		FE3DF4F3200493B6006D839B /* UtilityBillCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3DF4F2200493B6006D839B /* UtilityBillCollectionViewCell.swift */; };
+		FE3DF4F5200497E2006D839B /* BillPaymentCompanies.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3DF4F4200497E2006D839B /* BillPaymentCompanies.swift */; };
+		FE3DF4F72004E8A7006D839B /* TopUpMainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3DF4F62004E8A7006D839B /* TopUpMainVC.swift */; };
+		FE3DF4F92004EBBC006D839B /* TopUpCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3DF4F82004EBBC006D839B /* TopUpCollectionViewCell.swift */; };
+		FE4011BB2006498600498791 /* UtilityBillInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4011BA2006498600498791 /* UtilityBillInfoVC.swift */; };
+		FE4011BD20064C3500498791 /* BillPaymentCompaniesListDropDown.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4011BC20064C3500498791 /* BillPaymentCompaniesListDropDown.swift */; };
+		FE5FBF731FE3B6FA000ABC8F /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE5FBF721FE3B6F9000ABC8F /* Weather.swift */; };
+		FE61558420089008008A1D85 /* PrePaidTopUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE61558320089008008A1D85 /* PrePaidTopUpVC.swift */; };
+		FE61558620089791008A1D85 /* PrePaidTopUpConfirmationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE61558520089791008A1D85 /* PrePaidTopUpConfirmationVC.swift */; };
+		FE6155882008CBE4008A1D85 /* BillPaymentDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6155872008CBE4008A1D85 /* BillPaymentDetailsVC.swift */; };
+		FE61558A2008D28F008A1D85 /* BillPaymentTransfer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6155892008D28F008A1D85 /* BillPaymentTransfer.swift */; };
+		FE61558D2008DD54008A1D85 /* PrePaidTransfer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE61558C2008DD54008A1D85 /* PrePaidTransfer.swift */; };
+		FE61558F2008DDF6008A1D85 /* PrepaidTopUpDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE61558E2008DDF6008A1D85 /* PrepaidTopUpDetailVC.swift */; };
+		FE7E75AC200396BA00765FB0 /* GenericResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE7E75AB200396BA00765FB0 /* GenericResponse.swift */; };
+		FEC1F1B61FC737F3003EDC31 /* PinTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC1F1B51FC737F3003EDC31 /* PinTextField.swift */; };
+		FEC1F1B81FC73B01003EDC31 /* SideDrawerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC1F1B71FC73B01003EDC31 /* SideDrawerVC.swift */; };
+		FEC1F1BD1FC73F6A003EDC31 /* FTBButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC1F1BC1FC73F66003EDC31 /* FTBButton.swift */; };
+		FEC1F1BF1FC73FCB003EDC31 /* UIColor+FTB.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC1F1BE1FC73FCB003EDC31 /* UIColor+FTB.swift */; };
+		FEC1F1C11FC746F8003EDC31 /* SideBarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC1F1C01FC746F7003EDC31 /* SideBarCell.swift */; };
+		FED1777C1FD93FEF00653BBD /* FTBView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED1777B1FD93FEF00653BBD /* FTBView.swift */; };
+		FED177801FD9608100653BBD /* Registeration.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED1777F1FD9608100653BBD /* Registeration.swift */; };
+		FED177821FD963D100653BBD /* CustomActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED177811FD963D100653BBD /* CustomActivityIndicator.swift */; };
+		FED177841FD98A1800653BBD /* VerifyOTP.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED177831FD98A1800653BBD /* VerifyOTP.swift */; };
+		FEE1CDCC1FF3643800154E01 /* QuickPayVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE1CDCB1FF3643800154E01 /* QuickPayVC.swift */; };
+		FEE1CDCE1FF3645C00154E01 /* QuickPay.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE1CDCD1FF3645C00154E01 /* QuickPay.swift */; };
+		FEE1CDD01FF3695C00154E01 /* QuickPayListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE1CDCF1FF3695C00154E01 /* QuickPayListTableViewCell.swift */; };
+		FEEEA87F1FDFF26B00A30B68 /* AgentLocator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEEEA87E1FDFF26B00A30B68 /* AgentLocator.swift */; };
+		FEEEA8811FDFF2AF00A30B68 /* AgentLocatorVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEEEA8801FDFF2AF00A30B68 /* AgentLocatorVC.swift */; };
+		FEEEA8831FDFF37200A30B68 /* AgentLocatorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEEEA8821FDFF37200A30B68 /* AgentLocatorTableViewCell.swift */; };
+		FEF523641FDFD69300924540 /* BranchLocator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF523631FDFD69300924540 /* BranchLocator.swift */; };
+		FEF523661FDFD87C00924540 /* BranchLocatorVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF523651FDFD87C00924540 /* BranchLocatorVC.swift */; };
+		FEF523681FDFD90100924540 /* BranchLocatorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF523671FDFD90100924540 /* BranchLocatorTableViewCell.swift */; };
+		FEF5236A1FDFE62B00924540 /* AtmLocator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF523691FDFE62B00924540 /* AtmLocator.swift */; };
+		FEF5236C1FDFE6A500924540 /* AtmLocatorVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF5236B1FDFE6A500924540 /* AtmLocatorVC.swift */; };
+		FEF5236E1FDFE7CF00924540 /* AtmLocationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF5236D1FDFE7CF00924540 /* AtmLocationTableViewCell.swift */; };
+		FEF96E9E1FF4EFA10044C657 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEF96E9D1FF4EF880044C657 /* MessageUI.framework */; };
+		FEFC7C561FDE919F0050F233 /* NetworkConnectivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFC7C551FDE919E0050F233 /* NetworkConnectivity.swift */; };
+		FEFC7C581FDEB2110050F233 /* NotificationsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFC7C571FDEB2110050F233 /* NotificationsVC.swift */; };
+		FEFC7C5A1FDEB2C80050F233 /* NotificationsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFC7C591FDEB2C80050F233 /* NotificationsTableViewCell.swift */; };
+		FEFC7C5C1FDEB5B00050F233 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFC7C5B1FDEB5B00050F233 /* Notifications.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		6AE5C5BD2B2C14CC00C833D2 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				6AFE82CC2B34110000F2286F /* Veridium4FUI.xcframework in Embed Frameworks */,
+				6AFE82CA2B34110000F2286F /* LicensingFramework.xcframework in Embed Frameworks */,
+				6AFE82D02B34110000F2286F /* FingerprintSDK.xcframework in Embed Frameworks */,
+				6AFE82C22B3410FF00F2286F /* VeridiumAnalytics.xcframework in Embed Frameworks */,
+				6AFE82C42B3410FF00F2286F /* VeridiumCore.xcframework in Embed Frameworks */,
+				6AFE82C82B3410FF00F2286F /* VeridiumFingerSelector.xcframework in Embed Frameworks */,
+				6AFE82C62B3410FF00F2286F /* Veridium4FBiometrics.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		3512C838274CF04C00961C1C /* FakeLaunchScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeLaunchScreen.swift; sourceTree = "<group>"; };
+		3512C83A274D075400961C1C /* FakeLSCellVc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeLSCellVc.swift; sourceTree = "<group>"; };
+		3514C6812835433300241AAE /* URLSessionMethodVc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionMethodVc.swift; sourceTree = "<group>"; };
+		3517A14B287FF222002E094E /* GenerateQR.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerateQR.swift; sourceTree = "<group>"; };
+		3517A14D288006CC002E094E /* StaticQRVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticQRVC.swift; sourceTree = "<group>"; };
+		351C305D277EF1FF00B4A0CD /* TransferByAliasVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferByAliasVC.swift; sourceTree = "<group>"; };
+		3525F0D3277F278D00A5B398 /* AliasTransactionConfirmationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AliasTransactionConfirmationVC.swift; sourceTree = "<group>"; };
+		3525F0D5277F27AA00A5B398 /* AliasTransferOTPVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AliasTransferOTPVC.swift; sourceTree = "<group>"; };
+		3525F0D7277F27C700A5B398 /* TransactionAliasSuccessfull.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionAliasSuccessfull.swift; sourceTree = "<group>"; };
+		3525F0D9277F32F800A5B398 /* FundsTransferByalias.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FundsTransferByalias.swift; sourceTree = "<group>"; };
+		352A0C9327B4EFCA00E8C36F /* RAASTREasonsLOv.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RAASTREasonsLOv.swift; sourceTree = "<group>"; };
+		352E225328CDD51B0012BE95 /* CRC16.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CRC16.swift; sourceTree = "<group>"; };
+		353E2B93276B712000B93AF6 /* extentions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = extentions.swift; sourceTree = "<group>"; };
+		3557C8ED28964EF600098BD7 /* QRCodeReaderDisplayable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = QRCodeReaderDisplayable.swift; path = "First Touch Banking/ViewControllers/QRCodeReaderDisplayable.swift"; sourceTree = SOURCE_ROOT; };
+		3557C8EF28964F0300098BD7 /* QRCodeReaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = QRCodeReaderView.swift; path = "First Touch Banking/ViewControllers/QRCodeReaderView.swift"; sourceTree = SOURCE_ROOT; };
+		3557C8F128964F0F00098BD7 /* QRCodeReaderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = QRCodeReaderViewController.swift; path = "First Touch Banking/ViewControllers/QRCodeReaderViewController.swift"; sourceTree = SOURCE_ROOT; };
+		3557C8F328964F1D00098BD7 /* QRCodeReaderViewControllerBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = QRCodeReaderViewControllerBuilder.swift; path = "First Touch Banking/ViewControllers/QRCodeReaderViewControllerBuilder.swift"; sourceTree = SOURCE_ROOT; };
+		3557C8F528964F2D00098BD7 /* QRCodeReaderViewControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = QRCodeReaderViewControllerDelegate.swift; path = "First Touch Banking/ViewControllers/QRCodeReaderViewControllerDelegate.swift"; sourceTree = SOURCE_ROOT; };
+		3557C8F728964F3900098BD7 /* ReaderOverlayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ReaderOverlayView.swift; path = "First Touch Banking/ViewControllers/ReaderOverlayView.swift"; sourceTree = SOURCE_ROOT; };
+		3557C8F928964F4600098BD7 /* ReaderOverlayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ReaderOverlayView.swift; path = "First Touch Banking/ViewControllers/ReaderOverlayView.swift"; sourceTree = SOURCE_ROOT; };
+		3557C8FB28964F6A00098BD7 /* SwitchCameraButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwitchCameraButton.swift; path = "First Touch Banking/ViewControllers/SwitchCameraButton.swift"; sourceTree = SOURCE_ROOT; };
+		3557C8FD28964F7D00098BD7 /* TabQRSccaner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TabQRSccaner.swift; path = "First Touch Banking/ViewControllers/TabQRSccaner.swift"; sourceTree = SOURCE_ROOT; };
+		3557C8FF28964F8D00098BD7 /* TabQRSccaner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TabQRSccaner.swift; path = "First Touch Banking/ViewControllers/TabQRSccaner.swift"; sourceTree = SOURCE_ROOT; };
+		3557C90528964FAA00098BD7 /* ToggleTorchButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ToggleTorchButton.swift; path = "First Touch Banking/ViewControllers/ToggleTorchButton.swift"; sourceTree = SOURCE_ROOT; };
+		3557C9072896517900098BD7 /* QRCodeReader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = QRCodeReader.swift; path = "First Touch Banking/ViewControllers/QRCodeReader.swift"; sourceTree = SOURCE_ROOT; };
+		3557C909289651BA00098BD7 /* QRCodeReaderResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = QRCodeReaderResult.swift; path = "First Touch Banking/ViewControllers/QRCodeReaderResult.swift"; sourceTree = SOURCE_ROOT; };
+		3557C90B289651FD00098BD7 /* TapQRCodeScanner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TapQRCodeScanner.swift; path = "First Touch Banking/ViewControllers/TapQRCodeScanner.swift"; sourceTree = SOURCE_ROOT; };
+		355AD19B277EDB9C00DD3D47 /* DelinkAliasVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelinkAliasVC.swift; sourceTree = "<group>"; };
+		356190D5289A581F003C830C /* Scan_QRVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scan_QRVC.swift; sourceTree = "<group>"; };
+		356190D7289A6979003C830C /* UIUtilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIUtilities.swift; path = "First Touch Banking/ViewControllers/UIUtilities.swift"; sourceTree = SOURCE_ROOT; };
+		35641FC627ABB80800A3F4AB /* ATMCellvC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ATMCellvC.swift; sourceTree = "<group>"; };
+		35641FC827ABB80F00A3F4AB /* MobileBankingCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MobileBankingCell.swift; sourceTree = "<group>"; };
+		35641FCA27ABB85900A3F4AB /* LimitManagementMainVc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LimitManagementMainVc.swift; sourceTree = "<group>"; };
+		35641FCC27ABB96100A3F4AB /* SelectLimitMangamnetLovVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectLimitMangamnetLovVC.swift; sourceTree = "<group>"; };
+		35641FCF27ABBB2500A3F4AB /* AtmMobilebankingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AtmMobilebankingModel.swift; sourceTree = "<group>"; };
+		35641FD127ABF6DE00A3F4AB /* MaintenanceCertificateVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaintenanceCertificateVC.swift; sourceTree = "<group>"; };
+		35641FD327AD0ACF00A3F4AB /* WHTCertificateVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WHTCertificateVC.swift; sourceTree = "<group>"; };
+		356CA188279051A900FD11F3 /* Terms.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Terms.pdf; sourceTree = "<group>"; };
+		357EFA0F289E490000B32C9A /* ScanReader_VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanReader_VC.swift; sourceTree = "<group>"; };
+		3584270628854C8800DB673B /* ReadQRVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadQRVC.swift; sourceTree = "<group>"; };
+		3588DF5B2837866A00AAB1D7 /* Access Banking Terms and Conditions.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Access Banking Terms and Conditions.pdf"; sourceTree = "<group>"; };
+		3590E43727832BBA006A699B /* DelinkModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelinkModel.swift; sourceTree = "<group>"; };
+		359895B727686C1700667F35 /* ChequeBookMainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChequeBookMainVC.swift; sourceTree = "<group>"; };
+		359895BA2768718700667F35 /* NewRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewRequest.swift; sourceTree = "<group>"; };
+		359895BC276871FF00667F35 /* StatusCheck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusCheck.swift; sourceTree = "<group>"; };
+		359895BE276876F400667F35 /* StopPaymentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopPaymentModel.swift; sourceTree = "<group>"; };
+		359895C02768779500667F35 /* LeafInqModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeafInqModel.swift; sourceTree = "<group>"; };
+		359895C22768785100667F35 /* MaintenanceCertificateModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaintenanceCertificateModel.swift; sourceTree = "<group>"; };
+		359895C4276878FE00667F35 /* WHT Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WHT Model.swift"; sourceTree = "<group>"; };
+		359895C62768794700667F35 /* SMSModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMSModel.swift; sourceTree = "<group>"; };
+		359895C82768797800667F35 /* E-StatementModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "E-StatementModel.swift"; sourceTree = "<group>"; };
+		359895CA2768833A00667F35 /* ChequeBookRequestVc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChequeBookRequestVc.swift; sourceTree = "<group>"; };
+		359895CC276884B400667F35 /* StatusCheckVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusCheckVC.swift; sourceTree = "<group>"; };
+		359895CE276884D900667F35 /* StatusCheckTableViewCellVc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusCheckTableViewCellVc.swift; sourceTree = "<group>"; };
+		359895D02768886A00667F35 /* StopPaymentVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopPaymentVC.swift; sourceTree = "<group>"; };
+		359895D227688E7800667F35 /* CheckLeafVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckLeafVC.swift; sourceTree = "<group>"; };
+		359895D427688ED000667F35 /* LeafCellVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeafCellVC.swift; sourceTree = "<group>"; };
+		359895D62768969A00667F35 /* MaintenaceCellVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaintenaceCellVC.swift; sourceTree = "<group>"; };
+		359895D8276896EE00667F35 /* MaintenanceCertificationVc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaintenanceCertificationVc.swift; sourceTree = "<group>"; };
+		359B89722768A27A00447B66 /* WHTtaxVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WHTtaxVC.swift; sourceTree = "<group>"; };
+		359B89742768A29100447B66 /* WHTCellvc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WHTCellvc.swift; sourceTree = "<group>"; };
+		359B89762768A58800447B66 /* EStatementCEllVc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EStatementCEllVc.swift; sourceTree = "<group>"; };
+		359B89782768A5B400447B66 /* E-StatmentVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "E-StatmentVC.swift"; sourceTree = "<group>"; };
+		359B897A2768FECA00447B66 /* ur-Arab-PK */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "ur-Arab-PK"; path = "ur-Arab-PK.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		359B897B2768FECB00447B66 /* ur-Arab-PK */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "ur-Arab-PK"; path = "ur-Arab-PK.lproj/Main.strings"; sourceTree = "<group>"; };
+		359B897C2768FED900447B66 /* ur-Arab-PK */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "ur-Arab-PK"; path = "ur-Arab-PK.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		359B897D27691E9200447B66 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		359F62AC28AD10B6007F1963 /* ShowQr_model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowQr_model.swift; sourceTree = "<group>"; };
+		359F62AE28AD1243007F1963 /* Qr_Create.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Qr_Create.swift; sourceTree = "<group>"; };
+		359F62B028AD1778007F1963 /* Show_QrList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Show_QrList.swift; sourceTree = "<group>"; };
+		359F62B228AD193B007F1963 /* Cell_showQr.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cell_showQr.swift; sourceTree = "<group>"; };
+		35A0BD42277B2D9900D25EC3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = Base; path = Base.lproj/Extension.pdf; sourceTree = "<group>"; };
+		35A26BAF27AA9AFB00C310E8 /* OTPVerificationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPVerificationVC.swift; sourceTree = "<group>"; };
+		35A45A9E286C2E3200654D1D /* MainQRVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainQRVC.swift; sourceTree = "<group>"; };
+		35AAD95E277DB71100484B80 /* RegisterAliasVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterAliasVC.swift; sourceTree = "<group>"; };
+		35AAD961277DC0D200484B80 /* CustomerDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerDetail.swift; sourceTree = "<group>"; };
+		35ADDF1328CB8BC900F0FD08 /* TestVc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestVc.swift; sourceTree = "<group>"; };
+		35AE55B627DB4061006ACD32 /* RelinkAlias.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RelinkAlias.swift; sourceTree = "<group>"; };
+		35B48EC3277F029600F85A9F /* TitleFetchTransactiinByAlias.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleFetchTransactiinByAlias.swift; sourceTree = "<group>"; };
+		35B9FD0F28A66FB90042FF77 /* BaseVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseVC.swift; path = "First Touch Banking/ViewControllers/BaseVC.swift"; sourceTree = SOURCE_ROOT; };
+		35C1A6DF283DE84700DFB7BA /* Access Banking FAQs updateddocx.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Access Banking FAQs updateddocx.pdf"; sourceTree = "<group>"; };
+		35C274C227BD022100073FBF /* MyLoansModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyLoansModel.swift; sourceTree = "<group>"; };
+		35C274C427BD026C00073FBF /* LoansCellVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoansCellVC.swift; sourceTree = "<group>"; };
+		35C274C627BD027E00073FBF /* MyLoanListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyLoanListVC.swift; sourceTree = "<group>"; };
+		35C274C827BD17C400073FBF /* LoanModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanModel.swift; sourceTree = "<group>"; };
+		35C92DAD28AFDDA000A475DE /* Scanning_UplaodingVc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scanning_UplaodingVc.swift; sourceTree = "<group>"; };
+		35D549E927A1897C00987DCE /* BeneficiaryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeneficiaryModel.swift; sourceTree = "<group>"; };
+		35D549EB27A18C9F00987DCE /* BenefiaryListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BenefiaryListVC.swift; sourceTree = "<group>"; };
+		35D549ED27A18CBA00987DCE /* RaastbeneficiaryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaastbeneficiaryCell.swift; sourceTree = "<group>"; };
+		35D549F027A199C800987DCE /* CustomerProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerProfile.swift; sourceTree = "<group>"; };
+		35F60317277D9D0E00585E4E /* RaastMainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaastMainVC.swift; sourceTree = "<group>"; };
+		35F6031A277DA55300585E4E /* RaastSubViewVc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaastSubViewVc.swift; sourceTree = "<group>"; };
+		35F6031C277DA80F00585E4E /* RaastSubvIew2Vc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaastSubvIew2Vc.swift; sourceTree = "<group>"; };
+		35F6D32A27EF4C0900BC23EC /* DebitCardActivationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebitCardActivationVC.swift; sourceTree = "<group>"; };
+		35F6D32C27EF4C1F00BC23EC /* DebitCardBlockingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebitCardBlockingVC.swift; sourceTree = "<group>"; };
+		35F6D32E27EF4C3500BC23EC /* DebitCardServiceVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebitCardServiceVC.swift; sourceTree = "<group>"; };
+		35F6D33127EF4C6B00BC23EC /* DebitCardMainVc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebitCardMainVc.swift; sourceTree = "<group>"; };
+		35F6D33327EF50CB00BC23EC /* DebitcardOTPVerificationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebitcardOTPVerificationVC.swift; sourceTree = "<group>"; };
+		35F6D33527EF50EC00BC23EC /* DebitcardSetPinVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebitcardSetPinVC.swift; sourceTree = "<group>"; };
+		35F6D33727F1B6FD00BC23EC /* DebitCardActivation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebitCardActivation.swift; sourceTree = "<group>"; };
+		35FD2D1F277DE999002DE307 /* Sparrowindex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sparrowindex.swift; sourceTree = "<group>"; };
+		35FD2D21277DF518002DE307 /* RegisterAliasSuccessVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterAliasSuccessVC.swift; sourceTree = "<group>"; };
+		35FD2D23277DF8CC002DE307 /* SparrowRegister.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SparrowRegister.swift; sourceTree = "<group>"; };
+		5FCA799F1FCAC3E7001E5246 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		5FCA79A11FCAC453001E5246 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		6A4E2D692B3C45C000ADD8D1 /* SelectedlangugaegVc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectedlangugaegVc.swift; sourceTree = "<group>"; };
+		6A4E2D6A2B3C45C000ADD8D1 /* Notification Setting.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Notification Setting.storyboard"; sourceTree = "<group>"; };
+		6A4E2D6B2B3C45C000ADD8D1 /* NotificationSettingVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationSettingVC.swift; sourceTree = "<group>"; };
+		6A97316B2B26DD2C00E977F2 /* FIRST Touch Banking FAQs-converted.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "FIRST Touch Banking FAQs-converted.pdf"; sourceTree = "<group>"; };
+		6A97316C2B26DD2C00E977F2 /* Access Banking Terms and Conditions-converted 3.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Access Banking Terms and Conditions-converted 3.pdf"; sourceTree = "<group>"; };
+		6A97316D2B26DD2C00E977F2 /* touch old revised with HBL MFB.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "touch old revised with HBL MFB.pdf"; sourceTree = "<group>"; };
+		6A97316E2B26DD2C00E977F2 /* Access Banking FAQs-converted.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Access Banking FAQs-converted.pdf"; sourceTree = "<group>"; };
+		6A97316F2B26DD2C00E977F2 /* Access Banking Terms and Conditions-converted 2.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Access Banking Terms and Conditions-converted 2.pdf"; sourceTree = "<group>"; };
+		6A9731702B26DD2C00E977F2 /* First Touch Banking Terms and Conditions-converted.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "First Touch Banking Terms and Conditions-converted.pdf"; sourceTree = "<group>"; };
+		6A9731722B26DD2C00E977F2 /* Access Banking Terms and Conditions-converted.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Access Banking Terms and Conditions-converted.pdf"; sourceTree = "<group>"; };
+		6A97317E2B26DDE600E977F2 /* Access Banking FAQs Urdu.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "Access Banking FAQs Urdu.html"; sourceTree = "<group>"; };
+		6AFE82B92B3410FE00F2286F /* VeridiumAnalytics.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = VeridiumAnalytics.xcframework; sourceTree = "<group>"; };
+		6AFE82BA2B3410FE00F2286F /* VeridiumCore.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = VeridiumCore.xcframework; sourceTree = "<group>"; };
+		6AFE82BB2B3410FE00F2286F /* Veridium4FBiometrics.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = Veridium4FBiometrics.xcframework; sourceTree = "<group>"; };
+		6AFE82BC2B3410FE00F2286F /* VeridiumFingerSelector.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = VeridiumFingerSelector.xcframework; sourceTree = "<group>"; };
+		6AFE82BD2B3410FE00F2286F /* LicensingFramework.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = LicensingFramework.xcframework; sourceTree = "<group>"; };
+		6AFE82BE2B3410FF00F2286F /* Veridium4FUI.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = Veridium4FUI.xcframework; sourceTree = "<group>"; };
+		6AFE82C02B3410FF00F2286F /* FingerprintSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = FingerprintSDK.xcframework; sourceTree = "<group>"; };
+		6AFE82D12B3421FD00F2286F /* APIs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIs.swift; sourceTree = "<group>"; };
+		79F3EC0DF11191E1D1739845 /* Pods-First Touch Banking.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-First Touch Banking.release.xcconfig"; path = "Target Support Files/Pods-First Touch Banking/Pods-First Touch Banking.release.xcconfig"; sourceTree = "<group>"; };
+		A200DE872191B8FA00C750AB /* MoviePaymentSuccess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviePaymentSuccess.swift; sourceTree = "<group>"; };
+		A20219FB2020443D0013A824 /* SearchTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchTextField.swift; sourceTree = "<group>"; };
+		A20A12CC21E76592001FB44A /* EFTStatement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EFTStatement.swift; sourceTree = "<group>"; };
+		A2123CAB21E7E6790025DE2A /* tc.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = tc.html; sourceTree = "<group>"; };
+		A212C7382239104A001219E5 /* TouchIDFaceIDEnableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchIDFaceIDEnableVC.swift; sourceTree = "<group>"; };
+		A23765AD21A40B2C001A6484 /* BookMeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookMeVC.swift; sourceTree = "<group>"; };
+		A23765AF21A40CB8001A6484 /* TransportListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransportListVC.swift; sourceTree = "<group>"; };
+		A23765B121A40FE9001A6484 /* TransportListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransportListModel.swift; sourceTree = "<group>"; };
+		A23765B321A4127E001A6484 /* TransportSelectedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransportSelectedVC.swift; sourceTree = "<group>"; };
+		A23CDDF12022F1E300AC5CD6 /* LocalAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalAuthentication.framework; path = System/Library/Frameworks/LocalAuthentication.framework; sourceTree = SDKROOT; };
+		A23CDDF32022F2A000AC5CD6 /* PITouchIDManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PITouchIDManager.swift; sourceTree = "<group>"; };
+		A2459C1F201AF76600C7384E /* First Touch Banking.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "First Touch Banking.entitlements"; sourceTree = "<group>"; };
+		A246C4B020218C71003C32FF /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		A247152D21E73ADA0022385D /* TransactionConsent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionConsent.swift; sourceTree = "<group>"; };
+		A251D027205AA22B00F68DC3 /* SocialServicesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialServicesVC.swift; sourceTree = "<group>"; };
+		A256CBBA20E3A3BC00534572 /* MyProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProfileVC.swift; sourceTree = "<group>"; };
+		A256CBBC20E3A73B00534572 /* MyProfileAccountsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProfileAccountsTableViewCell.swift; sourceTree = "<group>"; };
+		A258D76920AABE900078E329 /* RateUsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateUsVC.swift; sourceTree = "<group>"; };
+		A25B5226204E779A0035C41B /* AccountPreviewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountPreviewVC.swift; sourceTree = "<group>"; };
+		A25B522A204EC2130035C41B /* CLTypingLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLTypingLabel.swift; sourceTree = "<group>"; };
+		A25BD4FC23BA131700D114EF /* UtilityBillConfirmationOneBillVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilityBillConfirmationOneBillVC.swift; sourceTree = "<group>"; };
+		A25E6A56217F08C70013B54D /* MoviesShowVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesShowVC.swift; sourceTree = "<group>"; };
+		A25E6A58217F0BED0013B54D /* MovieShowInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieShowInfo.swift; sourceTree = "<group>"; };
+		A25E6A5A217F369D0013B54D /* MoviesBookingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesBookingTableViewCell.swift; sourceTree = "<group>"; };
+		A25E6A5C217F4E940013B54D /* MovieSeatSelectionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieSeatSelectionVC.swift; sourceTree = "<group>"; };
+		A25E6A5E217F4F6A0013B54D /* MovieSeatsBooking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieSeatsBooking.swift; sourceTree = "<group>"; };
+		A25E6A60217F5F760013B54D /* SeatBookingPlanCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeatBookingPlanCollectionViewCell.swift; sourceTree = "<group>"; };
+		A25F2303235907550052CF6D /* TouchID.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = TouchID.html; sourceTree = "<group>"; };
+		A2638D6A20F47BF400D43399 /* PrifleUpdate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrifleUpdate.swift; sourceTree = "<group>"; };
+		A264564B205BA21F001F5E53 /* ChangePasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordVC.swift; sourceTree = "<group>"; };
+		A265E43A2111DB4700C64D39 /* MyLoanFurtherInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyLoanFurtherInfoVC.swift; sourceTree = "<group>"; };
+		A265E43C2111DBC200C64D39 /* FurtherLoanInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FurtherLoanInfoTableViewCell.swift; sourceTree = "<group>"; };
+		A2678E35216C7E32006E6515 /* GetReaons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetReaons.swift; sourceTree = "<group>"; };
+		A268042420315FC1008BE619 /* faq.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = faq.html; sourceTree = "<group>"; };
+		A26848C8210F40AD0007FBA8 /* MyLoanVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyLoanVC.swift; sourceTree = "<group>"; };
+		A26848CA210F410A0007FBA8 /* MyLoanTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyLoanTableViewCell.swift; sourceTree = "<group>"; };
+		A26848CC210F44970007FBA8 /* MyLoanInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyLoanInformation.swift; sourceTree = "<group>"; };
+		A26C020F2178997E00F280D8 /* MoviesListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesListVC.swift; sourceTree = "<group>"; };
+		A26C0211217899B700F280D8 /* MoviesListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesListTableViewCell.swift; sourceTree = "<group>"; };
+		A26C021321789BAC00F280D8 /* MovieList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieList.swift; sourceTree = "<group>"; };
+		A26CDAF525FB27FA005245E4 /* NetworkManagerSUA.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManagerSUA.swift; sourceTree = "<group>"; };
+		A27564B22339EE81002A2939 /* TitleBalanceStatementModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleBalanceStatementModel.swift; sourceTree = "<group>"; };
+		A27BDA7C2181DCEA000945D6 /* MovieTicketConfirmationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTicketConfirmationVC.swift; sourceTree = "<group>"; };
+		A27BDA7E2181F670000945D6 /* SectionHeaderCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeaderCollectionReusableView.swift; sourceTree = "<group>"; };
+		A282A9A5245963AC0087EBA8 /* DonationsMainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationsMainVC.swift; sourceTree = "<group>"; };
+		A282A9A7245979E20087EBA8 /* DonationsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationsTableViewCell.swift; sourceTree = "<group>"; };
+		A2841C7A23B4BBEB00F658D3 /* app.fmfb.com.pk.cer */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = app.fmfb.com.pk.cer; sourceTree = "<group>"; };
+		A284FB6D2068C9B0003F937A /* TimerApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerApplication.swift; sourceTree = "<group>"; };
+		A284FB6F2068C9C7003F937A /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		A294294A20B3D26E0075250E /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		A294294C20B3D26E0075250E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A2B09FB824FE027700CD4D97 /* KeyChainUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyChainUtils.swift; sourceTree = "<group>"; };
+		A2C6F74324FD205E003FD837 /* GetIpLocationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetIpLocationModel.swift; sourceTree = "<group>"; };
+		A77D1EE4CB8170B9FD52AD29 /* Pods_First_Touch_Banking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_First_Touch_Banking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B670E7ED028E1EEEB48F1EB0 /* Pods-First Touch Banking.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-First Touch Banking.debug.xcconfig"; path = "Target Support Files/Pods-First Touch Banking/Pods-First Touch Banking.debug.xcconfig"; sourceTree = "<group>"; };
+		FE0234871FF4C5C600804076 /* WebViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewVC.swift; sourceTree = "<group>"; };
+		FE03C7942007722A003608D3 /* UtilityBillPaymentConfirmationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilityBillPaymentConfirmationVC.swift; sourceTree = "<group>"; };
+		FE03C7962007762E003608D3 /* BillPaymentInquiry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillPaymentInquiry.swift; sourceTree = "<group>"; };
+		FE072BBA1FEA810D00D891F1 /* NotificationPut.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationPut.swift; sourceTree = "<group>"; };
+		FE1698C31FC6F2BD00AC25CC /* First Touch Banking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "First Touch Banking.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE1698C61FC6F2BD00AC25CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FE1698CB1FC6F2BD00AC25CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FE1698CD1FC6F2BD00AC25CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FE1698D01FC6F2BD00AC25CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FE1698D21FC6F2BD00AC25CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FE1698DD1FC732BC00AC25CC /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		FE1698DF1FC732F800AC25CC /* RegistrationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationVC.swift; sourceTree = "<group>"; };
+		FE1698E11FC7331200AC25CC /* OTPVerifyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPVerifyVC.swift; sourceTree = "<group>"; };
+		FE1698E31FC7332600AC25CC /* EnterPasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterPasswordVC.swift; sourceTree = "<group>"; };
+		FE1698E51FC7333800AC25CC /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		FE3791171FDA4DB700969D67 /* EnterPassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterPassword.swift; sourceTree = "<group>"; };
+		FE3791191FDA589D00969D67 /* CustomAlertVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomAlertVC.swift; sourceTree = "<group>"; };
+		FE37911B1FDA6A1800969D67 /* AcessAndRefreshToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcessAndRefreshToken.swift; sourceTree = "<group>"; };
+		FE37911D1FDA950800969D67 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		FE37911F1FDAAF8B00969D67 /* BalanceInquiry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceInquiry.swift; sourceTree = "<group>"; };
+		FE37F0781FF4BAC5008627F7 /* ContactUsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactUsVC.swift; sourceTree = "<group>"; };
+		FE396CDE1FE23E3900361F16 /* LocalFundTransferConfirmationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalFundTransferConfirmationVC.swift; sourceTree = "<group>"; };
+		FE396CE01FE2564000361F16 /* LocalFundsTransferDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalFundsTransferDetailsVC.swift; sourceTree = "<group>"; };
+		FE396CE41FE26CAA00361F16 /* InterBankFundTransferVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterBankFundTransferVC.swift; sourceTree = "<group>"; };
+		FE396CE61FE27DD700361F16 /* BankNames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankNames.swift; sourceTree = "<group>"; };
+		FE396CE81FE286C800361F16 /* InterBankFundTransferConfirmationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterBankFundTransferConfirmationVC.swift; sourceTree = "<group>"; };
+		FE396CEA1FE29CCE00361F16 /* IBFTFundTransfer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IBFTFundTransfer.swift; sourceTree = "<group>"; };
+		FE396CEC1FE29E4800361F16 /* InterBankFundTransferDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterBankFundTransferDetailsVC.swift; sourceTree = "<group>"; };
+		FE3988AC1FE100F90093D7D6 /* TitleFetch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleFetch.swift; sourceTree = "<group>"; };
+		FE3988AE1FE129C40093D7D6 /* MiniStatement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniStatement.swift; sourceTree = "<group>"; };
+		FE3988B01FE138D80093D7D6 /* MiniStatementVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniStatementVC.swift; sourceTree = "<group>"; };
+		FE3988B21FE1412B0093D7D6 /* MiniStatementTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniStatementTableViewCell.swift; sourceTree = "<group>"; };
+		FE3988B41FE1660E0093D7D6 /* LocalFundsTransferVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalFundsTransferVC.swift; sourceTree = "<group>"; };
+		FE3988B61FE1662F0093D7D6 /* LocalFundsTransfer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalFundsTransfer.swift; sourceTree = "<group>"; };
+		FE3988B81FE16C1A0093D7D6 /* UIDropDown.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIDropDown.swift; sourceTree = "<group>"; };
+		FE3988BA1FE16F1F0093D7D6 /* Accounts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Accounts.swift; sourceTree = "<group>"; };
+		FE3D0B0D1FE9254D004FAF68 /* NotificationPopUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationPopUpVC.swift; sourceTree = "<group>"; };
+		FE3DF4F020048206006D839B /* UtilityBillMainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilityBillMainVC.swift; sourceTree = "<group>"; };
+		FE3DF4F2200493B6006D839B /* UtilityBillCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilityBillCollectionViewCell.swift; sourceTree = "<group>"; };
+		FE3DF4F4200497E2006D839B /* BillPaymentCompanies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillPaymentCompanies.swift; sourceTree = "<group>"; };
+		FE3DF4F62004E8A7006D839B /* TopUpMainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopUpMainVC.swift; sourceTree = "<group>"; };
+		FE3DF4F82004EBBC006D839B /* TopUpCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopUpCollectionViewCell.swift; sourceTree = "<group>"; };
+		FE4011BA2006498600498791 /* UtilityBillInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilityBillInfoVC.swift; sourceTree = "<group>"; };
+		FE4011BC20064C3500498791 /* BillPaymentCompaniesListDropDown.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillPaymentCompaniesListDropDown.swift; sourceTree = "<group>"; };
+		FE5FBF721FE3B6F9000ABC8F /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
+		FE61558320089008008A1D85 /* PrePaidTopUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrePaidTopUpVC.swift; sourceTree = "<group>"; };
+		FE61558520089791008A1D85 /* PrePaidTopUpConfirmationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrePaidTopUpConfirmationVC.swift; sourceTree = "<group>"; };
+		FE6155872008CBE4008A1D85 /* BillPaymentDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillPaymentDetailsVC.swift; sourceTree = "<group>"; };
+		FE6155892008D28F008A1D85 /* BillPaymentTransfer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillPaymentTransfer.swift; sourceTree = "<group>"; };
+		FE61558C2008DD54008A1D85 /* PrePaidTransfer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrePaidTransfer.swift; sourceTree = "<group>"; };
+		FE61558E2008DDF6008A1D85 /* PrepaidTopUpDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrepaidTopUpDetailVC.swift; sourceTree = "<group>"; };
+		FE7E75AB200396BA00765FB0 /* GenericResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericResponse.swift; sourceTree = "<group>"; };
+		FEC1F1B51FC737F3003EDC31 /* PinTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PinTextField.swift; sourceTree = "<group>"; };
+		FEC1F1B71FC73B01003EDC31 /* SideDrawerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideDrawerVC.swift; sourceTree = "<group>"; };
+		FEC1F1BC1FC73F66003EDC31 /* FTBButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FTBButton.swift; sourceTree = "<group>"; };
+		FEC1F1BE1FC73FCB003EDC31 /* UIColor+FTB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+FTB.swift"; sourceTree = "<group>"; };
+		FEC1F1C01FC746F7003EDC31 /* SideBarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideBarCell.swift; sourceTree = "<group>"; };
+		FED1777B1FD93FEF00653BBD /* FTBView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FTBView.swift; sourceTree = "<group>"; };
+		FED1777F1FD9608100653BBD /* Registeration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Registeration.swift; sourceTree = "<group>"; };
+		FED177811FD963D100653BBD /* CustomActivityIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomActivityIndicator.swift; sourceTree = "<group>"; };
+		FED177831FD98A1800653BBD /* VerifyOTP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifyOTP.swift; sourceTree = "<group>"; };
+		FEE1CDCB1FF3643800154E01 /* QuickPayVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickPayVC.swift; sourceTree = "<group>"; };
+		FEE1CDCD1FF3645C00154E01 /* QuickPay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickPay.swift; sourceTree = "<group>"; };
+		FEE1CDCF1FF3695C00154E01 /* QuickPayListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickPayListTableViewCell.swift; sourceTree = "<group>"; };
+		FEEEA87E1FDFF26B00A30B68 /* AgentLocator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentLocator.swift; sourceTree = "<group>"; };
+		FEEEA8801FDFF2AF00A30B68 /* AgentLocatorVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentLocatorVC.swift; sourceTree = "<group>"; };
+		FEEEA8821FDFF37200A30B68 /* AgentLocatorTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentLocatorTableViewCell.swift; sourceTree = "<group>"; };
+		FEF523631FDFD69300924540 /* BranchLocator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BranchLocator.swift; sourceTree = "<group>"; };
+		FEF523651FDFD87C00924540 /* BranchLocatorVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BranchLocatorVC.swift; sourceTree = "<group>"; };
+		FEF523671FDFD90100924540 /* BranchLocatorTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BranchLocatorTableViewCell.swift; sourceTree = "<group>"; };
+		FEF523691FDFE62B00924540 /* AtmLocator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AtmLocator.swift; sourceTree = "<group>"; };
+		FEF5236B1FDFE6A500924540 /* AtmLocatorVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AtmLocatorVC.swift; sourceTree = "<group>"; };
+		FEF5236D1FDFE7CF00924540 /* AtmLocationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AtmLocationTableViewCell.swift; sourceTree = "<group>"; };
+		FEF96E9D1FF4EF880044C657 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		FEFC7C551FDE919E0050F233 /* NetworkConnectivity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkConnectivity.swift; sourceTree = "<group>"; };
+		FEFC7C571FDEB2110050F233 /* NotificationsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsVC.swift; sourceTree = "<group>"; };
+		FEFC7C591FDEB2C80050F233 /* NotificationsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsTableViewCell.swift; sourceTree = "<group>"; };
+		FEFC7C5B1FDEB5B00050F233 /* Notifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notifications.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FE1698C01FC6F2BD00AC25CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6AFE82CB2B34110000F2286F /* Veridium4FUI.xcframework in Frameworks */,
+				359D22652769C61B007769A9 /* CoreLocation.framework in Frameworks */,
+				6AFE82C32B3410FF00F2286F /* VeridiumCore.xcframework in Frameworks */,
+				6AFE82C92B34110000F2286F /* LicensingFramework.xcframework in Frameworks */,
+				6AFE82C72B3410FF00F2286F /* VeridiumFingerSelector.xcframework in Frameworks */,
+				6AFE82C12B3410FF00F2286F /* VeridiumAnalytics.xcframework in Frameworks */,
+				6AFE82CF2B34110000F2286F /* FingerprintSDK.xcframework in Frameworks */,
+				6AFE82C52B3410FF00F2286F /* Veridium4FBiometrics.xcframework in Frameworks */,
+				A23CDDF22022F1E300AC5CD6 /* LocalAuthentication.framework in Frameworks */,
+				FEF96E9E1FF4EFA10044C657 /* MessageUI.framework in Frameworks */,
+				F1A3005720DBE7BE1B047D1B /* Pods_First_Touch_Banking.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1C39EEAE367E6AC4DE003B1F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B670E7ED028E1EEEB48F1EB0 /* Pods-First Touch Banking.debug.xcconfig */,
+				79F3EC0DF11191E1D1739845 /* Pods-First Touch Banking.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		1C52AE39385C8D425BBCC804 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6AFE82C02B3410FF00F2286F /* FingerprintSDK.xcframework */,
+				6AFE82BD2B3410FE00F2286F /* LicensingFramework.xcframework */,
+				6AFE82BB2B3410FE00F2286F /* Veridium4FBiometrics.xcframework */,
+				6AFE82BE2B3410FF00F2286F /* Veridium4FUI.xcframework */,
+				6AFE82B92B3410FE00F2286F /* VeridiumAnalytics.xcframework */,
+				6AFE82BA2B3410FE00F2286F /* VeridiumCore.xcframework */,
+				6AFE82BC2B3410FE00F2286F /* VeridiumFingerSelector.xcframework */,
+				A23CDDF12022F1E300AC5CD6 /* LocalAuthentication.framework */,
+				FEF96E9D1FF4EF880044C657 /* MessageUI.framework */,
+				FE37911D1FDA950800969D67 /* CoreLocation.framework */,
+				A77D1EE4CB8170B9FD52AD29 /* Pods_First_Touch_Banking.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		356190D4289A5783003C830C /* Major Classes QR */ = {
+			isa = PBXGroup;
+			children = (
+				35A45A9E286C2E3200654D1D /* MainQRVC.swift */,
+				3517A14B287FF222002E094E /* GenerateQR.swift */,
+				352E225328CDD51B0012BE95 /* CRC16.swift */,
+				3584270628854C8800DB673B /* ReadQRVC.swift */,
+				357EFA0F289E490000B32C9A /* ScanReader_VC.swift */,
+				3517A14D288006CC002E094E /* StaticQRVC.swift */,
+				356190D5289A581F003C830C /* Scan_QRVC.swift */,
+				359F62B028AD1778007F1963 /* Show_QrList.swift */,
+				35C92DAD28AFDDA000A475DE /* Scanning_UplaodingVc.swift */,
+			);
+			path = "Major Classes QR";
+			sourceTree = "<group>";
+		};
+		35641FC527ABB7F100A3F4AB /* Atm Mobilebanking */ = {
+			isa = PBXGroup;
+			children = (
+				35641FCE27ABBB0C00A3F4AB /* Models */,
+				35641FC827ABB80F00A3F4AB /* MobileBankingCell.swift */,
+				35641FCC27ABB96100A3F4AB /* SelectLimitMangamnetLovVC.swift */,
+				35641FCA27ABB85900A3F4AB /* LimitManagementMainVc.swift */,
+				35641FC627ABB80800A3F4AB /* ATMCellvC.swift */,
+			);
+			path = "Atm Mobilebanking";
+			sourceTree = "<group>";
+		};
+		35641FCE27ABBB0C00A3F4AB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				35641FCF27ABBB2500A3F4AB /* AtmMobilebankingModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		35969529274BAFC900A682AB /* NewTermsAndConditions */ = {
+			isa = PBXGroup;
+			children = (
+				6A97317D2B26DD9F00E977F2 /* urduT&C */,
+				3588DF5B2837866A00AAB1D7 /* Access Banking Terms and Conditions.pdf */,
+				6A97316E2B26DD2C00E977F2 /* Access Banking FAQs-converted.pdf */,
+				6A97316F2B26DD2C00E977F2 /* Access Banking Terms and Conditions-converted 2.pdf */,
+				6A97316C2B26DD2C00E977F2 /* Access Banking Terms and Conditions-converted 3.pdf */,
+				6A9731722B26DD2C00E977F2 /* Access Banking Terms and Conditions-converted.pdf */,
+				6A97316B2B26DD2C00E977F2 /* FIRST Touch Banking FAQs-converted.pdf */,
+				6A9731702B26DD2C00E977F2 /* First Touch Banking Terms and Conditions-converted.pdf */,
+				6A97316D2B26DD2C00E977F2 /* touch old revised with HBL MFB.pdf */,
+				35C1A6DF283DE84700DFB7BA /* Access Banking FAQs updateddocx.pdf */,
+				356CA188279051A900FD11F3 /* Terms.pdf */,
+			);
+			path = NewTermsAndConditions;
+			sourceTree = "<group>";
+		};
+		359895AE27673E1100667F35 /* Localizable */ = {
+			isa = PBXGroup;
+			children = (
+				359895B327673E3D00667F35 /* Localizable.strings */,
+			);
+			path = Localizable;
+			sourceTree = "<group>";
+		};
+		359895B627686BF300667F35 /* Chequebook services */ = {
+			isa = PBXGroup;
+			children = (
+				359895B727686C1700667F35 /* ChequeBookMainVC.swift */,
+				35641FD127ABF6DE00A3F4AB /* MaintenanceCertificateVC.swift */,
+				35A26BAF27AA9AFB00C310E8 /* OTPVerificationVC.swift */,
+				359895D8276896EE00667F35 /* MaintenanceCertificationVc.swift */,
+				359B89762768A58800447B66 /* EStatementCEllVc.swift */,
+				35641FD327AD0ACF00A3F4AB /* WHTCertificateVC.swift */,
+				359895CC276884B400667F35 /* StatusCheckVC.swift */,
+				359B89722768A27A00447B66 /* WHTtaxVC.swift */,
+				359B89782768A5B400447B66 /* E-StatmentVC.swift */,
+				359B89742768A29100447B66 /* WHTCellvc.swift */,
+				359895D427688ED000667F35 /* LeafCellVC.swift */,
+				359895D227688E7800667F35 /* CheckLeafVC.swift */,
+				359895CA2768833A00667F35 /* ChequeBookRequestVc.swift */,
+				359895CE276884D900667F35 /* StatusCheckTableViewCellVc.swift */,
+				359895D02768886A00667F35 /* StopPaymentVC.swift */,
+				359895D62768969A00667F35 /* MaintenaceCellVC.swift */,
+			);
+			path = "Chequebook services";
+			sourceTree = "<group>";
+		};
+		359895B92768716C00667F35 /* ChequeBook Models */ = {
+			isa = PBXGroup;
+			children = (
+				359895BA2768718700667F35 /* NewRequest.swift */,
+				359895C4276878FE00667F35 /* WHT Model.swift */,
+				359895C02768779500667F35 /* LeafInqModel.swift */,
+				359895BE276876F400667F35 /* StopPaymentModel.swift */,
+				359895BC276871FF00667F35 /* StatusCheck.swift */,
+				359895C62768794700667F35 /* SMSModel.swift */,
+				359895C82768797800667F35 /* E-StatementModel.swift */,
+				359895C22768785100667F35 /* MaintenanceCertificateModel.swift */,
+			);
+			path = "ChequeBook Models";
+			sourceTree = "<group>";
+		};
+		359F62AB28AD1086007F1963 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				359F62AC28AD10B6007F1963 /* ShowQr_model.swift */,
+				359F62B228AD193B007F1963 /* Cell_showQr.swift */,
+				359F62AE28AD1243007F1963 /* Qr_Create.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		35A45A9D286C2E0800654D1D /* QR Transaction */ = {
+			isa = PBXGroup;
+			children = (
+				359F62AB28AD1086007F1963 /* Models */,
+				356190D4289A5783003C830C /* Major Classes QR */,
+				3557C8F128964F0F00098BD7 /* QRCodeReaderViewController.swift */,
+				3557C9072896517900098BD7 /* QRCodeReader.swift */,
+				356190D7289A6979003C830C /* UIUtilities.swift */,
+				3557C8F728964F3900098BD7 /* ReaderOverlayView.swift */,
+				3557C8F528964F2D00098BD7 /* QRCodeReaderViewControllerDelegate.swift */,
+				3557C8F928964F4600098BD7 /* ReaderOverlayView.swift */,
+				3557C90B289651FD00098BD7 /* TapQRCodeScanner.swift */,
+				3557C90528964FAA00098BD7 /* ToggleTorchButton.swift */,
+				3557C909289651BA00098BD7 /* QRCodeReaderResult.swift */,
+				3557C8FF28964F8D00098BD7 /* TabQRSccaner.swift */,
+				3557C8FB28964F6A00098BD7 /* SwitchCameraButton.swift */,
+				3557C8FD28964F7D00098BD7 /* TabQRSccaner.swift */,
+				3557C8F328964F1D00098BD7 /* QRCodeReaderViewControllerBuilder.swift */,
+				3557C8EF28964F0300098BD7 /* QRCodeReaderView.swift */,
+				3557C8ED28964EF600098BD7 /* QRCodeReaderDisplayable.swift */,
+				35ADDF1328CB8BC900F0FD08 /* TestVc.swift */,
+			);
+			path = "QR Transaction";
+			sourceTree = "<group>";
+		};
+		35AAD960277DC0A200484B80 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				35AAD961277DC0D200484B80 /* CustomerDetail.swift */,
+				35AE55B627DB4061006ACD32 /* RelinkAlias.swift */,
+				352A0C9327B4EFCA00E8C36F /* RAASTREasonsLOv.swift */,
+				35D549E927A1897C00987DCE /* BeneficiaryModel.swift */,
+				35D549ED27A18CBA00987DCE /* RaastbeneficiaryCell.swift */,
+				3525F0D9277F32F800A5B398 /* FundsTransferByalias.swift */,
+				3590E43727832BBA006A699B /* DelinkModel.swift */,
+				35B48EC3277F029600F85A9F /* TitleFetchTransactiinByAlias.swift */,
+				35FD2D23277DF8CC002DE307 /* SparrowRegister.swift */,
+				35FD2D1F277DE999002DE307 /* Sparrowindex.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		35B9FD0E28A66EF60042FF77 /* Base Classes */ = {
+			isa = PBXGroup;
+			children = (
+				FEFC7C571FDEB2110050F233 /* NotificationsVC.swift */,
+				FEC1F1B71FC73B01003EDC31 /* SideDrawerVC.swift */,
+				35B9FD0F28A66FB90042FF77 /* BaseVC.swift */,
+				FE3D0B0D1FE9254D004FAF68 /* NotificationPopUpVC.swift */,
+				3512C838274CF04C00961C1C /* FakeLaunchScreen.swift */,
+				3512C83A274D075400961C1C /* FakeLSCellVc.swift */,
+			);
+			path = "Base Classes";
+			sourceTree = "<group>";
+		};
+		35B9FD1228A66FE80042FF77 /* Logins */ = {
+			isa = PBXGroup;
+			children = (
+				FE1698DD1FC732BC00AC25CC /* LoginVC.swift */,
+				FE1698E11FC7331200AC25CC /* OTPVerifyVC.swift */,
+				FE1698DF1FC732F800AC25CC /* RegistrationVC.swift */,
+			);
+			path = Logins;
+			sourceTree = "<group>";
+		};
+		35B9FD1328A6702F0042FF77 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				FEE1CDCB1FF3643800154E01 /* QuickPayVC.swift */,
+				FE1698E51FC7333800AC25CC /* HomeVC.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		35B9FD1428A6703E0042FF77 /* Password */ = {
+			isa = PBXGroup;
+			children = (
+				A264564B205BA21F001F5E53 /* ChangePasswordVC.swift */,
+				FE1698E31FC7332600AC25CC /* EnterPasswordVC.swift */,
+			);
+			path = Password;
+			sourceTree = "<group>";
+		};
+		35B9FD1528A670960042FF77 /* Atm Management */ = {
+			isa = PBXGroup;
+			children = (
+				FEF523651FDFD87C00924540 /* BranchLocatorVC.swift */,
+				FEEEA8801FDFF2AF00A30B68 /* AgentLocatorVC.swift */,
+				A265E43A2111DB4700C64D39 /* MyLoanFurtherInfoVC.swift */,
+				A26848C8210F40AD0007FBA8 /* MyLoanVC.swift */,
+				FEF5236B1FDFE6A500924540 /* AtmLocatorVC.swift */,
+			);
+			path = "Atm Management";
+			sourceTree = "<group>";
+		};
+		35B9FD1628A670C50042FF77 /* Bills */ = {
+			isa = PBXGroup;
+			children = (
+				FE4011BA2006498600498791 /* UtilityBillInfoVC.swift */,
+				FE3DF4F020048206006D839B /* UtilityBillMainVC.swift */,
+				FE6155872008CBE4008A1D85 /* BillPaymentDetailsVC.swift */,
+				A25BD4FC23BA131700D114EF /* UtilityBillConfirmationOneBillVC.swift */,
+				FE03C7942007722A003608D3 /* UtilityBillPaymentConfirmationVC.swift */,
+			);
+			path = Bills;
+			sourceTree = "<group>";
+		};
+		35B9FD1728A670F00042FF77 /* Local Fund */ = {
+			isa = PBXGroup;
+			children = (
+				FE3988B41FE1660E0093D7D6 /* LocalFundsTransferVC.swift */,
+				FE396CE01FE2564000361F16 /* LocalFundsTransferDetailsVC.swift */,
+				FE396CDE1FE23E3900361F16 /* LocalFundTransferConfirmationVC.swift */,
+			);
+			path = "Local Fund";
+			sourceTree = "<group>";
+		};
+		35B9FD1828A671070042FF77 /* IBFT */ = {
+			isa = PBXGroup;
+			children = (
+				FE396CE41FE26CAA00361F16 /* InterBankFundTransferVC.swift */,
+				FE396CEC1FE29E4800361F16 /* InterBankFundTransferDetailsVC.swift */,
+				FE396CE81FE286C800361F16 /* InterBankFundTransferConfirmationVC.swift */,
+			);
+			path = IBFT;
+			sourceTree = "<group>";
+		};
+		35B9FD1928A6713D0042FF77 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				A25B5226204E779A0035C41B /* AccountPreviewVC.swift */,
+				A212C7382239104A001219E5 /* TouchIDFaceIDEnableVC.swift */,
+				A256CBBA20E3A3BC00534572 /* MyProfileVC.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		35B9FD1A28A6716A0042FF77 /* Statement */ = {
+			isa = PBXGroup;
+			children = (
+				FE3988B01FE138D80093D7D6 /* MiniStatementVC.swift */,
+			);
+			path = Statement;
+			sourceTree = "<group>";
+		};
+		35B9FD1B28A671830042FF77 /* Contact HBl */ = {
+			isa = PBXGroup;
+			children = (
+				FE0234871FF4C5C600804076 /* WebViewVC.swift */,
+				FE37F0781FF4BAC5008627F7 /* ContactUsVC.swift */,
+			);
+			path = "Contact HBl";
+			sourceTree = "<group>";
+		};
+		35B9FD1C28A6719F0042FF77 /* payment Method */ = {
+			isa = PBXGroup;
+			children = (
+				35B9FD1828A671070042FF77 /* IBFT */,
+				35B9FD1728A670F00042FF77 /* Local Fund */,
+				35F60319277DA53700585E4E /* Raast */,
+			);
+			path = "payment Method";
+			sourceTree = "<group>";
+		};
+		35B9FD1D28A671EF0042FF77 /* Topup */ = {
+			isa = PBXGroup;
+			children = (
+				FE61558320089008008A1D85 /* PrePaidTopUpVC.swift */,
+				FE61558520089791008A1D85 /* PrePaidTopUpConfirmationVC.swift */,
+				FE61558E2008DDF6008A1D85 /* PrepaidTopUpDetailVC.swift */,
+				FE3DF4F62004E8A7006D839B /* TopUpMainVC.swift */,
+			);
+			path = Topup;
+			sourceTree = "<group>";
+		};
+		35B9FD1E28A672270042FF77 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				A251D027205AA22B00F68DC3 /* SocialServicesVC.swift */,
+				A258D76920AABE900078E329 /* RateUsVC.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		35C274C127BD020E00073FBF /* MyLoans */ = {
+			isa = PBXGroup;
+			children = (
+				35C274C227BD022100073FBF /* MyLoansModel.swift */,
+				35C274C827BD17C400073FBF /* LoanModel.swift */,
+				35C274C627BD027E00073FBF /* MyLoanListVC.swift */,
+				35C274C427BD026C00073FBF /* LoansCellVC.swift */,
+			);
+			path = MyLoans;
+			sourceTree = "<group>";
+		};
+		35D4A54D27EF4A800092960D /* Debit Card */ = {
+			isa = PBXGroup;
+			children = (
+				35F6D33027EF4C4000BC23EC /* Models */,
+				35F6D32A27EF4C0900BC23EC /* DebitCardActivationVC.swift */,
+				35F6D33327EF50CB00BC23EC /* DebitcardOTPVerificationVC.swift */,
+				35F6D33527EF50EC00BC23EC /* DebitcardSetPinVC.swift */,
+				35F6D33127EF4C6B00BC23EC /* DebitCardMainVc.swift */,
+				35F6D32E27EF4C3500BC23EC /* DebitCardServiceVC.swift */,
+				35F6D32C27EF4C1F00BC23EC /* DebitCardBlockingVC.swift */,
+			);
+			path = "Debit Card";
+			sourceTree = "<group>";
+		};
+		35D549EF27A199B300987DCE /* CustomerProfile */ = {
+			isa = PBXGroup;
+			children = (
+				35D549F027A199C800987DCE /* CustomerProfile.swift */,
+			);
+			path = CustomerProfile;
+			sourceTree = "<group>";
+		};
+		35F60319277DA53700585E4E /* Raast */ = {
+			isa = PBXGroup;
+			children = (
+				35AAD960277DC0A200484B80 /* Model */,
+				35F6031A277DA55300585E4E /* RaastSubViewVc.swift */,
+				35D549EB27A18C9F00987DCE /* BenefiaryListVC.swift */,
+				3525F0D3277F278D00A5B398 /* AliasTransactionConfirmationVC.swift */,
+				35F60317277D9D0E00585E4E /* RaastMainVC.swift */,
+				351C305D277EF1FF00B4A0CD /* TransferByAliasVC.swift */,
+				3525F0D5277F27AA00A5B398 /* AliasTransferOTPVC.swift */,
+				3525F0D7277F27C700A5B398 /* TransactionAliasSuccessfull.swift */,
+				355AD19B277EDB9C00DD3D47 /* DelinkAliasVC.swift */,
+				35FD2D21277DF518002DE307 /* RegisterAliasSuccessVC.swift */,
+				35AAD95E277DB71100484B80 /* RegisterAliasVC.swift */,
+				35F6031C277DA80F00585E4E /* RaastSubvIew2Vc.swift */,
+			);
+			path = Raast;
+			sourceTree = "<group>";
+		};
+		35F6D33027EF4C4000BC23EC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				35F6D33727F1B6FD00BC23EC /* DebitCardActivation.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		6A4E2D682B3C45C000ADD8D1 /* Notification Language */ = {
+			isa = PBXGroup;
+			children = (
+				6A4E2D692B3C45C000ADD8D1 /* SelectedlangugaegVc.swift */,
+				6A4E2D6A2B3C45C000ADD8D1 /* Notification Setting.storyboard */,
+				6A4E2D6B2B3C45C000ADD8D1 /* NotificationSettingVC.swift */,
+			);
+			path = "Notification Language";
+			sourceTree = "<group>";
+		};
+		6A97317D2B26DD9F00E977F2 /* urduT&C */ = {
+			isa = PBXGroup;
+			children = (
+				6A97317E2B26DDE600E977F2 /* Access Banking FAQs Urdu.html */,
+			);
+			path = "urduT&C";
+			sourceTree = "<group>";
+		};
+		A23765AC21A40B01001A6484 /* Book Me */ = {
+			isa = PBXGroup;
+			children = (
+				A23765AD21A40B2C001A6484 /* BookMeVC.swift */,
+				A26C020F2178997E00F280D8 /* MoviesListVC.swift */,
+				A25E6A56217F08C70013B54D /* MoviesShowVC.swift */,
+				A25E6A5C217F4E940013B54D /* MovieSeatSelectionVC.swift */,
+				A27BDA7C2181DCEA000945D6 /* MovieTicketConfirmationVC.swift */,
+				A23765AF21A40CB8001A6484 /* TransportListVC.swift */,
+				A23765B321A4127E001A6484 /* TransportSelectedVC.swift */,
+			);
+			path = "Book Me";
+			sourceTree = "<group>";
+		};
+		A280C1C923D5928000F77122 /* NetworkManager */ = {
+			isa = PBXGroup;
+			children = (
+				6AFE82D12B3421FD00F2286F /* APIs.swift */,
+				A26CDAF525FB27FA005245E4 /* NetworkManagerSUA.swift */,
+			);
+			path = NetworkManager;
+			sourceTree = "<group>";
+		};
+		A282A9A4245963990087EBA8 /* Donations */ = {
+			isa = PBXGroup;
+			children = (
+				A282A9A5245963AC0087EBA8 /* DonationsMainVC.swift */,
+			);
+			path = Donations;
+			sourceTree = "<group>";
+		};
+		A294294920B3D26E0075250E /* OneSignalNotificationServiceExtension */ = {
+			isa = PBXGroup;
+			children = (
+				A294294A20B3D26E0075250E /* NotificationService.swift */,
+				A294294C20B3D26E0075250E /* Info.plist */,
+			);
+			path = OneSignalNotificationServiceExtension;
+			sourceTree = "<group>";
+		};
+		FE1698BA1FC6F2BD00AC25CC = {
+			isa = PBXGroup;
+			children = (
+				FE1698C51FC6F2BD00AC25CC /* First Touch Banking */,
+				A294294920B3D26E0075250E /* OneSignalNotificationServiceExtension */,
+				FE1698C41FC6F2BD00AC25CC /* Products */,
+				1C52AE39385C8D425BBCC804 /* Frameworks */,
+				1C39EEAE367E6AC4DE003B1F /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		FE1698C41FC6F2BD00AC25CC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FE1698C31FC6F2BD00AC25CC /* First Touch Banking.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FE1698C51FC6F2BD00AC25CC /* First Touch Banking */ = {
+			isa = PBXGroup;
+			children = (
+				359895AE27673E1100667F35 /* Localizable */,
+				35969529274BAFC900A682AB /* NewTermsAndConditions */,
+				A280C1C923D5928000F77122 /* NetworkManager */,
+				A2459C1F201AF76600C7384E /* First Touch Banking.entitlements */,
+				FED1777E1FD95E8200653BBD /* Globals */,
+				FED1777D1FD95E5400653BBD /* Model */,
+				FE1698D81FC6F2E500AC25CC /* AppDelegate */,
+				FE1698DC1FC6F33100AC25CC /* Assets */,
+				FE1698D91FC6F2F100AC25CC /* UI */,
+				FE1698DA1FC6F2F600AC25CC /* ViewControllers */,
+				FEC1F1BB1FC73F4C003EDC31 /* Extensions */,
+				A2841C7A23B4BBEB00F658D3 /* app.fmfb.com.pk.cer */,
+				FE1698D21FC6F2BD00AC25CC /* Info.plist */,
+			);
+			path = "First Touch Banking";
+			sourceTree = "<group>";
+		};
+		FE1698D81FC6F2E500AC25CC /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				FE1698C61FC6F2BD00AC25CC /* AppDelegate.swift */,
+				A284FB6D2068C9B0003F937A /* TimerApplication.swift */,
+				A284FB6F2068C9C7003F937A /* main.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		FE1698D91FC6F2F100AC25CC /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				FE1698CF1FC6F2BD00AC25CC /* LaunchScreen.storyboard */,
+				FE1698CA1FC6F2BD00AC25CC /* Main.storyboard */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		FE1698DA1FC6F2F600AC25CC /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				6A4E2D682B3C45C000ADD8D1 /* Notification Language */,
+				35B9FD1328A6702F0042FF77 /* Home */,
+				35B9FD1228A66FE80042FF77 /* Logins */,
+				35B9FD1E28A672270042FF77 /* Services */,
+				35B9FD1C28A6719F0042FF77 /* payment Method */,
+				35B9FD1D28A671EF0042FF77 /* Topup */,
+				35B9FD1B28A671830042FF77 /* Contact HBl */,
+				35B9FD1A28A6716A0042FF77 /* Statement */,
+				35B9FD1928A6713D0042FF77 /* Profile */,
+				35B9FD1628A670C50042FF77 /* Bills */,
+				35B9FD1528A670960042FF77 /* Atm Management */,
+				35B9FD1428A6703E0042FF77 /* Password */,
+				35A45A9D286C2E0800654D1D /* QR Transaction */,
+				35D4A54D27EF4A800092960D /* Debit Card */,
+				35C274C127BD020E00073FBF /* MyLoans */,
+				35641FC527ABB7F100A3F4AB /* Atm Mobilebanking */,
+				359895B627686BF300667F35 /* Chequebook services */,
+				A282A9A4245963990087EBA8 /* Donations */,
+				35B9FD0E28A66EF60042FF77 /* Base Classes */,
+				A23765AC21A40B01001A6484 /* Book Me */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		FE1698DB1FC6F32200AC25CC /* AppSupport */ = {
+			isa = PBXGroup;
+			children = (
+				A2B09FB824FE027700CD4D97 /* KeyChainUtils.swift */,
+				A25F2303235907550052CF6D /* TouchID.html */,
+				A25B522A204EC2130035C41B /* CLTypingLabel.swift */,
+				A23CDDF32022F2A000AC5CD6 /* PITouchIDManager.swift */,
+				A20219FB2020443D0013A824 /* SearchTextField.swift */,
+				FE3988B81FE16C1A0093D7D6 /* UIDropDown.swift */,
+				FEFC7C551FDE919E0050F233 /* NetworkConnectivity.swift */,
+				FE3791191FDA589D00969D67 /* CustomAlertVC.swift */,
+				FEC1F1C01FC746F7003EDC31 /* SideBarCell.swift */,
+				FEC1F1BE1FC73FCB003EDC31 /* UIColor+FTB.swift */,
+				FEC1F1B51FC737F3003EDC31 /* PinTextField.swift */,
+				FED177811FD963D100653BBD /* CustomActivityIndicator.swift */,
+				FEFC7C591FDEB2C80050F233 /* NotificationsTableViewCell.swift */,
+				FEF523671FDFD90100924540 /* BranchLocatorTableViewCell.swift */,
+				FEF5236D1FDFE7CF00924540 /* AtmLocationTableViewCell.swift */,
+				FEEEA8821FDFF37200A30B68 /* AgentLocatorTableViewCell.swift */,
+				FE3988B21FE1412B0093D7D6 /* MiniStatementTableViewCell.swift */,
+				FEE1CDCF1FF3695C00154E01 /* QuickPayListTableViewCell.swift */,
+				A256CBBC20E3A73B00534572 /* MyProfileAccountsTableViewCell.swift */,
+				FE3DF4F2200493B6006D839B /* UtilityBillCollectionViewCell.swift */,
+				FE3DF4F82004EBBC006D839B /* TopUpCollectionViewCell.swift */,
+				A2123CAB21E7E6790025DE2A /* tc.html */,
+				A268042420315FC1008BE619 /* faq.html */,
+				A26848CA210F410A0007FBA8 /* MyLoanTableViewCell.swift */,
+				A265E43C2111DBC200C64D39 /* FurtherLoanInfoTableViewCell.swift */,
+				A26C0211217899B700F280D8 /* MoviesListTableViewCell.swift */,
+				A25E6A5A217F369D0013B54D /* MoviesBookingTableViewCell.swift */,
+				A25E6A60217F5F760013B54D /* SeatBookingPlanCollectionViewCell.swift */,
+				A27BDA7E2181F670000945D6 /* SectionHeaderCollectionReusableView.swift */,
+				A282A9A7245979E20087EBA8 /* DonationsTableViewCell.swift */,
+			);
+			path = AppSupport;
+			sourceTree = "<group>";
+		};
+		FE1698DC1FC6F33100AC25CC /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				FE1698DB1FC6F32200AC25CC /* AppSupport */,
+				FE1698CD1FC6F2BD00AC25CC /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		FEC1F1BB1FC73F4C003EDC31 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				FED1777B1FD93FEF00653BBD /* FTBView.swift */,
+				353E2B93276B712000B93AF6 /* extentions.swift */,
+				FEC1F1BC1FC73F66003EDC31 /* FTBButton.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		FED1777D1FD95E5400653BBD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				35D549EF27A199B300987DCE /* CustomerProfile */,
+				359895B92768716C00667F35 /* ChequeBook Models */,
+				A247152D21E73ADA0022385D /* TransactionConsent.swift */,
+				A246C4B020218C71003C32FF /* NetworkManager.swift */,
+				5FCA79A11FCAC453001E5246 /* DataManager.swift */,
+				FED1777F1FD9608100653BBD /* Registeration.swift */,
+				FED177831FD98A1800653BBD /* VerifyOTP.swift */,
+				FE3791171FDA4DB700969D67 /* EnterPassword.swift */,
+				FE37911B1FDA6A1800969D67 /* AcessAndRefreshToken.swift */,
+				FE37911F1FDAAF8B00969D67 /* BalanceInquiry.swift */,
+				FEFC7C5B1FDEB5B00050F233 /* Notifications.swift */,
+				FEF523631FDFD69300924540 /* BranchLocator.swift */,
+				FEF523691FDFE62B00924540 /* AtmLocator.swift */,
+				FEEEA87E1FDFF26B00A30B68 /* AgentLocator.swift */,
+				FE3988AC1FE100F90093D7D6 /* TitleFetch.swift */,
+				FE3988AE1FE129C40093D7D6 /* MiniStatement.swift */,
+				FE3988B61FE1662F0093D7D6 /* LocalFundsTransfer.swift */,
+				FEE1CDCD1FF3645C00154E01 /* QuickPay.swift */,
+				FE3988BA1FE16F1F0093D7D6 /* Accounts.swift */,
+				FE396CE61FE27DD700361F16 /* BankNames.swift */,
+				FE396CEA1FE29CCE00361F16 /* IBFTFundTransfer.swift */,
+				FE5FBF721FE3B6F9000ABC8F /* Weather.swift */,
+				FE072BBA1FEA810D00D891F1 /* NotificationPut.swift */,
+				FE7E75AB200396BA00765FB0 /* GenericResponse.swift */,
+				FE3DF4F4200497E2006D839B /* BillPaymentCompanies.swift */,
+				FE4011BC20064C3500498791 /* BillPaymentCompaniesListDropDown.swift */,
+				FE03C7962007762E003608D3 /* BillPaymentInquiry.swift */,
+				FE6155892008D28F008A1D85 /* BillPaymentTransfer.swift */,
+				FE61558C2008DD54008A1D85 /* PrePaidTransfer.swift */,
+				A2638D6A20F47BF400D43399 /* PrifleUpdate.swift */,
+				A26848CC210F44970007FBA8 /* MyLoanInformation.swift */,
+				A2678E35216C7E32006E6515 /* GetReaons.swift */,
+				A26C021321789BAC00F280D8 /* MovieList.swift */,
+				A25E6A58217F0BED0013B54D /* MovieShowInfo.swift */,
+				A25E6A5E217F4F6A0013B54D /* MovieSeatsBooking.swift */,
+				A200DE872191B8FA00C750AB /* MoviePaymentSuccess.swift */,
+				A23765B121A40FE9001A6484 /* TransportListModel.swift */,
+				A20A12CC21E76592001FB44A /* EFTStatement.swift */,
+				A27564B22339EE81002A2939 /* TitleBalanceStatementModel.swift */,
+				A2C6F74324FD205E003FD837 /* GetIpLocationModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FED1777E1FD95E8200653BBD /* Globals */ = {
+			isa = PBXGroup;
+			children = (
+				5FCA799F1FCAC3E7001E5246 /* Constants.swift */,
+				35A0BD43277B2D9900D25EC3 /* Extension.pdf */,
+				3514C6812835433300241AAE /* URLSessionMethodVc.swift */,
+			);
+			path = Globals;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FE1698C21FC6F2BD00AC25CC /* First Touch Banking */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FE1698D51FC6F2BD00AC25CC /* Build configuration list for PBXNativeTarget "First Touch Banking" */;
+			buildPhases = (
+				C8B27E9872F72B2FD14DDFF6 /* [CP] Check Pods Manifest.lock */,
+				FE1698BF1FC6F2BD00AC25CC /* Sources */,
+				FE1698C01FC6F2BD00AC25CC /* Frameworks */,
+				FE1698C11FC6F2BD00AC25CC /* Resources */,
+				A2CD373A2161DF90007C0073 /* ShellScript */,
+				6AE5C5BD2B2C14CC00C833D2 /* Embed Frameworks */,
+				1848868CE78A2210DCAFE4F8 /* [CP] Embed Pods Frameworks */,
+				654BE9C08A8694FDCE79C966 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "First Touch Banking";
+			productName = "First Touch Banking";
+			productReference = FE1698C31FC6F2BD00AC25CC /* First Touch Banking.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FE1698BB1FC6F2BD00AC25CC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 1320;
+				ORGANIZATIONNAME = "irum Zubair";
+				TargetAttributes = {
+					FE1698C21FC6F2BD00AC25CC = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Keychain = {
+								enabled = 0;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = FE1698BE1FC6F2BD00AC25CC /* Build configuration list for PBXProject "Access Banking" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				"ur-Arab-PK",
+			);
+			mainGroup = FE1698BA1FC6F2BD00AC25CC;
+			productRefGroup = FE1698C41FC6F2BD00AC25CC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FE1698C21FC6F2BD00AC25CC /* First Touch Banking */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FE1698C11FC6F2BD00AC25CC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				356CA189279051A900FD11F3 /* Terms.pdf in Resources */,
+				A25E3B6523CDDFF500B78915 /* app.fmfb.com.pk.cer in Resources */,
+				FE1698D11FC6F2BD00AC25CC /* LaunchScreen.storyboard in Resources */,
+				FE1698CE1FC6F2BD00AC25CC /* Assets.xcassets in Resources */,
+				A268042520315FC1008BE619 /* faq.html in Resources */,
+				6A9731762B26DD2C00E977F2 /* Access Banking FAQs-converted.pdf in Resources */,
+				6A9731782B26DD2C00E977F2 /* First Touch Banking Terms and Conditions-converted.pdf in Resources */,
+				6A9731742B26DD2C00E977F2 /* Access Banking Terms and Conditions-converted 3.pdf in Resources */,
+				6A97317A2B26DD2C00E977F2 /* Access Banking Terms and Conditions-converted.pdf in Resources */,
+				359895B127673E3D00667F35 /* Localizable.strings in Resources */,
+				A25F2304235907550052CF6D /* TouchID.html in Resources */,
+				FE1698CC1FC6F2BD00AC25CC /* Main.storyboard in Resources */,
+				6A97317F2B26DDE600E977F2 /* Access Banking FAQs Urdu.html in Resources */,
+				A2123CAC21E7E6790025DE2A /* tc.html in Resources */,
+				6A9731772B26DD2C00E977F2 /* Access Banking Terms and Conditions-converted 2.pdf in Resources */,
+				6A9731752B26DD2C00E977F2 /* touch old revised with HBL MFB.pdf in Resources */,
+				6A9731732B26DD2C00E977F2 /* FIRST Touch Banking FAQs-converted.pdf in Resources */,
+				3588DF5C2837866B00AAB1D7 /* Access Banking Terms and Conditions.pdf in Resources */,
+				35C1A6E0283DE84800DFB7BA /* Access Banking FAQs updateddocx.pdf in Resources */,
+				6A4E2D6D2B3C45C000ADD8D1 /* Notification Setting.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1848868CE78A2210DCAFE4F8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-First Touch Banking/Pods-First Touch Banking-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/CommonDataModelsKit-iOS/CommonDataModelsKit_iOS.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoneVisible/GoneVisible.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleDataTransport/GoogleDataTransport.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManager/IQKeyboardManager.framework",
+				"${BUILT_PRODUCTS_DIR}/KYDrawerController/KYDrawerController.framework",
+				"${PODS_ROOT}/MasterpassQRCoreSDK/Frameworks/MasterpassQRCoreSDK.framework",
+				"${BUILT_PRODUCTS_DIR}/Nuke/Nuke.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/OpalImagePicker/OpalImagePicker.framework",
+				"${BUILT_PRODUCTS_DIR}/PinCodeTextField/PinCodeTextField.framework",
+				"${BUILT_PRODUCTS_DIR}/PromisesObjC/FBLPromises.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/SCLAlertView/SCLAlertView.framework",
+				"${BUILT_PRODUCTS_DIR}/Siren/Siren.framework",
+				"${BUILT_PRODUCTS_DIR}/SkyFloatingLabelTextField/SkyFloatingLabelTextField.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftKeychainWrapper/SwiftKeychainWrapper.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/TapAdditionsKitV2/TapAdditionsKitV2.framework",
+				"${BUILT_PRODUCTS_DIR}/TapSwiftFixesV2/TapSwiftFixesV2.framework",
+				"${BUILT_PRODUCTS_DIR}/Toaster/Toaster.framework",
+				"${BUILT_PRODUCTS_DIR}/iOSDropDown/iOSDropDown.framework",
+				"${BUILT_PRODUCTS_DIR}/libPhoneNumber-iOS/libPhoneNumber_iOS.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/OneSignalXCFramework/OneSignal/OneSignalFramework.framework/OneSignalFramework",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/OneSignalXCFramework/OneSignalCore/OneSignalCore.framework/OneSignalCore",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/OneSignalXCFramework/OneSignalExtension/OneSignalExtension.framework/OneSignalExtension",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/OneSignalXCFramework/OneSignalInAppMessages/OneSignalInAppMessages.framework/OneSignalInAppMessages",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/OneSignalXCFramework/OneSignalLocation/OneSignalLocation.framework/OneSignalLocation",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/OneSignalXCFramework/OneSignalNotifications/OneSignalNotifications.framework/OneSignalNotifications",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/OneSignalXCFramework/OneSignalOSCore/OneSignalOSCore.framework/OneSignalOSCore",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/OneSignalXCFramework/OneSignalOutcomes/OneSignalOutcomes.framework/OneSignalOutcomes",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/OneSignalXCFramework/OneSignalUser/OneSignalUser.framework/OneSignalUser",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CommonDataModelsKit_iOS.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoneVisible.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleDataTransport.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManager.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KYDrawerController.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MasterpassQRCoreSDK.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nuke.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OpalImagePicker.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PinCodeTextField.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBLPromises.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SCLAlertView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Siren.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SkyFloatingLabelTextField.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftKeychainWrapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TapAdditionsKitV2.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TapSwiftFixesV2.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Toaster.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/iOSDropDown.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/libPhoneNumber_iOS.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OneSignalFramework.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OneSignalCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OneSignalExtension.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OneSignalInAppMessages.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OneSignalLocation.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OneSignalNotifications.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OneSignalOSCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OneSignalOutcomes.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OneSignalUser.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-First Touch Banking/Pods-First Touch Banking-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		654BE9C08A8694FDCE79C966 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-First Touch Banking/Pods-First Touch Banking-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/MLKitTextRecognition/LatinOCRResources.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/LatinOCRResources.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-First Touch Banking/Pods-First Touch Banking-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A2CD373A2161DF90007C0073 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 12;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/run\" a3c67225e7697ca6b4c1399655bed61b80023bca cd953b83017a61e45d59bfb3e49621241847b461f67087ff0cbe6430202d9a60\n";
+		};
+		C8B27E9872F72B2FD14DDFF6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-First Touch Banking-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FE1698BF1FC6F2BD00AC25CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A246C4B120218C71003C32FF /* NetworkManager.swift in Sources */,
+				A25E6A5B217F369D0013B54D /* MoviesBookingTableViewCell.swift in Sources */,
+				FE1698DE1FC732BC00AC25CC /* LoginVC.swift in Sources */,
+				35D549EA27A1897C00987DCE /* BeneficiaryModel.swift in Sources */,
+				FEE1CDCE1FF3645C00154E01 /* QuickPay.swift in Sources */,
+				A256CBBD20E3A73B00534572 /* MyProfileAccountsTableViewCell.swift in Sources */,
+				FE61558A2008D28F008A1D85 /* BillPaymentTransfer.swift in Sources */,
+				35F6D32B27EF4C0900BC23EC /* DebitCardActivationVC.swift in Sources */,
+				35A45A9F286C2E3200654D1D /* MainQRVC.swift in Sources */,
+				A284FB6E2068C9B0003F937A /* TimerApplication.swift in Sources */,
+				A26C021421789BAC00F280D8 /* MovieList.swift in Sources */,
+				FE37F0791FF4BAC6008627F7 /* ContactUsVC.swift in Sources */,
+				6AFE82D22B3421FD00F2286F /* APIs.swift in Sources */,
+				FE5FBF731FE3B6FA000ABC8F /* Weather.swift in Sources */,
+				359B89732768A27A00447B66 /* WHTtaxVC.swift in Sources */,
+				FE61558D2008DD54008A1D85 /* PrePaidTransfer.swift in Sources */,
+				FE61558420089008008A1D85 /* PrePaidTopUpVC.swift in Sources */,
+				FE3791181FDA4DB700969D67 /* EnterPassword.swift in Sources */,
+				A284FB702068C9C7003F937A /* main.swift in Sources */,
+				359895C72768794700667F35 /* SMSModel.swift in Sources */,
+				FE6155882008CBE4008A1D85 /* BillPaymentDetailsVC.swift in Sources */,
+				359895BB2768718700667F35 /* NewRequest.swift in Sources */,
+				359895CD276884B400667F35 /* StatusCheckVC.swift in Sources */,
+				A27564B32339EE81002A2939 /* TitleBalanceStatementModel.swift in Sources */,
+				FEE1CDCC1FF3643800154E01 /* QuickPayVC.swift in Sources */,
+				35ADDF1428CB8BC900F0FD08 /* TestVc.swift in Sources */,
+				A2638D6B20F47BF400D43399 /* PrifleUpdate.swift in Sources */,
+				FE396CEB1FE29CCE00361F16 /* IBFTFundTransfer.swift in Sources */,
+				A2C6F74424FD205E003FD837 /* GetIpLocationModel.swift in Sources */,
+				A212C7392239104A001219E5 /* TouchIDFaceIDEnableVC.swift in Sources */,
+				3525F0DA277F32F800A5B398 /* FundsTransferByalias.swift in Sources */,
+				A27BDA7D2181DCEA000945D6 /* MovieTicketConfirmationVC.swift in Sources */,
+				35FD2D22277DF518002DE307 /* RegisterAliasSuccessVC.swift in Sources */,
+				FE1698E21FC7331200AC25CC /* OTPVerifyVC.swift in Sources */,
+				35F6D32F27EF4C3500BC23EC /* DebitCardServiceVC.swift in Sources */,
+				359895C92768797800667F35 /* E-StatementModel.swift in Sources */,
+				6A4E2D6E2B3C45C000ADD8D1 /* NotificationSettingVC.swift in Sources */,
+				3557C8FE28964F7D00098BD7 /* TabQRSccaner.swift in Sources */,
+				FE396CE71FE27DD700361F16 /* BankNames.swift in Sources */,
+				FEE1CDD01FF3695C00154E01 /* QuickPayListTableViewCell.swift in Sources */,
+				FEF523661FDFD87C00924540 /* BranchLocatorVC.swift in Sources */,
+				355AD19C277EDB9C00DD3D47 /* DelinkAliasVC.swift in Sources */,
+				FE396CED1FE29E4800361F16 /* InterBankFundTransferDetailsVC.swift in Sources */,
+				FEC1F1C11FC746F8003EDC31 /* SideBarCell.swift in Sources */,
+				35C274C927BD17C400073FBF /* LoanModel.swift in Sources */,
+				A26CDAF625FB27FA005245E4 /* NetworkManagerSUA.swift in Sources */,
+				A25BD4FD23BA131700D114EF /* UtilityBillConfirmationOneBillVC.swift in Sources */,
+				35C92DAE28AFDDA000A475DE /* Scanning_UplaodingVc.swift in Sources */,
+				5FCA79A21FCAC453001E5246 /* DataManager.swift in Sources */,
+				FE0234881FF4C5C600804076 /* WebViewVC.swift in Sources */,
+				35F60318277D9D0E00585E4E /* RaastMainVC.swift in Sources */,
+				FEEEA87F1FDFF26B00A30B68 /* AgentLocator.swift in Sources */,
+				359F62AF28AD1243007F1963 /* Qr_Create.swift in Sources */,
+				FE396CE51FE26CAA00361F16 /* InterBankFundTransferVC.swift in Sources */,
+				35B9FD1028A66FB90042FF77 /* BaseVC.swift in Sources */,
+				35AAD95F277DB71100484B80 /* RegisterAliasVC.swift in Sources */,
+				A26848C9210F40AD0007FBA8 /* MyLoanVC.swift in Sources */,
+				359895C12768779500667F35 /* LeafInqModel.swift in Sources */,
+				FEEEA8831FDFF37200A30B68 /* AgentLocatorTableViewCell.swift in Sources */,
+				359F62B128AD1778007F1963 /* Show_QrList.swift in Sources */,
+				A26848CD210F44970007FBA8 /* MyLoanInformation.swift in Sources */,
+				357EFA10289E490000B32C9A /* ScanReader_VC.swift in Sources */,
+				A25B5227204E779A0035C41B /* AccountPreviewVC.swift in Sources */,
+				359895D327688E7800667F35 /* CheckLeafVC.swift in Sources */,
+				FE1698E41FC7332600AC25CC /* EnterPasswordVC.swift in Sources */,
+				FE3DF4F120048206006D839B /* UtilityBillMainVC.swift in Sources */,
+				359895BF276876F400667F35 /* StopPaymentModel.swift in Sources */,
+				35FD2D24277DF8CC002DE307 /* SparrowRegister.swift in Sources */,
+				FE1698E61FC7333800AC25CC /* HomeVC.swift in Sources */,
+				359895D12768886A00667F35 /* StopPaymentVC.swift in Sources */,
+				A27BDA7F2181F670000945D6 /* SectionHeaderCollectionReusableView.swift in Sources */,
+				FEEEA8811FDFF2AF00A30B68 /* AgentLocatorVC.swift in Sources */,
+				FE3D0B0E1FE9254D004FAF68 /* NotificationPopUpVC.swift in Sources */,
+				FE3DF4F92004EBBC006D839B /* TopUpCollectionViewCell.swift in Sources */,
+				3557C8EE28964EF600098BD7 /* QRCodeReaderDisplayable.swift in Sources */,
+				35F6D33827F1B6FD00BC23EC /* DebitCardActivation.swift in Sources */,
+				35AAD962277DC0D200484B80 /* CustomerDetail.swift in Sources */,
+				FED177841FD98A1800653BBD /* VerifyOTP.swift in Sources */,
+				35F6D33427EF50CB00BC23EC /* DebitcardOTPVerificationVC.swift in Sources */,
+				35D549F127A199C800987DCE /* CustomerProfile.swift in Sources */,
+				FEF523681FDFD90100924540 /* BranchLocatorTableViewCell.swift in Sources */,
+				3525F0D8277F27C700A5B398 /* TransactionAliasSuccessfull.swift in Sources */,
+				359F62AD28AD10B6007F1963 /* ShowQr_model.swift in Sources */,
+				35641FD227ABF6DE00A3F4AB /* MaintenanceCertificateVC.swift in Sources */,
+				3557C90A289651BB00098BD7 /* QRCodeReaderResult.swift in Sources */,
+				3557C8FA28964F4700098BD7 /* ReaderOverlayView.swift in Sources */,
+				FED1777C1FD93FEF00653BBD /* FTBView.swift in Sources */,
+				3557C8F828964F3900098BD7 /* ReaderOverlayView.swift in Sources */,
+				3557C90628964FAB00098BD7 /* ToggleTorchButton.swift in Sources */,
+				FE3988B51FE1660E0093D7D6 /* LocalFundsTransferVC.swift in Sources */,
+				3557C8F628964F2D00098BD7 /* QRCodeReaderViewControllerDelegate.swift in Sources */,
+				35641FC927ABB80F00A3F4AB /* MobileBankingCell.swift in Sources */,
+				FE3DF4F5200497E2006D839B /* BillPaymentCompanies.swift in Sources */,
+				3517A14E288006CC002E094E /* StaticQRVC.swift in Sources */,
+				FEF523641FDFD69300924540 /* BranchLocator.swift in Sources */,
+				35B48EC4277F029600F85A9F /* TitleFetchTransactiinByAlias.swift in Sources */,
+				35641FCB27ABB85900A3F4AB /* LimitManagementMainVc.swift in Sources */,
+				359B89772768A58800447B66 /* EStatementCEllVc.swift in Sources */,
+				3512C839274CF04C00961C1C /* FakeLaunchScreen.swift in Sources */,
+				3557C8F028964F0400098BD7 /* QRCodeReaderView.swift in Sources */,
+				35641FCD27ABB96200A3F4AB /* SelectLimitMangamnetLovVC.swift in Sources */,
+				A265E43D2111DBC200C64D39 /* FurtherLoanInfoTableViewCell.swift in Sources */,
+				35FD2D20277DE999002DE307 /* Sparrowindex.swift in Sources */,
+				359B89752768A29100447B66 /* WHTCellvc.swift in Sources */,
+				FE3988AF1FE129C40093D7D6 /* MiniStatement.swift in Sources */,
+				FEC1F1BF1FC73FCB003EDC31 /* UIColor+FTB.swift in Sources */,
+				A200DE882191B8FA00C750AB /* MoviePaymentSuccess.swift in Sources */,
+				FEF5236C1FDFE6A500924540 /* AtmLocatorVC.swift in Sources */,
+				FE3DF4F3200493B6006D839B /* UtilityBillCollectionViewCell.swift in Sources */,
+				FE1698E01FC732F800AC25CC /* RegistrationVC.swift in Sources */,
+				A23765AE21A40B2C001A6484 /* BookMeVC.swift in Sources */,
+				A251D028205AA22B00F68DC3 /* SocialServicesVC.swift in Sources */,
+				FE396CE91FE286C800361F16 /* InterBankFundTransferConfirmationVC.swift in Sources */,
+				FE37911C1FDA6A1800969D67 /* AcessAndRefreshToken.swift in Sources */,
+				A264564C205BA21F001F5E53 /* ChangePasswordVC.swift in Sources */,
+				A20A12CD21E76592001FB44A /* EFTStatement.swift in Sources */,
+				FE4011BB2006498600498791 /* UtilityBillInfoVC.swift in Sources */,
+				5FCA79A01FCAC3E7001E5246 /* Constants.swift in Sources */,
+				356190D8289A6979003C830C /* UIUtilities.swift in Sources */,
+				35641FC727ABB80800A3F4AB /* ATMCellvC.swift in Sources */,
+				FE61558620089791008A1D85 /* PrePaidTopUpConfirmationVC.swift in Sources */,
+				359895D72768969A00667F35 /* MaintenaceCellVC.swift in Sources */,
+				FEC1F1B61FC737F3003EDC31 /* PinTextField.swift in Sources */,
+				359895CB2768833A00667F35 /* ChequeBookRequestVc.swift in Sources */,
+				359895BD2768720000667F35 /* StatusCheck.swift in Sources */,
+				FE072BBB1FEA810D00D891F1 /* NotificationPut.swift in Sources */,
+				FE61558F2008DDF6008A1D85 /* PrepaidTopUpDetailVC.swift in Sources */,
+				3557C8F428964F1E00098BD7 /* QRCodeReaderViewControllerBuilder.swift in Sources */,
+				353E2B94276B712000B93AF6 /* extentions.swift in Sources */,
+				35F6031D277DA80F00585E4E /* RaastSubvIew2Vc.swift in Sources */,
+				A2B09FB924FE027700CD4D97 /* KeyChainUtils.swift in Sources */,
+				A25E6A61217F5F760013B54D /* SeatBookingPlanCollectionViewCell.swift in Sources */,
+				3590E43827832BBB006A699B /* DelinkModel.swift in Sources */,
+				3557C8FC28964F6A00098BD7 /* SwitchCameraButton.swift in Sources */,
+				352A0C9427B4EFCA00E8C36F /* RAASTREasonsLOv.swift in Sources */,
+				35D549EE27A18CBA00987DCE /* RaastbeneficiaryCell.swift in Sources */,
+				FE3988BB1FE16F1F0093D7D6 /* Accounts.swift in Sources */,
+				FE3988B31FE1412B0093D7D6 /* MiniStatementTableViewCell.swift in Sources */,
+				FE3988B91FE16C1B0093D7D6 /* UIDropDown.swift in Sources */,
+				FE3988B71FE1662F0093D7D6 /* LocalFundsTransfer.swift in Sources */,
+				FEFC7C561FDE919F0050F233 /* NetworkConnectivity.swift in Sources */,
+				359895CF276884D900667F35 /* StatusCheckTableViewCellVc.swift in Sources */,
+				FE7E75AC200396BA00765FB0 /* GenericResponse.swift in Sources */,
+				A247152E21E73ADA0022385D /* TransactionConsent.swift in Sources */,
+				FE3791201FDAAF8B00969D67 /* BalanceInquiry.swift in Sources */,
+				35C274C327BD022100073FBF /* MyLoansModel.swift in Sources */,
+				359895B827686C1700667F35 /* ChequeBookMainVC.swift in Sources */,
+				A282A9A8245979E20087EBA8 /* DonationsTableViewCell.swift in Sources */,
+				A23765B021A40CB8001A6484 /* TransportListVC.swift in Sources */,
+				FEC1F1BD1FC73F6A003EDC31 /* FTBButton.swift in Sources */,
+				35AE55B727DB4061006ACD32 /* RelinkAlias.swift in Sources */,
+				A26C0212217899B700F280D8 /* MoviesListTableViewCell.swift in Sources */,
+				FEC1F1B81FC73B01003EDC31 /* SideDrawerVC.swift in Sources */,
+				3557C9082896517900098BD7 /* QRCodeReader.swift in Sources */,
+				A256CBBB20E3A3BC00534572 /* MyProfileVC.swift in Sources */,
+				FE4011BD20064C3500498791 /* BillPaymentCompaniesListDropDown.swift in Sources */,
+				359895D527688ED000667F35 /* LeafCellVC.swift in Sources */,
+				35F6D32D27EF4C2000BC23EC /* DebitCardBlockingVC.swift in Sources */,
+				3517A14C287FF222002E094E /* GenerateQR.swift in Sources */,
+				352E225428CDD51B0012BE95 /* CRC16.swift in Sources */,
+				35641FD027ABBB2500A3F4AB /* AtmMobilebankingModel.swift in Sources */,
+				359895D9276896EE00667F35 /* MaintenanceCertificationVc.swift in Sources */,
+				A26C02102178997E00F280D8 /* MoviesListVC.swift in Sources */,
+				351C305E277EF1FF00B4A0CD /* TransferByAliasVC.swift in Sources */,
+				FEF5236A1FDFE62B00924540 /* AtmLocator.swift in Sources */,
+				356190D6289A581F003C830C /* Scan_QRVC.swift in Sources */,
+				FE3988B11FE138D80093D7D6 /* MiniStatementVC.swift in Sources */,
+				FEF5236E1FDFE7CF00924540 /* AtmLocationTableViewCell.swift in Sources */,
+				A282A9A6245963AC0087EBA8 /* DonationsMainVC.swift in Sources */,
+				FEFC7C5C1FDEB5B00050F233 /* Notifications.swift in Sources */,
+				3557C8F228964F0F00098BD7 /* QRCodeReaderViewController.swift in Sources */,
+				FEFC7C581FDEB2110050F233 /* NotificationsVC.swift in Sources */,
+				FED177801FD9608100653BBD /* Registeration.swift in Sources */,
+				A258D76A20AABE900078E329 /* RateUsVC.swift in Sources */,
+				35F6D33227EF4C6B00BC23EC /* DebitCardMainVc.swift in Sources */,
+				35F6D33627EF50EC00BC23EC /* DebitcardSetPinVC.swift in Sources */,
+				FED177821FD963D100653BBD /* CustomActivityIndicator.swift in Sources */,
+				3525F0D4277F278D00A5B398 /* AliasTransactionConfirmationVC.swift in Sources */,
+				A265E43B2111DB4700C64D39 /* MyLoanFurtherInfoVC.swift in Sources */,
+				A2678E36216C7E32006E6515 /* GetReaons.swift in Sources */,
+				FE3DF4F72004E8A7006D839B /* TopUpMainVC.swift in Sources */,
+				A25E6A57217F08C70013B54D /* MoviesShowVC.swift in Sources */,
+				A25B522B204EC2130035C41B /* CLTypingLabel.swift in Sources */,
+				3525F0D6277F27AA00A5B398 /* AliasTransferOTPVC.swift in Sources */,
+				3584270728854C8800DB673B /* ReadQRVC.swift in Sources */,
+				A23765B221A40FE9001A6484 /* TransportListModel.swift in Sources */,
+				359895C5276878FE00667F35 /* WHT Model.swift in Sources */,
+				359895C32768785100667F35 /* MaintenanceCertificateModel.swift in Sources */,
+				FE03C7952007722A003608D3 /* UtilityBillPaymentConfirmationVC.swift in Sources */,
+				35C274C727BD027E00073FBF /* MyLoanListVC.swift in Sources */,
+				35D549EC27A18C9F00987DCE /* BenefiaryListVC.swift in Sources */,
+				359B89792768A5B400447B66 /* E-StatmentVC.swift in Sources */,
+				A20219FC2020443D0013A824 /* SearchTextField.swift in Sources */,
+				3557C90028964F8D00098BD7 /* TabQRSccaner.swift in Sources */,
+				3514C6822835433300241AAE /* URLSessionMethodVc.swift in Sources */,
+				A25E6A5D217F4E940013B54D /* MovieSeatSelectionVC.swift in Sources */,
+				3512C83B274D075400961C1C /* FakeLSCellVc.swift in Sources */,
+				FE396CE11FE2564000361F16 /* LocalFundsTransferDetailsVC.swift in Sources */,
+				FEFC7C5A1FDEB2C80050F233 /* NotificationsTableViewCell.swift in Sources */,
+				35C274C527BD026C00073FBF /* LoansCellVC.swift in Sources */,
+				6A4E2D6C2B3C45C000ADD8D1 /* SelectedlangugaegVc.swift in Sources */,
+				A25E6A5F217F4F6A0013B54D /* MovieSeatsBooking.swift in Sources */,
+				35A26BB027AA9AFB00C310E8 /* OTPVerificationVC.swift in Sources */,
+				35641FD427AD0ACF00A3F4AB /* WHTCertificateVC.swift in Sources */,
+				FE37911A1FDA589D00969D67 /* CustomAlertVC.swift in Sources */,
+				359F62B328AD193B007F1963 /* Cell_showQr.swift in Sources */,
+				35F6031B277DA55300585E4E /* RaastSubViewVc.swift in Sources */,
+				FE1698C71FC6F2BD00AC25CC /* AppDelegate.swift in Sources */,
+				A23CDDF42022F2A000AC5CD6 /* PITouchIDManager.swift in Sources */,
+				3557C90C289651FD00098BD7 /* TapQRCodeScanner.swift in Sources */,
+				A23765B421A4127E001A6484 /* TransportSelectedVC.swift in Sources */,
+				A25E6A59217F0BED0013B54D /* MovieShowInfo.swift in Sources */,
+				FE03C7972007762E003608D3 /* BillPaymentInquiry.swift in Sources */,
+				A26848CB210F410A0007FBA8 /* MyLoanTableViewCell.swift in Sources */,
+				FE3988AD1FE100F90093D7D6 /* TitleFetch.swift in Sources */,
+				FE396CDF1FE23E3900361F16 /* LocalFundTransferConfirmationVC.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		359895B327673E3D00667F35 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				359B897C2768FED900447B66 /* ur-Arab-PK */,
+				359B897D27691E9200447B66 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		35A0BD43277B2D9900D25EC3 /* Extension.pdf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				35A0BD42277B2D9900D25EC3 /* Base */,
+			);
+			name = Extension.pdf;
+			sourceTree = "<group>";
+		};
+		FE1698CA1FC6F2BD00AC25CC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FE1698CB1FC6F2BD00AC25CC /* Base */,
+				359B897B2768FECB00447B66 /* ur-Arab-PK */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FE1698CF1FC6F2BD00AC25CC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FE1698D01FC6F2BD00AC25CC /* Base */,
+				359B897A2768FECA00447B66 /* ur-Arab-PK */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FE1698D31FC6F2BD00AC25CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_ENTITLEMENTS = "First Touch Banking/First Touch Banking.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Distribution: The First MicroFinanceBank Ltd. (YP6FSM85P6)";
+				CODE_SIGN_STYLE = Manual;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				EXCLUDED_ARCHS = arm64;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = NO;
+				PROVISIONING_PROFILE_SPECIFIER = "FTB FMFB Distribution";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SUPPORTS_MACCATALYST = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VALIDATE_PRODUCT = YES;
+				VALIDATE_WORKSPACE = YES;
+			};
+			name = Debug;
+		};
+		FE1698D41FC6F2BD00AC25CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_ENTITLEMENTS = "First Touch Banking/First Touch Banking.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Distribution: The First MicroFinanceBank Ltd. (YP6FSM85P6)";
+				CODE_SIGN_STYLE = Manual;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXCLUDED_ARCHS = arm64;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = NO;
+				PROVISIONING_PROFILE_SPECIFIER = FTB_FMFB_Distribution;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SUPPORTS_MACCATALYST = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+				VALIDATE_WORKSPACE = YES;
+			};
+			name = Release;
+		};
+		FE1698D61FC6F2BD00AC25CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B670E7ED028E1EEEB48F1EB0 /* Pods-First Touch Banking.debug.xcconfig */;
+			buildSettings = {
+				"ARCHS[sdk=*]" = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = "First Touch Banking/First Touch Banking.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 8;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				"DEBUG_INFORMATION_FORMAT[sdk=*]" = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = YP6FSM85P6;
+				EXCLUDED_ARCHS = "";
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)/../../../../../../../../../Users/arsalanamjad/Library/Developer/Xcode/DerivedData/First_Touch_Banking-dkzacesfimqhumczywpijxiiijmp/Build/Products/Debug-iphoneos",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = "First Touch Banking/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 6.0.2;
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fmfb.ftb;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "7b0d935a-80ac-4844-bb0f-08c9b0d5afd1";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+			};
+			name = Debug;
+		};
+		FE1698D71FC6F2BD00AC25CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 79F3EC0DF11191E1D1739845 /* Pods-First Touch Banking.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = "First Touch Banking/First Touch Banking.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 8;
+				DEVELOPMENT_TEAM = YP6FSM85P6;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)/../../../../../../../../../Users/arsalanamjad/Library/Developer/Xcode/DerivedData/First_Touch_Banking-dkzacesfimqhumczywpijxiiijmp/Build/Products/Debug-iphoneos",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = "First Touch Banking/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 6.0.2;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fmfb.ftb;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "7b0d935a-80ac-4844-bb0f-08c9b0d5afd1";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FE1698BE1FC6F2BD00AC25CC /* Build configuration list for PBXProject "Access Banking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE1698D31FC6F2BD00AC25CC /* Debug */,
+				FE1698D41FC6F2BD00AC25CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FE1698D51FC6F2BD00AC25CC /* Build configuration list for PBXNativeTarget "First Touch Banking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE1698D61FC6F2BD00AC25CC /* Debug */,
+				FE1698D71FC6F2BD00AC25CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FE1698BB1FC6F2BD00AC25CC /* Project object */;
+}

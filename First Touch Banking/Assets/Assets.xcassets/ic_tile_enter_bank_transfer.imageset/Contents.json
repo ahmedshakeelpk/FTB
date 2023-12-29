@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "ic_tile_enter_bank_transfer.png",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

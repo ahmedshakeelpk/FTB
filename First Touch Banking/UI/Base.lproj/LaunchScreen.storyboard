@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RjY-i1-qUw">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splash_background" translatesAutoresizingMaskIntoConstraints="NO" id="OkL-AO-Sfh">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HBL MicroFinanceBank Ltd" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IFs-yO-Jq7">
+                                <rect key="frame" x="83" y="431" width="248" height="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="248" id="9xV-VX-Uck"/>
+                                    <constraint firstAttribute="height" constant="17" id="oMN-eH-Mab"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Access  Banking" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="okp-zB-5if">
+                                <rect key="frame" x="111.66666666666669" y="401.66666666666669" width="191" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="191" id="aTK-Fv-die"/>
+                                    <constraint firstAttribute="height" constant="21" id="bNr-NI-p43"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Y05-UK-VeI"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="OkL-AO-Sfh" firstAttribute="leading" secondItem="Y05-UK-VeI" secondAttribute="leading" id="Anw-Nv-D4M"/>
+                            <constraint firstItem="Y05-UK-VeI" firstAttribute="bottom" secondItem="OkL-AO-Sfh" secondAttribute="bottom" id="FA9-vN-3p6"/>
+                            <constraint firstItem="IFs-yO-Jq7" firstAttribute="top" secondItem="okp-zB-5if" secondAttribute="bottom" constant="8.5" id="N8F-h3-V4E"/>
+                            <constraint firstItem="IFs-yO-Jq7" firstAttribute="centerX" secondItem="okp-zB-5if" secondAttribute="centerX" id="NPh-8C-3S7"/>
+                            <constraint firstItem="OkL-AO-Sfh" firstAttribute="top" secondItem="Y05-UK-VeI" secondAttribute="top" id="Y8Q-2J-xeq"/>
+                            <constraint firstItem="Y05-UK-VeI" firstAttribute="trailing" secondItem="OkL-AO-Sfh" secondAttribute="trailing" id="YMM-xw-lXJ"/>
+                            <constraint firstItem="okp-zB-5if" firstAttribute="centerX" secondItem="RjY-i1-qUw" secondAttribute="centerX" id="rL8-Tb-T61"/>
+                            <constraint firstItem="okp-zB-5if" firstAttribute="centerY" secondItem="RjY-i1-qUw" secondAttribute="centerY" constant="-36" id="wS5-DG-Cmh"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52.5" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="splash_background" width="473" height="843"/>
+    </resources>
+</document>

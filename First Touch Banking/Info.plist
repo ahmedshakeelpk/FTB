@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>$(DEVELOPMENT_LANGUAGE)</string>
+	<key>CFBundleDisplayName</key>
+	<string>Access Banking</string>
+	<key>CFBundleExecutable</key>
+	<string>$(EXECUTABLE_NAME)</string>
+	<key>CFBundleIcons</key>
+	<dict>
+		<key>CFBundlePrimaryIcon</key>
+		<dict>
+			<key>CFBundleIconFiles</key>
+			<array>
+				<string></string>
+			</array>
+			<key>CFBundleIconName</key>
+			<string></string>
+			<key>UIPrerenderedIcon</key>
+			<false/>
+		</dict>
+	</dict>
+	<key>CFBundleIcons~ipad</key>
+	<dict/>
+	<key>CFBundleIdentifier</key>
+	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>$(PRODUCT_NAME)</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>$(MARKETING_VERSION)</string>
+	<key>CFBundleVersion</key>
+	<string>$(CURRENT_PROJECT_VERSION)</string>
+	<key>Fabric</key>
+	<dict>
+		<key>APIKey</key>
+		<string>a3c67225e7697ca6b4c1399655bed61b80023bca</string>
+		<key>Kits</key>
+		<array>
+			<dict>
+				<key>KitInfo</key>
+				<dict/>
+				<key>KitName</key>
+				<string>Crashlytics</string>
+			</dict>
+		</array>
+	</dict>
+	<key>FaceoffLicenseKey</key>
+	<string>MTY4LDE2MywyMjcsMTAyLDExNywyMjUsMTgzLDcxLDI0NCwyMjksMTk1LDE0MCwxMjAsMzksMTksMzgsMjE2LDE3NSwxMzgsMTE4LDkzLDE4NSw3MiwxNzIsMTU1LDg0LDE0OSwyMzMsMjM2LDE3LDg3LDQ2LDEzOSw4MCw4MSw0NiwyMTIsMTM4LDExNywxMTQsMTcxLDIxNyw5MCwxNDYsMjA1LDE1NCwzNiwxODQsMTczLDcsNzgsMTI5LDQzLDE1NCwzMyw5NCwyMjksMTcxLDIyLDE0MCwyMTQsMjQyLDExOCwyLDE2NywxNzgsMTQ4LDIxMiwxOTcsNzUsMjEwLDE4NiwyMCwxMzcsMTQ3LDIyMCwxODcsMzcsMTIxLDE5NSwxODUsMjM4LDExNywyMjksMTMzLDM1LDIzLDM0LDIyMSw5NSwyMjgsMjQzLDE5NCw4OSwyMjIsNjAsMTQ5LDY2LDE5MSw0NCwxNDEsMjIxLDEwLDEwMSw2NSwyMDksMjA1LDY0LDMyLDI0MywyMTQsMjA5LDIzMyw4LDE3OCwyOCwxNTksMTcxLDIzMiwxNTEsMTYwLDI0MywxOTIsMTQzLDQ2LDIyOCwyMjcsMTg1LDIyOCwxNTUsMTQ0LDEyNywyNDUsMTk5LDE5LDE4NCwxNCw1NSw3OCwxNzAsNDksNTQsMjA1LDk0LDMyLDc2LDEyNyw3NCwxMjAsMTE3LDE0Nyw1NSwxODIsMjAxLDIwNSw4OCw2NywyMTcsMjQxLDIyNyw2Nyw0MiwyMTUsMywxNDEsMTM3LDUzLDE3MCwxMTksMjIwLDE0LDExNSwxODcsOTQsMTIxLDU0LDkxLDU2LDE5MywyNTQsNTksMjE5LDc5LDY3LDIyMiwxNDMsNSwxNjEsMTA3LDI0NiwyMzAsMjA1LDEwOCw2NCwyNTAsNzUsMjMxLDQyLDU4LDIwOCwxMTgsMTM0LDEzLDg4LDEzNCwxNTgsMTc5LDc5LDE0NywyOCwyNDgsNSwxOTgsMTIwLDkzLDEwMCwxMzksMTcwLDU3LDM1LDI0NywxNjEsMjMzLDIyMSwyMDAsMjM4LDc5LDE3OCw5OSwxOTAsMjI1LDE5MiwxNzEsMTgsMjQwLDE5MiwxOTQsMTcwLDYzLDE1OSwxNjEsMTIwLDIxMSw3NSwxMywxMDQsMTM2LDg3LDE3Niw0NywxNjksNjAsMzAsNCw0NSwxNTEsMSwwLDEs</string>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>cydia</string>
+	</array>
+	<key>LSRequiresIPhoneOS</key>
+	<true/>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+		<key>NSExceptionDomains</key>
+		<dict>
+			<key>New Exception Domain</key>
+			<dict>
+				<key>NSExceptionAllowsInsecureHTTPLoads</key>
+				<true/>
+				<key>NSIncludesSubdomains</key>
+				<true/>
+			</dict>
+			<key>http://api.weatherunlocked.com</key>
+			<string></string>
+		</dict>
+	</dict>
+	<key>NSCameraUsageDescription</key>
+	<string>App must require Photo Library Access</string>
+	<key>NSFaceIDUsageDescription</key>
+	<string>App requires your permission for login</string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>Location is required to secure the transaction history &amp; it is always private.</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>Location is required to secure the transaction history &amp; it is always private.</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Location is required to secure the transaction history &amp; it is always private.</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>App requires Photo Library Access for profile photo upload.</string>
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>remote-notification</string>
+	</array>
+	<key>UILaunchStoryboardName</key>
+	<string>LaunchScreen</string>
+	<key>UIMainStoryboardFile</key>
+	<string>Main</string>
+	<key>UIRequiredDeviceCapabilities</key>
+	<array>
+		<string>armv7</string>
+	</array>
+	<key>UIRequiresFullScreen</key>
+	<true/>
+	<key>UISupportedInterfaceOrientations</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+	</array>
+	<key>UISupportedInterfaceOrientations~ipad</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+		<string>UIInterfaceOrientationLandscapeRight</string>
+	</array>
+	<key>UIUserInterfaceStyle</key>
+	<string>Light</string>
+</dict>
+</plist>
