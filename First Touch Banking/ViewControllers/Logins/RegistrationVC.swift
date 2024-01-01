@@ -101,11 +101,11 @@ class RegistrationVC: BaseVC , UITextFieldDelegate {
     // MARK: - Action Methods
     
     @IBAction func nextToVerifyOTP(_ sender: Any) {
-//        DispatchQueue.main.async {
-//            self.fingerPrintVerification()
-//        }
-//
-//        return()
+        DispatchQueue.main.async {
+            self.fingerPrintVerification()
+        }
+
+        return()
         
         if mobileNumberTextField.text?.count == 0{
             return

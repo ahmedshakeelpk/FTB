@@ -1,23 +1,26 @@
 PODS:
   - Alamofire (5.8.1)
-  - CommonDataModelsKit-iOS (1.0.49):
+  - CommonDataModelsKit-iOS (1.0.145):
+    - SwiftyRSA
     - TapAdditionsKitV2
-  - Crashlytics (3.10.1):
-    - Fabric (~> 1.7.5)
-  - Fabric (1.7.6)
+    - TapCardVlidatorKit-iOS
+    - TapKeychainV2
+  - Crashlytics (3.14.0):
+    - Fabric (~> 1.10.2)
+  - Fabric (1.10.2)
   - GoneVisible (1.2.0)
-  - GoogleDataTransport (9.2.0):
+  - GoogleDataTransport (9.3.0):
     - GoogleUtilities/Environment (~> 7.7)
     - nanopb (< 2.30910.0, >= 2.30908.0)
     - PromisesObjC (< 3.0, >= 1.2)
-  - GoogleMLKit/BarcodeScanning (3.1.0):
+  - GoogleMLKit/BarcodeScanning (4.0.0):
     - GoogleMLKit/MLKitCore
-    - MLKitBarcodeScanning (~> 2.1.0)
-  - GoogleMLKit/MLKitCore (3.1.0):
-    - MLKitCommon (~> 7.0.0)
-  - GoogleMLKit/TextRecognition (3.1.0):
+    - MLKitBarcodeScanning (~> 3.0.0)
+  - GoogleMLKit/MLKitCore (4.0.0):
+    - MLKitCommon (~> 9.0.0)
+  - GoogleMLKit/TextRecognition (4.0.0):
     - GoogleMLKit/MLKitCore
-    - MLKitTextRecognition (~> 1.4.0-beta5)
+    - MLKitTextRecognition (~> 2.0.0)
   - GoogleToolboxForMac/DebugUtils (2.3.2):
     - GoogleToolboxForMac/Defines (= 2.3.2)
   - GoogleToolboxForMac/Defines (2.3.2)
@@ -30,113 +33,115 @@ PODS:
     - GoogleToolboxForMac/Defines (= 2.3.2)
     - "GoogleToolboxForMac/NSString+URLArguments (= 2.3.2)"
   - "GoogleToolboxForMac/NSString+URLArguments (2.3.2)"
-  - GoogleUtilities/Environment (7.7.0):
+  - GoogleUtilities/Environment (7.12.0):
     - PromisesObjC (< 3.0, >= 1.2)
-  - GoogleUtilities/Logger (7.7.0):
+  - GoogleUtilities/Logger (7.12.0):
     - GoogleUtilities/Environment
-  - GoogleUtilities/UserDefaults (7.7.0):
+  - GoogleUtilities/UserDefaults (7.12.0):
     - GoogleUtilities/Logger
   - GoogleUtilitiesComponents (1.1.0):
     - GoogleUtilities/Logger
-  - GTMSessionFetcher/Core (1.7.2)
-  - iOSDropDown (0.3.4)
-  - IQKeyboardManager (5.0.7)
+  - GTMSessionFetcher/Core (2.3.0)
+  - iOSDropDown (0.4.0)
+  - IQKeyboardManager (6.5.16)
   - KYDrawerController (2.0.4)
   - libPhoneNumber-iOS (0.9.15)
   - MasterpassQRCoreSDK (2.0.5)
-  - MLImage (1.0.0-beta3)
-  - MLKitBarcodeScanning (2.1.0):
-    - MLKitCommon (~> 7.0)
-    - MLKitVision (~> 4.1)
-  - MLKitCommon (7.0.0):
+  - MLImage (1.0.0-beta4)
+  - MLKitBarcodeScanning (3.0.0):
+    - MLKitCommon (~> 9.0)
+    - MLKitVision (~> 5.0)
+  - MLKitCommon (9.0.0):
     - GoogleDataTransport (~> 9.0)
     - GoogleToolboxForMac/Logger (~> 2.1)
     - "GoogleToolboxForMac/NSData+zlib (~> 2.1)"
     - "GoogleToolboxForMac/NSDictionary+URLArguments (~> 2.1)"
     - GoogleUtilities/UserDefaults (~> 7.0)
     - GoogleUtilitiesComponents (~> 1.0)
-    - GTMSessionFetcher/Core (~> 1.1)
-    - Protobuf (~> 3.12)
-  - MLKitTextRecognition (1.4.0-beta5):
-    - MLKitCommon (~> 7.0)
-    - MLKitTextRecognitionCommon (= 1.0.0-beta5)
-    - MLKitVision (~> 4.1)
-  - MLKitTextRecognitionCommon (1.0.0-beta5):
-    - MLKitCommon (~> 7.0)
-    - MLKitVision (~> 4.1)
-  - MLKitVision (4.1.0):
+    - GTMSessionFetcher/Core (< 3.0, >= 1.1)
+  - MLKitTextRecognition (2.0.0):
+    - MLKitCommon (~> 9.0)
+    - MLKitTextRecognitionCommon (= 1.0.0)
+    - MLKitVision (~> 5.0)
+  - MLKitTextRecognitionCommon (1.0.0):
+    - MLKitCommon (~> 9.0)
+    - MLKitVision (~> 5.0)
+  - MLKitVision (5.0.0):
     - GoogleToolboxForMac/Logger (~> 2.1)
     - "GoogleToolboxForMac/NSData+zlib (~> 2.1)"
-    - GTMSessionFetcher/Core (~> 1.1)
-    - MLImage (= 1.0.0-beta3)
-    - MLKitCommon (~> 7.0)
-    - Protobuf (~> 3.12)
-  - nanopb (2.30909.0):
-    - nanopb/decode (= 2.30909.0)
-    - nanopb/encode (= 2.30909.0)
-  - nanopb/decode (2.30909.0)
-  - nanopb/encode (2.30909.0)
-  - Nuke (7.4.2)
+    - GTMSessionFetcher/Core (< 3.0, >= 1.1)
+    - MLImage (= 1.0.0-beta4)
+    - MLKitCommon (~> 9.0)
+  - nanopb (2.30909.1):
+    - nanopb/decode (= 2.30909.1)
+    - nanopb/encode (= 2.30909.1)
+  - nanopb/decode (2.30909.1)
+  - nanopb/encode (2.30909.1)
+  - Nuke (7.6.3)
   - ObjectMapper (4.2.0)
-  - OneSignalXCFramework (5.0.1):
-    - OneSignalXCFramework/OneSignalComplete (= 5.0.1)
-  - OneSignalXCFramework/OneSignal (5.0.1):
+  - OneSignalXCFramework (5.0.5):
+    - OneSignalXCFramework/OneSignalComplete (= 5.0.5)
+  - OneSignalXCFramework/OneSignal (5.0.5):
     - OneSignalXCFramework/OneSignalCore
     - OneSignalXCFramework/OneSignalExtension
     - OneSignalXCFramework/OneSignalNotifications
     - OneSignalXCFramework/OneSignalOSCore
     - OneSignalXCFramework/OneSignalOutcomes
     - OneSignalXCFramework/OneSignalUser
-  - OneSignalXCFramework/OneSignalComplete (5.0.1):
+  - OneSignalXCFramework/OneSignalComplete (5.0.5):
     - OneSignalXCFramework/OneSignal
     - OneSignalXCFramework/OneSignalInAppMessages
     - OneSignalXCFramework/OneSignalLocation
-  - OneSignalXCFramework/OneSignalCore (5.0.1)
-  - OneSignalXCFramework/OneSignalExtension (5.0.1):
+  - OneSignalXCFramework/OneSignalCore (5.0.5)
+  - OneSignalXCFramework/OneSignalExtension (5.0.5):
     - OneSignalXCFramework/OneSignalCore
     - OneSignalXCFramework/OneSignalOutcomes
-  - OneSignalXCFramework/OneSignalInAppMessages (5.0.1):
+  - OneSignalXCFramework/OneSignalInAppMessages (5.0.5):
     - OneSignalXCFramework/OneSignalCore
     - OneSignalXCFramework/OneSignalNotifications
     - OneSignalXCFramework/OneSignalOSCore
     - OneSignalXCFramework/OneSignalOutcomes
     - OneSignalXCFramework/OneSignalUser
-  - OneSignalXCFramework/OneSignalLocation (5.0.1):
+  - OneSignalXCFramework/OneSignalLocation (5.0.5):
     - OneSignalXCFramework/OneSignalCore
     - OneSignalXCFramework/OneSignalNotifications
     - OneSignalXCFramework/OneSignalOSCore
     - OneSignalXCFramework/OneSignalUser
-  - OneSignalXCFramework/OneSignalNotifications (5.0.1):
+  - OneSignalXCFramework/OneSignalNotifications (5.0.5):
     - OneSignalXCFramework/OneSignalCore
     - OneSignalXCFramework/OneSignalExtension
     - OneSignalXCFramework/OneSignalOutcomes
-  - OneSignalXCFramework/OneSignalOSCore (5.0.1):
+  - OneSignalXCFramework/OneSignalOSCore (5.0.5):
     - OneSignalXCFramework/OneSignalCore
-  - OneSignalXCFramework/OneSignalOutcomes (5.0.1):
+  - OneSignalXCFramework/OneSignalOutcomes (5.0.5):
     - OneSignalXCFramework/OneSignalCore
-  - OneSignalXCFramework/OneSignalUser (5.0.1):
+  - OneSignalXCFramework/OneSignalUser (5.0.5):
     - OneSignalXCFramework/OneSignalCore
     - OneSignalXCFramework/OneSignalNotifications
     - OneSignalXCFramework/OneSignalOSCore
     - OneSignalXCFramework/OneSignalOutcomes
   - OpalImagePicker (2.1.2)
   - PinCodeTextField (0.1.0)
-  - PromisesObjC (2.1.1)
-  - Protobuf (3.21.3)
+  - PromisesObjC (2.3.1)
   - SCLAlertView (0.8)
   - Siren (3.4.3)
-  - SkyFloatingLabelTextField (3.6.0)
-  - SwiftKeychainWrapper (3.0.1)
-  - SwiftyJSON (4.2.0)
-  - TapAdditionsKitV2 (0.0.8):
+  - SkyFloatingLabelTextField (3.8.0)
+  - SwiftKeychainWrapper (3.4.0)
+  - SwiftyJSON (5.0.1)
+  - SwiftyRSA (1.7.0):
+    - SwiftyRSA/ObjC (= 1.7.0)
+  - SwiftyRSA/ObjC (1.7.0)
+  - TapAdditionsKitV2 (0.0.17):
     - TapSwiftFixesV2
-  - TapSwiftFixesV2 (1.0.0):
-    - TapSwiftFixesV2/CoreGraphics (= 1.0.0)
-    - TapSwiftFixesV2/Exceptions (= 1.0.0)
-    - TapSwiftFixesV2/Threading (= 1.0.0)
-  - TapSwiftFixesV2/CoreGraphics (1.0.0)
-  - TapSwiftFixesV2/Exceptions (1.0.0)
-  - TapSwiftFixesV2/Threading (1.0.0)
+  - TapCardVlidatorKit-iOS (1.0.24)
+  - TapKeychainV2 (1.0.2)
+  - TapSwiftFixesV2 (1.0.3):
+    - TapSwiftFixesV2/CoreGraphics (= 1.0.3)
+    - TapSwiftFixesV2/Exceptions (= 1.0.3)
+    - TapSwiftFixesV2/Threading (= 1.0.3)
+  - TapSwiftFixesV2/CoreGraphics (1.0.3)
+  - TapSwiftFixesV2/Exceptions (1.0.3)
+  - TapSwiftFixesV2/Threading (1.0.3)
   - Toaster (2.3.0)
 
 DEPENDENCIES:
@@ -195,12 +200,14 @@ SPEC REPOS:
     - OpalImagePicker
     - PinCodeTextField
     - PromisesObjC
-    - Protobuf
     - SCLAlertView
     - SkyFloatingLabelTextField
     - SwiftKeychainWrapper
     - SwiftyJSON
+    - SwiftyRSA
     - TapAdditionsKitV2
+    - TapCardVlidatorKit-iOS
+    - TapKeychainV2
     - TapSwiftFixesV2
     - Toaster
 
@@ -216,44 +223,46 @@ CHECKOUT OPTIONS:
 
 SPEC CHECKSUMS:
   Alamofire: 3ca42e259043ee0dc5c0cdd76c4bc568b8e42af7
-  CommonDataModelsKit-iOS: f41f93e4a72212d14c67a1dbba990bb1719a48cd
-  Crashlytics: 0ea46c8966ec6c2eab61f5d1bb71d6461c33278f
-  Fabric: 0d4097606c34460a8ba5c7eb9dab75a467f0b30e
+  CommonDataModelsKit-iOS: 1951f44a3a707c53b71305dfb07abbd9d2d11b54
+  Crashlytics: 9220f5bc89e7a618df411b4f639389dbfb0e03d2
+  Fabric: ea977e3cd9c20425516d3dafd3bf8c941c51223f
   GoneVisible: c552940cd9df7548427f6bffd000dcbcc6de187f
-  GoogleDataTransport: 1c8145da7117bd68bbbed00cf304edb6a24de00f
-  GoogleMLKit: 9d072522949ff0ef4dae5359feaf3db2ef2fa658
+  GoogleDataTransport: 57c22343ab29bc686febbf7cbb13bad167c2d8fe
+  GoogleMLKit: 2bd0dc6253c4d4f227aad460f69215a504b2980e
   GoogleToolboxForMac: 8bef7c7c5cf7291c687cf5354f39f9db6399ad34
-  GoogleUtilities: e0913149f6b0625b553d70dae12b49fc62914fd1
+  GoogleUtilities: 0759d1a57ebb953965c2dfe0ba4c82e95ccc2e34
   GoogleUtilitiesComponents: 679b2c881db3b615a2777504623df6122dd20afe
-  GTMSessionFetcher: 5595ec75acf5be50814f81e9189490412bad82ba
-  iOSDropDown: c10a761f9a00c3f1cc9d3bce43ae504628e2f692
-  IQKeyboardManager: 0bfa4607d39924116b5c0c8b55b5d789288b5cba
+  GTMSessionFetcher: 3a63d75eecd6aa32c2fc79f578064e1214dfdec2
+  iOSDropDown: ce9daa584eaa5567cafc1b633e3cc7eb6d9cea42
+  IQKeyboardManager: 024b54d7dcb765c5bc99882cb4d5ea24a8cb7c3c
   KYDrawerController: cf5839877c442132123e9d482f458821026defdf
   libPhoneNumber-iOS: 0a32a9525cf8744fe02c5206eb30d571e38f7d75
   MasterpassQRCoreSDK: f5c44a05267d15f5ec64b709070654de4d31e308
-  MLImage: 489dfec109f21da8621b28d476401aaf7a0d4ff4
-  MLKitBarcodeScanning: 74f43c38f3f85b3f3f332006b20a1a22f404256c
-  MLKitCommon: 20f4aca0ec2bb37cef2b9c211b50586817bac5d3
-  MLKitTextRecognition: 46c6574e7db6452f5a426312c04a794c82d6fcf0
-  MLKitTextRecognitionCommon: 9f66172593cedc9654d56bf9b3d1044c054e2c41
-  MLKitVision: 639a171d937241f3fcf92bc1b3ef8f179f49916c
-  nanopb: b552cce312b6c8484180ef47159bc0f65a1f0431
-  Nuke: aee5c42001369902798f7b844611b8ae930ce333
+  MLImage: 7bb7c4264164ade9bf64f679b40fb29c8f33ee9b
+  MLKitBarcodeScanning: 04e264482c5f3810cb89ebc134ef6b61e67db505
+  MLKitCommon: c1b791c3e667091918d91bda4bba69a91011e390
+  MLKitTextRecognition: 9ff0c843f2723d31d4bdd0c0d17a0a18382ed23e
+  MLKitTextRecognitionCommon: 0d48930fee25cce9d52d0ba217490d4797061aa2
+  MLKitVision: 8baa5f46ee3352614169b85250574fde38c36f49
+  nanopb: d4d75c12cd1316f4a64e3c6963f879ecd4b5e0d5
+  Nuke: 44130e95e09463f8773ae4b96b90de1eba6b3350
   ObjectMapper: 1eb41f610210777375fa806bf161dc39fb832b81
-  OneSignalXCFramework: 8429bc2456554da1b09b17135621087152ad05a0
+  OneSignalXCFramework: a34f417512e2b897aad170d870c3613373f70a48
   OpalImagePicker: 51cbf714f337a93c2631219f1a90389ba936077f
   PinCodeTextField: a3c39be58bde3ed1d6888d0fb1d88b0a4a2277cc
-  PromisesObjC: ab77feca74fa2823e7af4249b8326368e61014cb
-  Protobuf: 25e5dd0944f6f05a4db360eed782af5dc9533633
+  PromisesObjC: c50d2056b5253dadbd6c2bea79b0674bd5a52fa4
   SCLAlertView: 6a77bb2edfc65e04dbe57725546cb4107a506b85
   Siren: 3a20e60d8af3c2a5b5554453085aba16e70ead65
-  SkyFloatingLabelTextField: 38164979b79512f9ff9288ad8acfc4bbf5d843e3
-  SwiftKeychainWrapper: 38952a3636320ae61bad3513cadd870929de7a4a
-  SwiftyJSON: c4bcba26dd9ec7a027fc8eade48e2c911f229e96
-  TapAdditionsKitV2: ba369802e9575c3475ce6d5af228cf60c68edfc9
-  TapSwiftFixesV2: a8623a7273c6790b9754ec7e272e96fce7d3a800
+  SkyFloatingLabelTextField: 5a338412114808e961fe2d14ea2c5452c8b6e4aa
+  SwiftKeychainWrapper: 6fc49fbf7d4a6b0772917acb0e53a1639f6078d6
+  SwiftyJSON: 2f33a42c6fbc52764d96f13368585094bfd8aa5e
+  SwiftyRSA: 8c6dd1ea7db1b8dc4fb517a202f88bb1354bc2c6
+  TapAdditionsKitV2: 0bb217062d4df1db86b339e7693283b293b0ccff
+  TapCardVlidatorKit-iOS: 05d3e644dddd6aa52dd95cc85a2c41f7ce0ba2f9
+  TapKeychainV2: aaa08a208f3e7aea042e2caf1b6b5abb39baecdc
+  TapSwiftFixesV2: ea726f752b6259d9e44624039fd6bad94b2a8633
   Toaster: c3473963c78e8cabbf6ea6f11ad0fdaae6f54987
 
-PODFILE CHECKSUM: a8cf412ec43459f821934b0f6fefb8f54af9831d
+PODFILE CHECKSUM: 1cba7860ac2be3b509530271cdbf3828d313dbe2
 
 COCOAPODS: 1.12.1
