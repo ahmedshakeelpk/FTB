@@ -112,6 +112,7 @@
 		6A4E2D6C2B3C45C000ADD8D1 /* SelectedlangugaegVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A4E2D692B3C45C000ADD8D1 /* SelectedlangugaegVc.swift */; };
 		6A4E2D6D2B3C45C000ADD8D1 /* Notification Setting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A4E2D6A2B3C45C000ADD8D1 /* Notification Setting.storyboard */; };
 		6A4E2D6E2B3C45C000ADD8D1 /* NotificationSettingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A4E2D6B2B3C45C000ADD8D1 /* NotificationSettingVC.swift */; };
+		6A4F982E2B45F10C00A72851 /* BioMetricVerifyNow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A4F982D2B45F10C00A72851 /* BioMetricVerifyNow.swift */; };
 		6A9731732B26DD2C00E977F2 /* FIRST Touch Banking FAQs-converted.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 6A97316B2B26DD2C00E977F2 /* FIRST Touch Banking FAQs-converted.pdf */; };
 		6A9731742B26DD2C00E977F2 /* Access Banking Terms and Conditions-converted 3.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 6A97316C2B26DD2C00E977F2 /* Access Banking Terms and Conditions-converted 3.pdf */; };
 		6A9731752B26DD2C00E977F2 /* touch old revised with HBL MFB.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 6A97316D2B26DD2C00E977F2 /* touch old revised with HBL MFB.pdf */; };
@@ -392,6 +393,7 @@
 		6A4E2D692B3C45C000ADD8D1 /* SelectedlangugaegVc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectedlangugaegVc.swift; sourceTree = "<group>"; };
 		6A4E2D6A2B3C45C000ADD8D1 /* Notification Setting.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Notification Setting.storyboard"; sourceTree = "<group>"; };
 		6A4E2D6B2B3C45C000ADD8D1 /* NotificationSettingVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationSettingVC.swift; sourceTree = "<group>"; };
+		6A4F982D2B45F10C00A72851 /* BioMetricVerifyNow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BioMetricVerifyNow.swift; sourceTree = "<group>"; };
 		6A97316B2B26DD2C00E977F2 /* FIRST Touch Banking FAQs-converted.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "FIRST Touch Banking FAQs-converted.pdf"; sourceTree = "<group>"; };
 		6A97316C2B26DD2C00E977F2 /* Access Banking Terms and Conditions-converted 3.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Access Banking Terms and Conditions-converted 3.pdf"; sourceTree = "<group>"; };
 		6A97316D2B26DD2C00E977F2 /* touch old revised with HBL MFB.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "touch old revised with HBL MFB.pdf"; sourceTree = "<group>"; };
@@ -957,6 +959,14 @@
 			path = "Notification Language";
 			sourceTree = "<group>";
 		};
+		6A4F982C2B45F0E200A72851 /* BioMetricVerifyNow */ = {
+			isa = PBXGroup;
+			children = (
+				6A4F982D2B45F10C00A72851 /* BioMetricVerifyNow.swift */,
+			);
+			path = BioMetricVerifyNow;
+			sourceTree = "<group>";
+		};
 		6A97317D2B26DD9F00E977F2 /* urduT&C */ = {
 			isa = PBXGroup;
 			children = (
@@ -1066,6 +1076,7 @@
 		FE1698DA1FC6F2F600AC25CC /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				6A4F982C2B45F0E200A72851 /* BioMetricVerifyNow */,
 				6A4E2D682B3C45C000ADD8D1 /* Notification Language */,
 				35B9FD1328A6702F0042FF77 /* Home */,
 				35B9FD1228A66FE80042FF77 /* Logins */,
@@ -1651,6 +1662,7 @@
 				359B89792768A5B400447B66 /* E-StatmentVC.swift in Sources */,
 				A20219FC2020443D0013A824 /* SearchTextField.swift in Sources */,
 				3557C90028964F8D00098BD7 /* TabQRSccaner.swift in Sources */,
+				6A4F982E2B45F10C00A72851 /* BioMetricVerifyNow.swift in Sources */,
 				3514C6822835433300241AAE /* URLSessionMethodVc.swift in Sources */,
 				A25E6A5D217F4E940013B54D /* MovieSeatSelectionVC.swift in Sources */,
 				3512C83B274D075400961C1C /* FakeLSCellVc.swift in Sources */,
