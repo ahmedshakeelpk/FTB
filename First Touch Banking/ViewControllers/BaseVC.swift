@@ -178,7 +178,7 @@ class BaseVC: UIViewController {
         
     }
     
-    public func showDefaultAlert(title:String , message:String){
+    public func showDefaultAlert(title:String , message:String) {
         
         let alert = UIAlertController(title: title, message:message, preferredStyle: UIAlertControllerStyle.alert)
         // add an action (button)

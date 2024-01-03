@@ -16148,13 +16148,13 @@
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r4M-N8-Odk">
                                                     <rect key="frame" x="10" y="10" width="300" height="88"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eae-KN-BW7">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eae-KN-BW7">
                                                             <rect key="frame" x="8" y="10" width="219.5" height="19.5"/>
                                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d81-vt-9G2">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d81-vt-9G2">
                                                             <rect key="frame" x="242.5" y="10" width="42.5" height="19.5"/>
                                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -19483,12 +19483,6 @@
         </scene>
     </scenes>
     <designables>
-        <designable name="08a-Q4-uqS">
-            <size key="intrinsicContentSize" width="159.5" height="34"/>
-        </designable>
-        <designable name="1Jb-Ju-042">
-            <size key="intrinsicContentSize" width="76" height="34"/>
-        </designable>
         <designable name="4Kx-54-fLK">
             <size key="intrinsicContentSize" width="312" height="39.220703125"/>
         </designable>
@@ -19498,23 +19492,14 @@
         <designable name="6Pz-Ik-4XL">
             <size key="intrinsicContentSize" width="290" height="41.153671875000001"/>
         </designable>
-        <designable name="6SP-Pf-xRT">
-            <size key="intrinsicContentSize" width="159.5" height="34"/>
-        </designable>
         <designable name="6lr-nV-7C0">
             <size key="intrinsicContentSize" width="290" height="41.153671875000001"/>
-        </designable>
-        <designable name="7Ut-Qe-4kx">
-            <size key="intrinsicContentSize" width="32" height="34"/>
         </designable>
         <designable name="BdP-mU-6yJ">
             <size key="intrinsicContentSize" width="290" height="41.153671875000001"/>
         </designable>
         <designable name="C71-vM-ska">
             <size key="intrinsicContentSize" width="173" height="39.220703125"/>
-        </designable>
-        <designable name="EUS-2U-BxP">
-            <size key="intrinsicContentSize" width="32" height="34"/>
         </designable>
         <designable name="FC3-h9-ben">
             <size key="intrinsicContentSize" width="173" height="39.220703125"/>
@@ -19530,9 +19515,6 @@
         </designable>
         <designable name="IWQ-jT-dKa">
             <size key="intrinsicContentSize" width="173" height="39.220703125"/>
-        </designable>
-        <designable name="IzF-09-ZRw">
-            <size key="intrinsicContentSize" width="141.5" height="34"/>
         </designable>
         <designable name="KTl-eE-cZR">
             <size key="intrinsicContentSize" width="280" height="41.153671875000001"/>
@@ -19573,9 +19555,6 @@
         <designable name="Yvr-nl-0FF">
             <size key="intrinsicContentSize" width="280" height="41.153671875000001"/>
         </designable>
-        <designable name="a1A-Md-ypO">
-            <size key="intrinsicContentSize" width="177" height="34"/>
-        </designable>
         <designable name="bFh-uP-HuR">
             <size key="intrinsicContentSize" width="290" height="41.153671875000001"/>
         </designable>
@@ -19587,9 +19566,6 @@
         </designable>
         <designable name="cfP-88-SAQ">
             <size key="intrinsicContentSize" width="173" height="36.833984375"/>
-        </designable>
-        <designable name="cjI-P8-6x1">
-            <size key="intrinsicContentSize" width="159.5" height="34"/>
         </designable>
         <designable name="d6t-vz-dcD">
             <size key="intrinsicContentSize" width="120" height="41.153671875000001"/>
@@ -19621,17 +19597,8 @@
         <designable name="pLs-oW-crf">
             <size key="intrinsicContentSize" width="290" height="41.153671875000001"/>
         </designable>
-        <designable name="pW2-Wy-2Kc">
-            <size key="intrinsicContentSize" width="69" height="34"/>
-        </designable>
-        <designable name="pry-Ch-rux">
-            <size key="intrinsicContentSize" width="69" height="34"/>
-        </designable>
         <designable name="rEP-2b-Siu">
             <size key="intrinsicContentSize" width="290" height="41.153671875000001"/>
-        </designable>
-        <designable name="rV0-0a-62b">
-            <size key="intrinsicContentSize" width="141.5" height="34"/>
         </designable>
         <designable name="snk-Sr-8Cf">
             <size key="intrinsicContentSize" width="280" height="41.153671875000001"/>

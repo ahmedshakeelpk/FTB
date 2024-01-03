@@ -64,6 +64,11 @@ class RegistrationVC: BaseVC , UITextFieldDelegate {
         }
         
         // Do any additional setup after loading the view.
+        
+        
+        mobileNumberTextField.text = "03015165456"
+        cnicTextField.text = "3740523841161"
+        accountNumberTextField.text = "0021041564175016"
     }
     
     override func didReceiveMemoryWarning() {
@@ -101,11 +106,11 @@ class RegistrationVC: BaseVC , UITextFieldDelegate {
     // MARK: - Action Methods
     
     @IBAction func nextToVerifyOTP(_ sender: Any) {
-        DispatchQueue.main.async {
-            self.fingerPrintVerification()
-        }
-
-        return()
+//        DispatchQueue.main.async {
+//            self.fingerPrintVerification()
+//        }
+//
+//        return()
         
         if mobileNumberTextField.text?.count == 0{
             return
@@ -344,7 +349,7 @@ class RegistrationVC: BaseVC , UITextFieldDelegate {
 //                    if let message = self.registerInfo?.message{
 //                        self.showDefaultAlert(title: "Error", message: message)
 //                    }
-                    self.showDefaultAlert(title: "Error", message: "OTP cannot be sent. Please Try Again")
+                    self.showDefaultAlert(title: "Error", message: self.registerInfo?.message ?? "")
                     
 //                    print(response.result.value)
                     print(response.response?.statusCode)
