@@ -335,28 +335,26 @@ extension BioMetricVerifyNow {
     
     // MARK: - ModelBioMetricVerificationSuccessfull
     struct ModelBioMetricVerificationSuccessfull: Codable {
-        let data: DataClass
+        let data: ModelBioMetricVerificationSuccessfullData?
         let message: String
         let response: Int
     }
 
     // MARK: - DataClass
     struct ModelBioMetricVerificationSuccessfullData: Codable {
-        let birthPlace, birthPlaceEn, cardType: String
-        let clientID, cnic: Int
-        let countryOfResidence, createdAt, dateOfBirth, entity: String
-        let expiryDate, familyNumber, fatherHusbandName, fatherHusbandNameEn: String
-        let id: Int
-        let issueDate, lat, long, name: String
-        let nameEn, nationality: String
-        let parentID: Int
-        let permanantAddress, permanantAddressEn, photograph, presentAddress: String
-        let presentAddressEn: String
-        let sessionID: Double
-        let statusCode: Int
-        let statusMessage: String
-        let transactionID: Double
-        let updatedAt: String
+        let birthPlace, birthPlaceEn, cardType, cnic, sessionID, transactionID: String?
+        let clientID: Int?
+        let countryOfResidence, createdAt, dateOfBirth, entity: String?
+        let expiryDate, familyNumber, fatherHusbandName, fatherHusbandNameEn: String?
+        let id: Int?
+        let issueDate, lat, long, name: String?
+        let nameEn, nationality: String?
+        let parentID: Int?
+        let permanantAddress, permanantAddressEn, photograph, presentAddress: String?
+        let presentAddressEn: String?
+        let statusCode: Int?
+        let statusMessage: String?
+        let updatedAt: String?
 
         enum CodingKeys: String, CodingKey {
             case birthPlace = "birth_place"
@@ -390,7 +388,6 @@ extension BioMetricVerifyNow {
             case updatedAt = "updated_at"
         }
     }
-
 }
 
 
