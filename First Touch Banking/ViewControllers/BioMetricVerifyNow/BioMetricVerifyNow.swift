@@ -21,6 +21,7 @@ class BioMetricVerifyNow: BaseVC, FingerprintResponseDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        buttonVerifyNow.layer.cornerRadius = 8
         // Do any additional setup after loading the view.
     }
     
@@ -30,6 +31,7 @@ class BioMetricVerifyNow: BaseVC, FingerprintResponseDelegate {
     
     @IBAction func buttonVerifyNow(_ sender: Any) {
         fingerPrintVerification()
+//        self.openEnterPasswordVC()
     }
     
     func fingerPrintVerification() {
@@ -118,7 +120,8 @@ class BioMetricVerifyNow: BaseVC, FingerprintResponseDelegate {
                     tempFingerPrintDictionary.append(
                         ["FINGER_INDEX":"\(item.fingerPositionCode)",
                          "FINGER_TEMPLATE":imageString,
-                         "templateType":"WSQ"]
+//                         "TEMPLATE_TYPE":"WSQ"
+                        ]
                     )
                 }
             }
@@ -135,7 +138,7 @@ class BioMetricVerifyNow: BaseVC, FingerprintResponseDelegate {
             //Add OK-Action
             actionSheetController.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: { (actionSheetController) -> Void in
 
-                self.fingerPrintVerification()
+
             }))
 
             //present actionSheetController
@@ -236,24 +239,15 @@ extension BioMetricVerifyNow {
                 //                self.registerInfo = Mapper<Registeration>().map(JSONObject: json)
                 print(json)
                 if response.response?.statusCode == 200 {
-                    self.openEnterPasswordVC()
+                    let model: ModelBioMetricVerificationSuccessfull? = self.decodeDataToObject(data: response.data)
+                    self.showAlert(title: "Success", message: model?.message ?? "", completion: {
+                        self.openEnterPasswordVC()
+                    })
+                    
                 }
                 else {
                     let model: ModelErrorBioVerisys? = self.decodeDataToObject(data: response.data)
-                    
-                    //                    self.showDefaultAlert(title: "Error", message: model?.data.responseStatus.message ?? "")
-                    
-                    let actionSheetController = UIAlertController (title: "Error", message: model?.data.responseStatus.message ?? "", preferredStyle: UIAlertControllerStyle.actionSheet)
-                    
-                    //Add OK-Action
-                    actionSheetController.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: { (actionSheetController) -> Void in
-                        
-                        self.fingerPrintVerification()
-                    }))
-                    
-                    //present actionSheetController
-                    self.present(actionSheetController, animated: true, completion: nil)
-                    
+                    self.showAlert(title: "Error", message: model?.data.responseStatus.message ?? "", completion: nil)
                 }
                 //                    print(response.result.value)
                 print(response.response?.statusCode)
@@ -338,4 +332,66 @@ extension BioMetricVerifyNow {
             self.templateType = ""
         }
     }
+    
+    // MARK: - ModelBioMetricVerificationSuccessfull
+    struct ModelBioMetricVerificationSuccessfull: Codable {
+        let data: DataClass
+        let message: String
+        let response: Int
+    }
+
+    // MARK: - DataClass
+    struct ModelBioMetricVerificationSuccessfullData: Codable {
+        let birthPlace, birthPlaceEn, cardType: String
+        let clientID, cnic: Int
+        let countryOfResidence, createdAt, dateOfBirth, entity: String
+        let expiryDate, familyNumber, fatherHusbandName, fatherHusbandNameEn: String
+        let id: Int
+        let issueDate, lat, long, name: String
+        let nameEn, nationality: String
+        let parentID: Int
+        let permanantAddress, permanantAddressEn, photograph, presentAddress: String
+        let presentAddressEn: String
+        let sessionID: Double
+        let statusCode: Int
+        let statusMessage: String
+        let transactionID: Double
+        let updatedAt: String
+
+        enum CodingKeys: String, CodingKey {
+            case birthPlace = "birth_place"
+            case birthPlaceEn = "birth_place_en"
+            case cardType = "card_type"
+            case clientID = "client_id"
+            case cnic
+            case countryOfResidence = "country_of_residence"
+            case createdAt = "created_at"
+            case dateOfBirth = "date_of_birth"
+            case entity
+            case expiryDate = "expiry_date"
+            case familyNumber = "family_number"
+            case fatherHusbandName = "father_husband_name"
+            case fatherHusbandNameEn = "father_husband_name_en"
+            case id
+            case issueDate = "issue_date"
+            case lat, long, name
+            case nameEn = "name_en"
+            case nationality
+            case parentID = "parent_id"
+            case permanantAddress = "permanant_address"
+            case permanantAddressEn = "permanant_address_en"
+            case photograph
+            case presentAddress = "present_address"
+            case presentAddressEn = "present_address_en"
+            case sessionID = "session_id"
+            case statusCode = "status_code"
+            case statusMessage = "status_message"
+            case transactionID = "transaction_id"
+            case updatedAt = "updated_at"
+        }
+    }
+
 }
+
+
+

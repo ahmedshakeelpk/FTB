@@ -69,6 +69,10 @@ class RegistrationVC: BaseVC , UITextFieldDelegate {
         mobileNumberTextField.text = "03015165456"
         cnicTextField.text = "3740523841161"
         accountNumberTextField.text = "0021041564175016"
+        
+//        mobileNumberTextField.text = "03219525315"
+//        cnicTextField.text = "1430150995593"
+//        accountNumberTextField.text = "0021123136893012"
     }
     
     override func didReceiveMemoryWarning() {
@@ -588,3 +592,4 @@ extension RegistrationVC {
         }
     }
 }
+
