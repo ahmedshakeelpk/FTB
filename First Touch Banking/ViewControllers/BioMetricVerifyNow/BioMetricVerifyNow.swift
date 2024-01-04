@@ -53,7 +53,8 @@ class BioMetricVerifyNow: BaseVC, FingerprintResponseDelegate {
             guidanceScreenButtonText: "NEXT",
             guidanceScreenText: "User Demo",
             guidanceScreenAnimationFilePath: nil,
-            showGuidanceScreen: true)
+            showGuidanceScreen: true,
+            guidanceScreenTopBarText: "Scan Left and Right Thumb")
         
         let customDialog = CustomDialog(
             dialogImageBackgroundColor: UIColor.white,
@@ -71,6 +72,8 @@ class BioMetricVerifyNow: BaseVC, FingerprintResponseDelegate {
             customUI: customUI,
             customDialog: customDialog,
             customFontFamily: nil)
+        
+        
         
         let fingerprintConfig = FingerprintConfig(mode: .EXPORT_WSQ,
                                                   hand: .BOTH_HANDS,

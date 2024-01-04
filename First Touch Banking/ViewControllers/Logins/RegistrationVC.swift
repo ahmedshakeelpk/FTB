@@ -73,6 +73,10 @@ class RegistrationVC: BaseVC , UITextFieldDelegate {
 //        mobileNumberTextField.text = "03219525315"
 //        cnicTextField.text = "1430150995593"
 //        accountNumberTextField.text = "0021123136893012"
+        
+//        mobileNumberTextField.text = "03337488328"
+//        cnicTextField.text = "3210398145485"
+//        accountNumberTextField.text = "0021121208219016"
     }
     
     override func didReceiveMemoryWarning() {
@@ -228,6 +232,8 @@ class RegistrationVC: BaseVC , UITextFieldDelegate {
     }
     
     // MARK: - UITextfield Delegate Methods
+    
+    
     
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         

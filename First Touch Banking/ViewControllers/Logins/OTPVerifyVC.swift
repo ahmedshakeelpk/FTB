@@ -38,10 +38,23 @@ class OTPVerifyVC: BaseVC {
     @IBOutlet weak var btnresendotp: FTBButton!
     @IBOutlet weak var lblDetail: UILabel!
     static let networkManager = NetworkManager()
-    
+//    func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
+//        if textField == otpTextField {
+//            return false; //do not show keyboard nor cursor
+//        }
+//        return true
+//    }
+//    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+//        if textField == otpTextField {
+//            return false; //do not show keyboard nor cursor
+//        }
+//        return true
+//    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        otpTextField.isUserInteractionEnabled = true
+//        otpTextField.delegate = self
         Changelanguage()
         
         
