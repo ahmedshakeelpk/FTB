@@ -753,14 +753,14 @@
                                             <constraint firstAttribute="height" constant="21" id="sND-A3-mnM"/>
                                         </constraints>
                                     </imageView>
-                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xxU-13-NQV" customClass="FTBButton" customModule="First_Touch_Banking" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xxU-13-NQV" customClass="FTBButton" customModule="First_Touch_Banking" customModuleProvider="target">
                                         <rect key="frame" x="20" y="546.66666666666663" width="388" height="40"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="YEL-HO-FS7"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="16"/>
-                                        <state key="normal" title="Tap here to receive OTP via Call">
+                                        <state key="normal" title="Re-send OTP">
                                             <color key="titleColor" red="0.22352941179999999" green="0.47058823529999999" blue="0.41176470590000003" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                         <connections>
@@ -846,8 +846,14 @@
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Not receiving  OTP? Try ‘Re-Send OTP’ 2 tries left." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8an-a7-Nu0">
+                                        <rect key="frame" x="20" y="594.66666666666663" width="388" height="18.666666666666629"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R8i-8C-Yi3">
-                                        <rect key="frame" x="367" y="636.66666666666663" width="41" height="31"/>
+                                        <rect key="frame" x="367" y="664.66666666666663" width="41" height="31"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
                                         <state key="normal" title="NEXT">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -857,7 +863,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3rx-Pc-x4F">
-                                        <rect key="frame" x="20" y="636.66666666666663" width="37" height="31"/>
+                                        <rect key="frame" x="20" y="664.66666666666663" width="37" height="31"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
                                         <state key="normal" title="Back">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -866,23 +872,33 @@
                                             <action selector="backButtonPressed:" destination="tuH-12-Rph" eventType="touchUpInside" id="6OX-tO-Xgq"/>
                                         </connections>
                                     </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="30 Sec" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dwj-MK-FFi">
+                                        <rect key="frame" x="20" y="621.33333333333337" width="388" height="18.666666666666629"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="z8g-dK-NwA" firstAttribute="top" secondItem="Uah-PB-q1O" secondAttribute="top" id="0NL-Cz-44F"/>
-                                    <constraint firstItem="R8i-8C-Yi3" firstAttribute="top" secondItem="xxU-13-NQV" secondAttribute="bottom" constant="50" id="0re-iL-gd6"/>
+                                    <constraint firstItem="R8i-8C-Yi3" firstAttribute="top" secondItem="xxU-13-NQV" secondAttribute="bottom" constant="78" id="0re-iL-gd6"/>
                                     <constraint firstAttribute="trailing" secondItem="ToF-Qb-P2c" secondAttribute="trailing" constant="20" id="6dP-aD-Z99"/>
                                     <constraint firstItem="yxL-Y9-rjm" firstAttribute="centerX" secondItem="Uah-PB-q1O" secondAttribute="centerX" id="8ig-ZS-pIO"/>
                                     <constraint firstItem="P4r-iF-VHB" firstAttribute="leading" secondItem="Uah-PB-q1O" secondAttribute="leading" constant="120" id="A4T-h3-AST"/>
                                     <constraint firstItem="HNK-FP-kuu" firstAttribute="top" secondItem="hSk-mZ-rGl" secondAttribute="bottom" constant="11" id="Bcx-g7-R9J"/>
                                     <constraint firstItem="qtk-QZ-Fz7" firstAttribute="leading" secondItem="Uah-PB-q1O" secondAttribute="leading" constant="20" id="C8P-wa-RpE"/>
                                     <constraint firstAttribute="trailing" secondItem="hSk-mZ-rGl" secondAttribute="trailing" constant="20" symbolic="YES" id="CX2-YY-kSu"/>
+                                    <constraint firstItem="dwj-MK-FFi" firstAttribute="top" secondItem="8an-a7-Nu0" secondAttribute="bottom" constant="8" id="Dc5-fZ-zrc"/>
                                     <constraint firstItem="qtk-QZ-Fz7" firstAttribute="top" relation="greaterThanOrEqual" secondItem="HNK-FP-kuu" secondAttribute="bottom" id="EyZ-ke-e5n"/>
                                     <constraint firstItem="28x-So-3VL" firstAttribute="leading" secondItem="Uah-PB-q1O" secondAttribute="leading" constant="8" id="Fig-I8-1o4"/>
                                     <constraint firstAttribute="trailing" secondItem="z8g-dK-NwA" secondAttribute="trailing" id="L6N-3X-uoV"/>
-                                    <constraint firstItem="3rx-Pc-x4F" firstAttribute="top" secondItem="xxU-13-NQV" secondAttribute="bottom" constant="50" id="LZS-KI-dIK"/>
+                                    <constraint firstItem="3rx-Pc-x4F" firstAttribute="top" secondItem="xxU-13-NQV" secondAttribute="bottom" constant="78" id="LZS-KI-dIK"/>
+                                    <constraint firstAttribute="trailing" secondItem="dwj-MK-FFi" secondAttribute="trailing" constant="20" symbolic="YES" id="P7c-VD-WEI"/>
+                                    <constraint firstItem="8an-a7-Nu0" firstAttribute="top" secondItem="xxU-13-NQV" secondAttribute="bottom" constant="8" id="QmL-w2-UR3"/>
                                     <constraint firstAttribute="trailing" secondItem="yxL-Y9-rjm" secondAttribute="trailing" constant="20" symbolic="YES" id="RCl-Au-eO2"/>
                                     <constraint firstItem="qtk-QZ-Fz7" firstAttribute="centerY" secondItem="Uah-PB-q1O" secondAttribute="centerY" priority="999" id="REX-bE-erX"/>
                                     <constraint firstAttribute="trailing" secondItem="P4r-iF-VHB" secondAttribute="trailing" constant="120" id="Vi3-7J-zMn"/>
+                                    <constraint firstItem="dwj-MK-FFi" firstAttribute="leading" secondItem="Uah-PB-q1O" secondAttribute="leading" constant="20" symbolic="YES" id="Xh4-bY-yaj"/>
                                     <constraint firstItem="hSk-mZ-rGl" firstAttribute="centerX" secondItem="Uah-PB-q1O" secondAttribute="centerX" id="YjI-v6-2XA"/>
                                     <constraint firstItem="yxL-Y9-rjm" firstAttribute="top" secondItem="P4r-iF-VHB" secondAttribute="bottom" constant="15.5" id="aKM-WD-LLE"/>
                                     <constraint firstItem="HNK-FP-kuu" firstAttribute="centerX" secondItem="Uah-PB-q1O" secondAttribute="centerX" id="ceb-eR-kWE"/>
@@ -892,6 +908,7 @@
                                     <constraint firstAttribute="trailing" secondItem="R8i-8C-Yi3" secondAttribute="trailing" constant="20" id="hge-bJ-oSQ"/>
                                     <constraint firstItem="hSk-mZ-rGl" firstAttribute="top" secondItem="yxL-Y9-rjm" secondAttribute="bottom" constant="8" id="k2S-w8-hvy"/>
                                     <constraint firstItem="z8g-dK-NwA" firstAttribute="top" secondItem="P4r-iF-VHB" secondAttribute="bottom" constant="-127" id="kcA-nt-8E8"/>
+                                    <constraint firstAttribute="trailing" secondItem="8an-a7-Nu0" secondAttribute="trailing" constant="20" symbolic="YES" id="kv9-wc-RMM"/>
                                     <constraint firstAttribute="trailing" secondItem="28x-So-3VL" secondAttribute="trailing" constant="8" id="lEX-gV-yM6"/>
                                     <constraint firstItem="ToF-Qb-P2c" firstAttribute="top" secondItem="qtk-QZ-Fz7" secondAttribute="bottom" constant="20" id="m3l-NA-Vkl"/>
                                     <constraint firstItem="qtk-QZ-Fz7" firstAttribute="centerX" secondItem="Uah-PB-q1O" secondAttribute="centerX" id="mfE-vO-WTo"/>
@@ -903,6 +920,7 @@
                                     <constraint firstItem="hSk-mZ-rGl" firstAttribute="leading" secondItem="Uah-PB-q1O" secondAttribute="leading" constant="20" symbolic="YES" id="vuL-cd-Ctg"/>
                                     <constraint firstItem="yxL-Y9-rjm" firstAttribute="leading" secondItem="Uah-PB-q1O" secondAttribute="leading" constant="20" symbolic="YES" id="wEk-sg-wlY"/>
                                     <constraint firstItem="ToF-Qb-P2c" firstAttribute="leading" secondItem="Uah-PB-q1O" secondAttribute="leading" constant="20" id="xU1-VK-WE5"/>
+                                    <constraint firstItem="8an-a7-Nu0" firstAttribute="leading" secondItem="Uah-PB-q1O" secondAttribute="leading" constant="20" symbolic="YES" id="xjb-8w-VkV"/>
                                     <constraint firstItem="3rx-Pc-x4F" firstAttribute="leading" secondItem="Uah-PB-q1O" secondAttribute="leading" constant="20" id="ywc-F6-gcp"/>
                                 </constraints>
                             </view>
@@ -920,6 +938,8 @@
                         <outlet property="btnback" destination="3rx-Pc-x4F" id="Xid-RV-1fB"/>
                         <outlet property="btnnext" destination="R8i-8C-Yi3" id="i4f-FF-BfW"/>
                         <outlet property="btnresendotp" destination="xxU-13-NQV" id="8k8-TW-rnz"/>
+                        <outlet property="labelOtpTimer" destination="dwj-MK-FFi" id="hcn-QS-7b1"/>
+                        <outlet property="labelResendOtp" destination="8an-a7-Nu0" id="v2K-ol-Z8N"/>
                         <outlet property="lblDetail" destination="ToF-Qb-P2c" id="GKP-PX-aPe"/>
                         <outlet property="lblMain" destination="yxL-Y9-rjm" id="oFX-mR-1wl"/>
                         <outlet property="lblOTPSEnd" destination="HNK-FP-kuu" id="KWb-FY-4cF"/>

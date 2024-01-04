@@ -42,6 +42,15 @@ class RegistrationVC: BaseVC , UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+//                mobileNumberTextField.text = "03015165456"
+//                cnicTextField.text = "3740523841161"
+//                accountNumberTextField.text = "0021041564175016"
+                
+                mobileNumberTextField.text = "03219525315"
+                cnicTextField.text = "1430150995593"
+                accountNumberTextField.text = "0021123136893012"
+        
+        
         self.updateUI()
         termsAccepted = false
         ChangeLanguage()
@@ -64,19 +73,6 @@ class RegistrationVC: BaseVC , UITextFieldDelegate {
         }
         
         // Do any additional setup after loading the view.
-        
-        
-        mobileNumberTextField.text = "03015165456"
-        cnicTextField.text = "3740523841161"
-        accountNumberTextField.text = "0021041564175016"
-        
-//        mobileNumberTextField.text = "03219525315"
-//        cnicTextField.text = "1430150995593"
-//        accountNumberTextField.text = "0021123136893012"
-        
-//        mobileNumberTextField.text = "03337488328"
-//        cnicTextField.text = "3210398145485"
-//        accountNumberTextField.text = "0021121208219016"
     }
     
     override func didReceiveMemoryWarning() {

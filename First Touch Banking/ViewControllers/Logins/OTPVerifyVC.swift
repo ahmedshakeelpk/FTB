@@ -17,6 +17,7 @@ class OTPVerifyVC: BaseVC {
     //    var fingerPrintVerification: FingerPrintVerification!
     var registrationToken: String!
     
+    @IBOutlet weak var labelResendOtp: UILabel!
     @IBOutlet weak var lblMain: UILabel!
     @IBOutlet weak var otpTextField: SkyFloatingLabelTextField!
     var verifyOTPInfo:VerifyOTP?
@@ -51,8 +52,15 @@ class OTPVerifyVC: BaseVC {
 //        return true
 //    }
     
+    func showResendOtpButton(isHidden: Bool) {
+        labelResendOtp.isHidden = isHidden
+        btnresendotp.isHidden = isHidden
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
+        showResendOtpButton(isHidden: false)
+        
+        
         otpTextField.isUserInteractionEnabled = true
 //        otpTextField.delegate = self
         Changelanguage()
@@ -75,7 +83,8 @@ class OTPVerifyVC: BaseVC {
         lblDetail.text = "Enter the code sent on your mobile device manually.".addLocalizableString(languageCode: languageCode)
         btnnext.setTitle("NEXT".addLocalizableString(languageCode: languageCode), for: .normal)
         btnback.setTitle("Back".addLocalizableString(languageCode: languageCode), for: .normal)
-        btnresendotp.setTitle("Tap here to receive OTP via Call".addLocalizableString(languageCode: languageCode), for: .normal)
+//        btnresendotp.setTitle("Tap here to receive OTP via Call".addLocalizableString(languageCode: languageCode), for: .normal)
+        btnresendotp.setTitle("Re-send OTP".addLocalizableString(languageCode: languageCode), for: .normal)
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -105,7 +114,6 @@ class OTPVerifyVC: BaseVC {
             self.verifyOTPCall()
         }
     }
-    
     @IBAction func callForOtpPressed(_ sender: Any) {
         
         if ForTransactionConsent == true{
@@ -190,8 +198,9 @@ class OTPVerifyVC: BaseVC {
         }
         
         showActivityIndicator()
-        
-        let compelteUrl = Constants.BASE_URL + "api/v1/Customers/\(self.sourceAccount!)/TransactionConsent/OTV"
+        //Using for Call
+//        let compelteUrl = Constants.BASE_URL + "api/v1/Customers/\(self.sourceAccount!)/TransactionConsent/OTV"
+        let compelteUrl = Constants.BASE_URL + "api/v1/Customers/\(self.sourceAccount!)/TransactionConsent/OTP"
         let header: HTTPHeaders = ["Accept":"application/json","Authorization":"Bearer \(DataManager.instance.accessToken!)"]
         
         print(header)
@@ -230,6 +239,31 @@ class OTPVerifyVC: BaseVC {
         }
     }
     
+    var otpTimerSeconds = 15
+    var otpRemeaningTries = 3
+    var otpTimer = Timer()
+    @IBOutlet weak var labelOtpTimer: UILabel!
+    func startTimer() {
+        otpRemeaningTries -= 1
+        labelResendOtp.text = "Not receiving  OTP? Try ‘Re-Send OTP’ \(otpRemeaningTries) tries left."
+        labelOtpTimer.text = "\(otpTimer)Sec"
+        
+        if otpRemeaningTries == 0 {
+            return()
+        }
+        self.showResendOtpButton(isHidden: false)
+        otpTimer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { timer in
+            self.otpTimerSeconds -= 1
+            if self.otpTimerSeconds == 0 {
+                print("Go!")
+                self.otpTimer.invalidate()
+                self.showResendOtpButton(isHidden: true)
+            } else {
+                print(self.otpTimerSeconds)
+                self.labelOtpTimer.text = "\(self.otpTimer)Sec"
+            }
+        }
+    }
     private func callForOTP() {
         
         if !NetworkConnectivity.isConnectedToInternet(){
@@ -253,7 +287,8 @@ class OTPVerifyVC: BaseVC {
         }
         
         
-        let compelteUrl = Constants.BASE_URL + "api/v1/Customers/OTV"
+//        let compelteUrl = Constants.BASE_URL + "api/v1/Customers/OTV"
+        let compelteUrl = Constants.BASE_URL + "api/v1/Customers/OTP"
         
         //   let params = []
         //       let header = ["Accept":"application/json","Content-Type":"application/x-www-form-urlencoded"]
