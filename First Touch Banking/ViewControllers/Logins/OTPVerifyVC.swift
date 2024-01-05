@@ -16,6 +16,10 @@ import ObjectMapper
 class OTPVerifyVC: BaseVC {
     //    var fingerPrintVerification: FingerPrintVerification!
     var registrationToken: String!
+    var totalOtpTime = 0
+    var otpTimerSeconds = 15
+    var otpTotalTriesFromServer = 3
+    var otpTimer = Timer()
     
     @IBOutlet weak var labelResendOtp: UILabel!
     @IBOutlet weak var lblMain: UILabel!
@@ -30,6 +34,7 @@ class OTPVerifyVC: BaseVC {
     var genericResponse:GenericResponse?
     var sourceAccount:String?
     var uniqueStringResponse: String?
+    
     
     @IBOutlet weak var lblOTPSEnd: UILabel!
     
@@ -58,7 +63,7 @@ class OTPVerifyVC: BaseVC {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-        showResendOtpButton(isHidden: false)
+        showResendOtpButton(isHidden: true)
         
         
         otpTextField.isUserInteractionEnabled = true
@@ -71,7 +76,7 @@ class OTPVerifyVC: BaseVC {
         if ForTransactionConsent == true{
             self.getOTPCallForConsent()
         }
-        
+        startTimer(isViewDidLoad: true)
         // Do any additional setup after loading the view.
     }
     
@@ -170,7 +175,7 @@ class OTPVerifyVC: BaseVC {
                     self.genericResponse = Mapper<GenericResponse>().map(JSONObject: json)
                     
                     if self.genericResponse?.response == 0 {
-                        
+                        self.startTimer()
                     }
                     else {
                         if let messageErrorTrans = self.genericResponse?.message{
@@ -219,7 +224,7 @@ class OTPVerifyVC: BaseVC {
                     self.genericResponse = Mapper<GenericResponse>().map(JSONObject: json)
                     //                self.genericResponse = response.result.value
                     if self.genericResponse?.response == 0 {
-                        
+                        self.startTimer()
                     }
                     else {
                         if let messageErrorTrans = self.genericResponse?.message{
@@ -239,28 +244,36 @@ class OTPVerifyVC: BaseVC {
         }
     }
     
-    var otpTimerSeconds = 15
-    var otpRemeaningTries = 3
-    var otpTimer = Timer()
+    var totalCanOtpTries = 3
     @IBOutlet weak var labelOtpTimer: UILabel!
-    func startTimer() {
-        otpRemeaningTries -= 1
-        labelResendOtp.text = "Not receiving  OTP? Try ‘Re-Send OTP’ \(otpRemeaningTries) tries left."
-        labelOtpTimer.text = "\(otpTimer)Sec"
-        
-        if otpRemeaningTries == 0 {
-            return()
+    
+    func startTimer(isViewDidLoad: Bool? = false) {
+        self.showResendOtpButton(isHidden: true)
+        otpTimerSeconds = totalOtpTime
+        if !isViewDidLoad! {
+            otpTotalTriesFromServer += 1
         }
-        self.showResendOtpButton(isHidden: false)
+        labelResendOtp.text = "Not receiving  OTP? Try ‘Re-Send OTP’ \(totalCanOtpTries-otpTotalTriesFromServer) tries left."
+        labelOtpTimer.text = "\(otpTimerSeconds) Sec"
+        otpTimer.invalidate()
         otpTimer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { timer in
             self.otpTimerSeconds -= 1
-            if self.otpTimerSeconds == 0 {
-                print("Go!")
+            if self.otpTimerSeconds < 1 {
                 self.otpTimer.invalidate()
-                self.showResendOtpButton(isHidden: true)
-            } else {
+                self.labelOtpTimer.isHidden = true
+                print("Go!")
+                if self.otpTotalTriesFromServer > 2 {
+                    self.labelResendOtp.isHidden = false
+                }
+                else {
+                    self.showResendOtpButton(isHidden: false)
+                }
+            }
+            else {
                 print(self.otpTimerSeconds)
-                self.labelOtpTimer.text = "\(self.otpTimer)Sec"
+                self.labelOtpTimer.text = "\(self.otpTimerSeconds) Sec"
+                self.labelOtpTimer.isHidden = false
+                self.btnresendotp.isHidden = true
             }
         }
     }
@@ -311,12 +324,12 @@ class OTPVerifyVC: BaseVC {
             guard let data = response.data else { return }
             if let json = try? JSONSerialization.jsonObject(with: data, options: []) {
                 self.genericObj = Mapper<GenericResponse>().map(JSONObject: json)
-                
                 if response.response?.statusCode == 200 {
                     if self.genericObj?.response == 2 || self.genericObj?.response == 1 {
                         
                         if let message = self.genericObj?.message{
                             self.showToast(title: message)
+                            self.startTimer()
                         }
                     }
                 }

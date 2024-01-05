@@ -330,6 +330,8 @@ class RegistrationVC: BaseVC , UITextFieldDelegate {
                         }
                         let OTPVerifyVC = self.storyboard!.instantiateViewController(withIdentifier: "OTPVerifyVC") as! OTPVerifyVC
                         OTPVerifyVC.mainTitle = "Enter OTP for Registration"
+                        OTPVerifyVC.totalOtpTime = self.registerInfo?.data?.otpSeconds ?? 15
+                        OTPVerifyVC.otpTotalTriesFromServer = self.registerInfo?.data?.otpCount ?? 15
 //                        OTPVerifyVC.registrationToken = registerInfo?.data?.token
                         self.navigationController!.pushViewController(OTPVerifyVC, animated: true)
                     }
@@ -480,6 +482,9 @@ class RegistrationVC: BaseVC , UITextFieldDelegate {
                         }
                         let OTPVerifyVC = self.storyboard!.instantiateViewController(withIdentifier: "OTPVerifyVC") as! OTPVerifyVC
                         OTPVerifyVC.mainTitle = "Enter OTP for Registration"
+                        OTPVerifyVC.totalOtpTime = self.registerInfo?.data?.otpSeconds ?? 15
+                        OTPVerifyVC.otpTotalTriesFromServer = self.registerInfo?.data?.otpCount ?? 15
+                        
                         self.navigationController!.pushViewController(OTPVerifyVC, animated: true)
                     }
                     else {

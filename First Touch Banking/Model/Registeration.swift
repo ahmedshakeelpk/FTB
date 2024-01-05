@@ -59,17 +59,20 @@ struct Registeration: Mappable {
     struct Data : Mappable {
         var cid : Int?
         var otp : Int?
+        var otpCount : Int?
+        var otpSeconds : Int?
         var token : String?
         var step : String?
-
+        
         init?(map: Map) {
 
         }
 
         mutating func mapping(map: Map) {
-
             cid <- map["cid"]
             otp <- map["otp"]
+            otpCount <- map["otp_count"]
+            otpSeconds <- map["otp_seconds"]
             token <- map["token"]
             step <- map["step"]
         }
