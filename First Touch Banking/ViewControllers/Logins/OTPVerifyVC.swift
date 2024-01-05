@@ -13,7 +13,7 @@ import Alamofire
 import SwiftKeychainWrapper
 import ObjectMapper
 
-class OTPVerifyVC: BaseVC {
+class OTPVerifyVC: BaseVC, UITextFieldDelegate {
     //    var fingerPrintVerification: FingerPrintVerification!
     var registrationToken: String!
     var totalOtpTime = 0
@@ -23,7 +23,9 @@ class OTPVerifyVC: BaseVC {
     
     @IBOutlet weak var labelResendOtp: UILabel!
     @IBOutlet weak var lblMain: UILabel!
-    @IBOutlet weak var otpTextField: SkyFloatingLabelTextField!
+    
+    @IBOutlet weak var otpTextField: UITextField!
+    
     var verifyOTPInfo:VerifyOTP?
     var genericObj:GenericResponse?
     @IBOutlet weak var lblMainTitle: UILabel!
@@ -61,11 +63,19 @@ class OTPVerifyVC: BaseVC {
         labelResendOtp.isHidden = isHidden
         btnresendotp.isHidden = isHidden
     }
+    //max Length
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange,
+                   replacementString string: String) -> Bool {
+        let maxLength = 15
+        let currentString: NSString = textField.text! as NSString
+        let newString: NSString = currentString.replacingCharacters(in: range, with: string) as NSString
+        return newString.length <= maxLength
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         showResendOtpButton(isHidden: true)
-        
-        
+        otpTextField.delegate = self
+
         otpTextField.isUserInteractionEnabled = true
 //        otpTextField.delegate = self
         Changelanguage()
@@ -253,7 +263,13 @@ class OTPVerifyVC: BaseVC {
         if !isViewDidLoad! {
             otpTotalTriesFromServer += 1
         }
-        labelResendOtp.text = "Not receiving  OTP? Try ‘Re-Send OTP’ \(totalCanOtpTries-otpTotalTriesFromServer) tries left."
+        
+        var tempRemeaningTries = totalCanOtpTries-otpTotalTriesFromServer
+        if tempRemeaningTries < 0 {
+            tempRemeaningTries = 0
+        }
+        
+        labelResendOtp.text = "Not receiving  OTP? Try ‘Re-Send OTP’ \(tempRemeaningTries) tries left."
         labelOtpTimer.text = "\(otpTimerSeconds) Sec"
         otpTimer.invalidate()
         otpTimer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { timer in
