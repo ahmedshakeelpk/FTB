@@ -47,9 +47,9 @@ class RegistrationVC: BaseVC , UITextFieldDelegate {
 //                accountNumberTextField.text = "0021041564175016"
                 
 //                mobileNumberTextField.text = "03219525315"
-                mobileNumberTextField.text = "03336222024"
-                cnicTextField.text = "1430150995593"
-                accountNumberTextField.text = "0021123136893012"
+//                mobileNumberTextField.text = "03336222024"
+//                cnicTextField.text = "1430150995593"
+//                accountNumberTextField.text = "0021123136893012"
         
         
         self.updateUI()
